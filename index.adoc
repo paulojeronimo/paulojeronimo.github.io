@@ -1,0 +1,25 @@
+= paulojeronimo.github.io
+Paulo Jerônimo <pj@paulojeronimo.com>; {localdatetime}
+:source-highlighter: coderay
+:icons: font
+
+:uri-pj: https://paulojeronimo.github.io
+:uri-cv: {uri-pj}/cv/en
+
+:cv: {uri-cv}[CV]
+
+image::https://avatars2.githubusercontent.com/u/66204?s=400&v=4[align=center]
+
+Hi! *I'm Paulo Jerônimo*.
+Welcome to my *very very simple website* (almost completely text-based and written in https://asciidoctor.org/docs/what-is-asciidoc/[AsciiDoc format]).
+
+I work as a *Software Architect/ Developer* and, sometimes, as a *DevOps* guy.
+I have some skills and experience (around 20 years).
+
+Currently, I work for a software company, in Portugal.
+I'm also building a startup focused on developing solutions to the sportive area.
+
+I'm an amateur triathlete practicing triathlon *daily* to get more healthy and life quality.
+I have *three (3) finished https://en.wikipedia.org/wiki/Ironman_Triathlon[Ironman]*.
+
+If you want to read more about me and the things that I'm doing, see my {cv}.
