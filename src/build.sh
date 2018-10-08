@@ -16,7 +16,11 @@ _build() {
 }
 
 _clean() {
-  find $html_dir -type f -name '*.html' -delete
+  find $html_dir -type f \( \
+    -name index.html -o \
+    -wholename "$css_dir/asciidoctor.css" -o \
+    -wholename "$css_dir/coderay-asciidoctor.css" \) \
+    -delete
 }
 
 op=${1:-build}

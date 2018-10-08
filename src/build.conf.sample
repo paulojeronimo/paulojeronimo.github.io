@@ -1,3 +1,4 @@
 # vi: set ft=sh:
 html_dir=..
+css_dir=../css
 doc=index.adoc

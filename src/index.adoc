@@ -1,6 +1,8 @@
 = paulojeronimo.github.io
 Paulo Jerônimo <pj@paulojeronimo.com>; {localdatetime}
 :source-highlighter: coderay
+:stylesdir: css
+:linkcss:
 :icons: font
 
 :uri-pj: https://paulojeronimo.github.io
