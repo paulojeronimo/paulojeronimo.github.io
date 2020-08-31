@@ -21,8 +21,16 @@ Page last updated in {localdatetime}
 :uri-ironman: https://en.wikipedia.org/wiki/Ironman_Triathlon
 :uri-finishertech: https://finisher.tech/slides/projeto.A4.9slides.pdf
 
-:MyId: paulojeronimo
-:MyPhone: +55 61 9 9807 3864
+[.text-center]
+{uri-pj-email}[icon:envelope[2x]^] |
+{uri-pj-whatsapp}[icon:whatsapp[2x]^] |
+{uri-pj-skype}[icon:skype[2x]^] |
+{uri-pj-linkedin}[icon:linkedin[2x]^] |
+{uri-pj-github}[icon:github[2x]^] |
+{uri-pj-twitter}[icon:twitter[2x]^] |
+{uri-pj-youtube}[icon:youtube[2x]^]
+
+'''
 
 [.left.text-center]
 image::{uri-pj-avatar}[width=40%]
@@ -49,15 +57,6 @@ I have finished three (3) *{uri-ironman}[Ironman^]* races.
 If you want to read more about the things that I'm doing these
 days, see {uri-pj-docs}[my docs^]. +
 You can also read and download *{uri-pj-cv}[my cv^]*.
-
-[.text-center]
-{uri-pj-email}[icon:envelope[2x]^] |
-{uri-pj-whatsapp}[icon:whatsapp[2x]^] |
-{uri-pj-skype}[icon:skype[2x]^] |
-{uri-pj-linkedin}[icon:linkedin[2x]^] |
-{uri-pj-github}[icon:github[2x]^] |
-{uri-pj-twitter}[icon:twitter[2x]^] |
-{uri-pj-youtube}[icon:youtube[2x]^]
 
 // References
 // https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat/?lang=en
