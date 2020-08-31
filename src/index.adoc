@@ -6,7 +6,7 @@ Page last updated in {localdatetime}
 :icons: font
 :nofooter:
 
-:uri-pj: http://paulojeronimo.com
+:uri-pj: https://paulojeronimo.com
 :uri-pj-cv: {uri-pj}/cv/en
 :uri-pj-docs: {uri-pj}/docs
 :uri-pj-avatar: https://avatars2.githubusercontent.com/u/66204?s=400&v=4
@@ -68,8 +68,8 @@ equipes no desenvolvimento de aplicativos integrados ao Keycloak^]
 . {uri-pj}/termux-presentation/multipage/index.html[Termux
 presentation^]
 . {uri-pj-github}/keycloak-matrix[Keycloak Matrix^]
-. {uri-pj-github}/docker-parcel-react-tutorial[Create React App (with
-  Docker and Parcel) Tutorial^]
+. {uri-pj}/docker-parcel-react-tutorial[Create React App (with Docker
+and Parcel) Tutorial^]
 . {uri-pj-github}/keycloak-labs[Keycloak labs^]
 . {uri-pj}/git-labs[Git labs^]
 . {uri-pj-github}/dev-box[Development Box^]
