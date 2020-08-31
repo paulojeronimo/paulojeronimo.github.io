@@ -54,9 +54,24 @@ I'm an amateur triathlete practicing sports *daily* to get more
 healthy and life quality. +
 I have finished three (3) *{uri-ironman}[Ironman^]* races.
 
-If you want to read more about the things that I'm doing these
-days, see {uri-pj-docs}[my docs^]. +
-You can also read and download *{uri-pj-cv}[my cv^]*.
+Here are *some things that I coded (or wrote)*:
+
+WARNING: You can see much more on {uri-pj-github}[my GitHub account^]
+or in *{uri-pj-cv}[my cv^]*.
+
+
+[%reversed]
+. {uri-pj}/termux-presentation/multipage/index.html[Termux
+presentation^]
+. {uri-pj-github}/keycloak-matrix[Keycloak Matrix^]
+. {uri-pj-github}/docker-parcel-react-tutorial[Create React App (with
+  Docker and Parcel) Tutorial^]
+. {uri-pj-github}/keycloak-labs[Keycloak labs^]
+. {uri-pj}/git-labs[Git labs^]
+. {uri-pj-github}/dev-box[Development Box^]
+. {uri-pj-github}/spring-boot-api-sample[spring-boot-api-sample^]
+. {uri-pj-github}/java-enums-generator[java-enums-generator^]
+. {uri-pj-github}/keycloak-spring-boot-tutorial[keycloak-spring-boot-tutorial^]
 
 // References
 // https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat/?lang=en
