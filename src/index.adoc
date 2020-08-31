@@ -14,6 +14,9 @@ Page last updated in {localdatetime}
 :uri-pj-github: https://github.com/paulojeronimo
 :uri-pj-linkedin: https://www.linkedin.com/in/paulojeronimo/
 :uri-pj-youtube: https://www.youtube.com/user/paulojeronimo74
+:uri-pj-whatsapp: https://wa.me/5561998073864
+:uri-pj-email: mailto:paulojeronimo@gmail.com
+:uri-pj-skype: https://join.skype.com/invite/nepGdOPZU0Nt
 :uri-what-is-asciidoc: https://asciidoctor.org/docs/what-is-asciidoc/
 :uri-ironman: https://en.wikipedia.org/wiki/Ironman_Triathlon
 :uri-finishertech: https://finisher.tech/slides/projeto.A4.9slides.pdf
@@ -47,12 +50,15 @@ If you want to read more about the things that I'm doing these
 days, see {uri-pj-docs}[my docs^]. +
 You can also read and download *{uri-pj-cv}[my cv^]*.
 
-icon:envelope[] paulojeronimo@gmail.com
+[.text-center]
+{uri-pj-email}[icon:envelope[2x]^] |
+{uri-pj-whatsapp}[icon:whatsapp[2x]^] |
+{uri-pj-skype}[icon:skype[2x]^] |
+{uri-pj-linkedin}[icon:linkedin[2x]^] |
+{uri-pj-github}[icon:github[2x]^] |
+{uri-pj-twitter}[icon:twitter[2x]^] |
+{uri-pj-youtube}[icon:youtube[2x]^]
 
-icon:phone[] {MyPhone} |
-icon:skype[] {MyID} |
-
-{uri-pj-linkedin}[icon:linkedin[]^] |
-{uri-pj-github}[icon:github[]^] |
-{uri-pj-twitter}[icon:twitter[]^] |
-{uri-pj-youtube}[icon:youtube[]^]
+// References
+// https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat/?lang=en
+// https://support.skype.com/en/faq/FA34802/how-do-i-invite-someone-to-chat-in-skype-on-desktop
