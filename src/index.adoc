@@ -1,27 +1,58 @@
-= paulojeronimo.github.io
-Paulo Jerônimo <pj@paulojeronimo.com>; {localdatetime}
+= paulojeronimo.com
+Page last updated in {localdatetime}
 :source-highlighter: coderay
 :stylesdir: css
 :linkcss:
 :icons: font
+:nofooter:
 
-:uri-pj: https://paulojeronimo.github.io
-:uri-cv: {uri-pj}/cv/en
+:uri-pj: http://paulojeronimo.com
+:uri-pj-cv: {uri-pj}/cv/en
+:uri-pj-docs: {uri-pj}/docs
+:uri-pj-avatar: https://avatars2.githubusercontent.com/u/66204?s=400&v=4
+:uri-pj-twitter: https://twitter.com/paulojeronimo
+:uri-pj-github: https://github.com/paulojeronimo
+:uri-pj-linkedin: https://www.linkedin.com/in/paulojeronimo/
+:uri-pj-youtube: https://www.youtube.com/user/paulojeronimo74
+:uri-what-is-asciidoc: https://asciidoctor.org/docs/what-is-asciidoc/
+:uri-ironman: https://en.wikipedia.org/wiki/Ironman_Triathlon
+:uri-finishertech: https://finisher.tech/slides/projeto.A4.9slides.pdf
 
-:cv: {uri-cv}[CV]
+:MyId: paulojeronimo
+:MyPhone: +55 61 9 9807 3864
 
-image::https://avatars2.githubusercontent.com/u/66204?s=400&v=4[align=center]
+[.left.text-center]
+image::{uri-pj-avatar}[width=40%]
 
-Hi! *I'm Paulo Jerônimo*.
-Welcome to my *very very simple website* (almost completely text-based and written in https://asciidoctor.org/docs/what-is-asciidoc/[AsciiDoc format]).
+Hi! *My name is Paulo Jerônimo*.
+Welcome to my *very very simple website* (almost completely text-based
+and written in {uri-what-is-asciidoc}[AsciiDoc format^]).
 
-I work as a *Software Architect/ Developer* and, sometimes, as a *DevOps* guy.
-I have some skills and experience (around 20 years).
+I work as a *Software Architect/ Developer* and, sometimes, as a
+*DevOps* guy.
+I am always working with *[red]#security in mind#*.
+I have some skills and many years of experience developing software
+(since 1993).
 
-Currently, I work for a software company, in Portugal.
-I'm also building a startup focused on developing solutions to the sportive area.
+Currently, *I live in Brazil* and in addition to my work as a software
+developer, +
+*I also founded and maintain a project named
+{uri-finishertech}[Finisher.Tech^]*.
 
-I'm an amateur triathlete practicing triathlon *daily* to get more healthy and life quality.
-I have *three (3) finished https://en.wikipedia.org/wiki/Ironman_Triathlon[Ironman]*.
+I'm an amateur triathlete practicing sports *daily* to get more
+healthy and life quality. +
+I have finished three (3) *{uri-ironman}[Ironman^]* races.
 
-If you want to read more about me and the things that I'm doing, see my {cv}.
+If you want to read more about the things that I'm doing these
+days, see {uri-pj-docs}[my docs^]. +
+You can also read and download *{uri-pj-cv}[my cv^]*.
+
+icon:envelope[] paulojeronimo@gmail.com
+
+icon:phone[] {MyPhone} |
+icon:skype[] {MyID} |
+
+{uri-pj-linkedin}[icon:linkedin[]^] |
+{uri-pj-github}[icon:github[]^] |
+{uri-pj-twitter}[icon:twitter[]^] |
+{uri-pj-youtube}[icon:youtube[]^]

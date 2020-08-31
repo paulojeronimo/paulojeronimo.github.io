@@ -1,18 +1,16 @@
 #!/usr/bin/env bash
-set -e
-
-DEBUG=${DEBUG:-false}
-$DEBUG && set -x || set +x
-
-BASE_DIR=${BASE_DIR:-`cd "$(dirname "$0")"; pwd`}
+set -eou pipefail
+BASE_DIR=${BASE_DIR:-`cd "$(dirname "$0")"/..; pwd -P`}
 BASE_NAME=`basename "$BASE_DIR"`
+cd "$BASE_DIR"
 
-config=build.conf
+config=src/build.conf
 [ -r $config ] || config=$config.sample
-source "$BASE_DIR/$config"
+source $config
 
 _build() {
-  asciidoctor -D $html_dir $doc
+  # https://github.com/paulojeronimo/dotfiles/blob/master/.scripts/docker/docker-asciidoctor
+  docker-asciidoctor -D $html_dir $doc
 }
 
 _clean() {
@@ -24,6 +22,5 @@ _clean() {
 }
 
 op=${1:-build}
-cd "$BASE_DIR"
 type _$op &> /dev/null || exit 1
 _$op
