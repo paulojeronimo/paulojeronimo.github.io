@@ -21,6 +21,8 @@ Page last updated in {localdatetime}
 :uri-ironman: https://en.wikipedia.org/wiki/Ironman_Triathlon
 :uri-finishertech: https://finisher.tech/slides/projeto.A4.9slides.pdf
 
+:pt-br: https://en.wikipedia.org/wiki/Brazilian_Portuguese[pt-br^]
+
 [.text-center]
 {uri-pj-email}[icon:envelope[2x]^] |
 {uri-pj-whatsapp}[icon:whatsapp[2x]^] |
@@ -61,6 +63,8 @@ or in *{uri-pj-cv}[my cv^]*.
 
 
 [%reversed]
+. {pt-br}: {uri-pj}/responsabilidades-keycloak[Responsabilidades de
+equipes no desenvolvimento de aplicativos integrados ao Keycloak^]
 . {uri-pj}/termux-presentation/multipage/index.html[Termux
 presentation^]
 . {uri-pj-github}/keycloak-matrix[Keycloak Matrix^]
