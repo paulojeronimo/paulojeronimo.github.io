@@ -67,7 +67,7 @@ or in *{uri-pj-cv}[my cv^]*.
 equipes no desenvolvimento de aplicativos integrados ao Keycloak^]
 . {uri-pj}/termux-presentation/multipage/index.html[Termux
 presentation^]
-. {uri-pj-github}/keycloak-matrix[Keycloak Matrix^]
+. {uri-pj}/keycloak-matrix[Keycloak Matrix^]
 . {uri-pj}/docker-parcel-react-tutorial[Create React App (with Docker
 and Parcel) Tutorial^]
 . {uri-pj-github}/keycloak-labs[Keycloak labs^]
