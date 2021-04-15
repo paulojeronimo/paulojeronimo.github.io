@@ -5,16 +5,19 @@ Page last updated in {localdatetime}
 :linkcss:
 :icons: font
 :nofooter:
+:docinfo2:
 
 :uri-pj: https://paulojeronimo.com
 :uri-pj-cv: {uri-pj}/cv/en
+:uri-pj-resume: {uri-pj}/cv/en/resume.html
 :uri-pj-docs: {uri-pj}/docs
 :uri-pj-avatar: https://avatars2.githubusercontent.com/u/66204?s=400&v=4
 :uri-pj-twitter: https://twitter.com/paulojeronimo
 :uri-pj-github: https://github.com/paulojeronimo
 :uri-pj-linkedin: https://www.linkedin.com/in/paulojeronimo/
-:uri-pj-youtube: https://www.youtube.com/user/paulojeronimo74
+:uri-pj-youtube: https://www.youtube.com/~paulojeronimo
 :uri-pj-whatsapp: https://wa.me/5561998073864
+:uri-pj-sitemap: {uri-pj}/sitemap
 :uri-pj-email: mailto:paulojeronimo@gmail.com
 :uri-pj-skype: https://join.skype.com/invite/nepGdOPZU0Nt
 :uri-what-is-asciidoc: https://asciidoctor.org/docs/what-is-asciidoc/
@@ -30,11 +33,12 @@ Page last updated in {localdatetime}
 {uri-pj-linkedin}[icon:linkedin[2x]^] |
 {uri-pj-github}[icon:github[2x]^] |
 {uri-pj-twitter}[icon:twitter[2x]^] |
-{uri-pj-youtube}[icon:youtube[2x]^]
+{uri-pj-youtube}[icon:youtube[2x]^] |
+{uri-pj-sitemap}[icon:sitemap[2x]^]
 
 '''
 
-[.left.text-center]
+[.left.text-center.rounded]
 image::{uri-pj-avatar}[width=40%]
 
 Hi! *My name is Paulo Jerônimo*.
@@ -56,27 +60,13 @@ I'm an amateur triathlete practicing sports *daily* to get more
 healthy and life quality. +
 I have finished three (3) *{uri-ironman}[Ironman^]* races.
 
-Here are *some things that I coded (or wrote)*:
+You can see some of the code, articles, and tutorials that I coded (or
+wrote) by accessing the {uri-pj-sitemap}[site map^].
+You can also see {uri-pj-resume}[my résumé^] or {uri-pj-cv}[my complete
+CV^].
 
-WARNING: You can see much more on {uri-pj-github}[my GitHub account^]
-or in *{uri-pj-cv}[my cv^]*.
-
-
-[%reversed]
-. {pt-br}: {uri-pj}/responsabilidades-keycloak[Responsabilidades de
-equipes no desenvolvimento de aplicativos integrados ao Keycloak^]
-. {uri-pj}/termux-presentation/multipage/index.html[Termux
-presentation^]
-. {uri-pj}/keycloak-matrix[Keycloak Matrix^]
-. {uri-pj}/docker-parcel-react-tutorial[Create React App (with Docker
-and Parcel) Tutorial^]
-. {uri-pj-github}/keycloak-labs[Keycloak labs^]
-. {uri-pj}/git-labs[Git labs^]
-. {uri-pj-github}/dev-box[Development Box^]
-. {uri-pj-github}/spring-boot-api-sample[spring-boot-api-sample^]
-. {uri-pj-github}/java-enums-generator[java-enums-generator^]
-. {uri-pj-github}/keycloak-spring-boot-tutorial[keycloak-spring-boot-tutorial^]
-
-// References
-// https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat/?lang=en
-// https://support.skype.com/en/faq/FA34802/how-do-i-invite-someone-to-chat-in-skype-on-desktop
+////
+https://discuss.asciidoctor.org/Borders-for-images-td1957.html
+https://blog.mrhaki.com/2015/04/awesome-asciidoctor-adding-custom.html
+https://docs.asciidoctor.org/asciidoctor/latest/docinfo/
+////
