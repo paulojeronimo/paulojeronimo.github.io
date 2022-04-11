@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/paulojeronimo
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://paulojeronimo.com
+  * I am paulojeronimo (https://keybase.io/paulojeronimo) on keybase.
+  * I have a public key ASBCJ16fy6V052sD0-0Q6mAbchT7rS8UmXjEngLFFV-LsAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012042275e9fcba574e76b03d3ed10ea601b7214fbad2f149978c49e02c5155f8bb00a",
+      "host": "keybase.io",
+      "kid": "012042275e9fcba574e76b03d3ed10ea601b7214fbad2f149978c49e02c5155f8bb00a",
+      "uid": "905c8223fe3108e46f9b5f14a2781a19",
+      "username": "paulojeronimo"
+    },
+    "merkle_root": {
+      "ctime": 1649719171,
+      "hash": "eb45727a99f1424c23e0dc99cb7ac081721f60e3db964d2ceb8798f6d44e62f9f31c50e46c859b0167c56d4c072b9ccbedf35355b9a8107afae16de6998e1548",
+      "hash_meta": "d3320f894f10a4d4055f0bd3a759140ca6cef75ca5f978346d2a6c3b2bdd834f",
+      "seqno": 22275224
+    },
+    "service": {
+      "entropy": "2c6+DVvSIZXQYmVqyhMXUINy",
+      "hostname": "paulojeronimo.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.9.0"
+  },
+  "ctime": 1649719284,
+  "expire_in": 504576000,
+  "prev": "3e5361fd85bddc7ed2d60aa435be30f858e46d13d40a01b67a7d830fdaeb9051",
+  "seqno": 17,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgQiden8uldOdrA9PtEOpgG3IU+60vFJl4xJ4CxRVfi7AKp3BheWxvYWTESpcCEcQgPlNh/YW93H7S1gqkNb4w+FjkbRPUCgG2en2DD9rrkFHEIFxksL6ugEJ1TFGaix9ezLeyv8pVf1F2DfU8mzTTECaCAgHCo3NpZ8RAQDFl+EjWpc3Wmu3ZbGWdUiP97D0ce0MPSuUKJkRgRCJiqHQMzAtb/mGpdcMkZeFGvWgNVFGg8xnOdHRKmM1LCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOeazyBTGWJ4DYkThQeHB8u00uXxjhGch7OsLmRDZXL8o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/paulojeronimo
+
+==================================================================
