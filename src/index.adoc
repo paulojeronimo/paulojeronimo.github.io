@@ -20,9 +20,11 @@ Page last updated in {localdatetime}
 :uri-pj-sitemap: {uri-pj}/sitemap
 :uri-pj-email: mailto:paulojeronimo@gmail.com
 :uri-pj-skype: https://join.skype.com/invite/nepGdOPZU0Nt
+:uri-pj-keybase: https://keybase.io/paulojeronimo
 :uri-what-is-asciidoc: https://asciidoctor.org/docs/what-is-asciidoc/
 :uri-ironman: https://en.wikipedia.org/wiki/Ironman_Triathlon
 :uri-finishertech: https://finisher.tech/slides/projeto.A4.9slides.pdf
+:uri-saudeecripto: https://finisher.tech/saudeecripto.pdf
 
 :pt-br: https://en.wikipedia.org/wiki/Brazilian_Portuguese[pt-br^]
 
@@ -47,7 +49,8 @@ and written in {uri-what-is-asciidoc}[AsciiDoc format^]).
 
 I work as a *Software Architect/ Developer* and, sometimes, as a
 *DevOps* guy.
-I am always working with *[red]#security in mind#*.
+I am always working with *[red]#security in mind#*
+(see {uri-pj-keybase}[my keybase account]).
 I have some skills and many years of experience developing software
 (since 1993).
 
@@ -59,6 +62,8 @@ developer, +
 I'm an amateur triathlete practicing sports *daily* to get more
 healthy and life quality. +
 I have finished three (3) *{uri-ironman}[Ironman^]* races.
+Read {uri-saudeecripto}[my history about this] _(only in Brasilian
+Portuguese at this moment)_.
 
 You can see some of the code, articles, and tutorials that I coded (or
 wrote) by accessing the {uri-pj-sitemap}[site map^].
