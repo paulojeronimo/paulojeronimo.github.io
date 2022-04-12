@@ -62,7 +62,7 @@ developer, +
 I'm an amateur triathlete practicing sports *daily* to get more
 healthy and life quality. +
 I have finished three (3) *{uri-ironman}[Ironman^]* races.
-Read {uri-saudeecripto}[my history about this] _(only in Brasilian
+Read {uri-saudeecripto}[my history about this] _(only in Brazilian
 Portuguese at this moment)_.
 
 You can see some of the code, articles, and tutorials that I coded (or
