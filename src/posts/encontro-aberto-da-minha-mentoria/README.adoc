@@ -1,0 +1,105 @@
+= encontro-aberto-da-minha-mentoria
+:nofooter:
+:icons: font
+:imagesdir: ../../images
+ifdef::backend-pdf[]
+:imagesdir: build/images
+endif::[]
+:linkcss:
+
+:uri-odysee: https://odysee.com/@paulojeronimo/
+:uri-mentoria: https://finisher.tech/mentoria.pdf
+:uri-serie-de-fibo: https://finisher.tech/fibonacci-app/docs/fibonacci.pt.html
+:uri-meeting: https://meet.google.com/bmu-vuej-zuf
+:uri-video: https://www.linkedin.com/feed/update/urn:li:activity:6933085839577030657/
+:uri-web3dev: https://www.web3dev.com.br/
+:uri-saudeecripto-pdf: http://finisher.tech/saudeecripto.pdf
+:uri-ironman-brasil: https://ironmanbrasil.com.br/novo/fln/?lang=en
+
+:PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
+:ilia: https://ilia.digital[ília]
+:Blockchain: https://www.youtube.com/playlist?list=PL3jVhh9mXmz_FvGpXNvAydlg_vxVaJj1V[Blockchain]
+:Ethereum: https://ethereum.org/en/[Ethereum]
+:NEAR: https://near.org/[NEAR]
+:CoinMarketCap: https://coinmarketcap.com/[CoinMarketCap]
+:Chainlink: https://coinmarketcap.com/currencies/chainlink/[Chainlink]
+:Polygon: https://coinmarketcap.com/currencies/polygon/[Polygon]
+:Avalanche: https://coinmarketcap.com/currencies/avalanche/[Avalanche]
+:Polkadot: https://coinmarketcap.com/currencies/polkadot-new/[Polkadot]
+:Solana: https://coinmarketcap.com/currencies/solana/[Solana]
+
+// https://valiantceo.com/dapp-development-process/
+image::{doctitle}.png[]
+
+*Saúde e Cripto para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
+por aqui!* +
+
+Antes de eu voltar a trabalhar para a {ilia} eu estava oferecendo a
+{uri-mentoria}[minha mentoria] em {Blockchain} e {Ethereum} para vários
+participantes que ela havia inscrito.
+
+Chegou a semana passada e, conforme {uri-video}[publiquei em um vídeo no
+Linkedin], eu fiquei muito contente em fazer parte, novamente, do time
+da {ilia}.
+
+A mentoria que eu tenho feito para as pessoas que estão inscritas é
+bastante técnica e focada na construção de DApps para a Blockchain do
+{Ethereum} (a segunda maior criptomoeda do mundo).
+
+Porém, recentemente, eu também tenho me aventurado na {Blockchain} da
+{NEAR}, como vocês podem ver no tutorial que publiquei em
+https://paulojeronimo.com/near-rust-smart-contract-tutorial/
+
+A {NEAR} está hoje, segundo o {CoinMarketCap}, na vigésima primeira (21)
+colocação em termos de capitalização de mercado.
+
+[[fibonacci]]
+Como eu curto muito a {uri-serie-de-fibo}[série de Fibonacci] (
+https://finisher.tech/fibonacci-app/docs ) e o número 21 é um dos meus
+preferidos, eu resolvi estudar a {NEAR}!
+
+Hahaha icon:smile-o[] ... Brincadeira ... não foi por isso que eu
+resolvi estudar ela não!
+
+Eu comecei a estudar a {NEAR} por ela me parecer ser uma das blockchains
+mais promissoras, asssim como a {Chainlink}, a {Polygon}, a {Polkadot},
+a {Avalanche} e a {Solana}.
+
+Mas, além disso, *eu estou participando de uma {uri-web3dev}[comunidade
+brasileira de desenvolvedores (bem animada) chamada web3dev]* e, também.
+desenvolvendo alguns conteúdos para ela.
+
+<<<
+Bem ... Agora vou ao *ponto que pode interessar a todos que estão lendo
+esse texto*: na minha mentoria, *o encontro online é sempre às
+terças-feiras, às 13 horas e 21 minutos, e dura 34 minutos*.
+
+NOTE: Observe que todos os números que citei na frase anterior são
+*<<fibonacci,números de Fibonacci>>*! icon:smile-o[]
+
+Esse encontro online era fechado aos inscritos na mentoria.
+Mas, de agora em diante, aproveitando que *{uri-saudeecripto-pdf}[amanhã
+fará 10 anos que participei de minha primeira prova de Ironman (em 26 de
+Maio de 2013)]*, eu irei presentear a todos: *a partir de agora esse
+encontro estará aberto, publicamente, para ouvintes*.
+
+NOTE: Neste final de semana será o {uri-ironman-brasil}[Ironman Brasil
+2022]! Tenho alguns amigos na prova e desejo a eles muita força para
+concluí-la! \o/
+
+Como ouvinte, qualquer um poderá acessar {uri-meeting}[este link da
+meeting] e ver/escutar o que está rolando no encontro.
+
+Dessa forma, espero a presença de mais pessoas da {ilia} (e do público
+em geral) icon:smile-o[]!
+
+NOTE: Se você é do time da {ilia} aguardarei-o, também, para trocarmos
+ideias em nosso canal *#misc-blockchain* (no Slack).
+
+WARNING: *Haverá um encontro extra, amanhã (quinta-feira, dia 26), no
+horário e na duração da mentoria. Participe!*
+
+*{PauloJeronimo}* +
+*https://bio.link/saudeecripto*
+
+*25 de Maio de 2022*.
