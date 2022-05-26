@@ -29,7 +29,7 @@ endif::[]
 :Solana: https://coinmarketcap.com/currencies/solana/[Solana]
 
 // https://valiantceo.com/dapp-development-process/
-image::{doctitle}.png[]
+image::posts/{doctitle}/capa.png[]
 
 *Saúde e Cripto para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
 por aqui!* +
