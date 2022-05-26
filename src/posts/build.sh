@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
+set -eou pipefail
 cd $(dirname $0)
 
 BASE_DIR=../..
 config_dir=..
+
+selected_post=${1:-all}
+selected_post=${selected_post%/}
 
 config=$config_dir/build.conf
 [ -r $config ] || config=$config.sample
@@ -13,8 +17,15 @@ posts=$(find . -maxdepth 1 -type d ! -name .)
 posts_dir=$(mkdir -p $BASE_DIR/$html_dir/posts && cd $_ && pwd)
 for post in $posts
 do
-  # post build
   post=${post##./}
+
+  if [ "$selected_post" != all ] && [ "$selected_post" != $post ]
+  then
+    echo "Skipping $post ..."
+    continue
+  fi
+
+  # post build
   mkdir -p $post/build
   rsync -a $BASE_DIR/images $post/build
   cd $post

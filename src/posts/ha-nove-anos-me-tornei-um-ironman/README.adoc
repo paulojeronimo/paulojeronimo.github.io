@@ -1,0 +1,63 @@
+ifndef::backend-pdf[]
+= ha-nove-anos-me-tornei-um-ironman
+endif::[]
+:nofooter:
+:icons: font
+:imagesdir: ../../images
+ifdef::backend-pdf[]
+:imagesdir: build/images
+endif::[]
+:linkcss:
+
+:uri-odysee: https://odysee.com/@paulojeronimo/
+
+
+:postdir: {doctitle}
+ifdef::backend-pdf[]
+:postdir: ha-nove-anos-me-tornei-um-ironman
+endif::[]
+
+:PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
+
+// https://valiantceo.com/dapp-development-process/
+image::posts/{postdir}/capa.png[]
+
+*Saúde e Cripto para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
+por aqui!* +
+
+Há exatos nove anos, *https://www.youtube.com/watch?v=Hxr0bJLDzzs[no dia
+26 de Maio de 2013]*, pela primeira vez eu escutei o grito, com toda a
+entonação merecida, que muitos que se prepararam durante um ano ou mais
+de treinamento, irão escutar neste próximo domingo, no
+https://www.ironman.com/im-brazil[dia 29 de Maio de 2022].
+
+[.text-center]
+*https://www.youtube.com/watch?v=wE108-27BxA[YOUUUUU AREEEEE AN IRONMAN!!!!!!]*
+
+Ser um Ironman é ser uma pessoa que está decidida a persistir na luta
+para finalizar um grande desafio.
+
+Ironman é o apelido de alguém que se dedica, brava e incansavelmente a
+cruzar uma linha de chegada, a concluir um desafio que ele mesmo se
+propoz.
+
+[.text-center]
+*Ninguém lhe incentivará a se tornar um Ironman!* +
+*Você é que desejará escolher isso!* +
+*Você é que precisará se provar que é capaz!* +
+*Um Ironman é um atleta muito mais forte mentalmente do que
+fisicamente.*
+
+Se quiser ler uma história que lhe possivelmente lhe dirá o porquê de de
+um simples Ironman (eu) se desafiar a tanto a uma meta, abra o site
+http://saudeecripto.com[saudeecripto.com].
+Isso lhe mostrará um PDF que talvez lhe traga alguma inspiração!
+
+*Além da benção de Deus, eu também desejo a todos que enfrentarão seu
+desafio neste próximo domingo, bastante força mental e física para
+atingirem suas metas. icon:smile-o[]*
+
+*{PauloJeronimo}* +
+*https://bio.link/saudeecripto*
+
+*26 de Maio de 2022*.
