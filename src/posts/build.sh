@@ -23,7 +23,7 @@ do
 
   # post artifacts copy
   mkdir -p "$posts_dir"/$post
-  rsync -a $post/build/ "$posts_dir"/$post/
+  rsync -a --exclude images $post/build/ "$posts_dir"/$post/
   f="$posts_dir"/$post/$post.pdf
   if [ -f "$f" ]
   then
