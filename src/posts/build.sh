@@ -7,6 +7,7 @@ config_dir=..
 
 selected_post=${1:-all}
 selected_post=${selected_post%/}
+selected_post=${selected_post##*/}
 
 config=$config_dir/build.conf
 [ -r $config ] || config=$config.sample
@@ -29,7 +30,7 @@ do
   mkdir -p $post/build
   rsync -a $BASE_DIR/images $post/build
   cd $post
-  GENERATE_PDF=true docker-asciidoctor-builder
+  GENERATE_PDF=true docker-asciidoctor-builder -a postdir=$selected_post
   cd ..
 
   # post artifacts copy

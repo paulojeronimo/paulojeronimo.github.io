@@ -1,5 +1,5 @@
 ifndef::backend-pdf[]
-= ha-nove-anos-me-tornei-um-ironman
+= {postdir}
 endif::[]
 :nofooter:
 :icons: font
@@ -11,11 +11,6 @@ endif::[]
 
 :uri-odysee: https://odysee.com/@paulojeronimo/
 
-
-:postdir: {doctitle}
-ifdef::backend-pdf[]
-:postdir: ha-nove-anos-me-tornei-um-ironman
-endif::[]
 
 :PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
 
