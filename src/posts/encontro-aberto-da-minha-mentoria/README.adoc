@@ -1,11 +1,4 @@
-= encontro-aberto-da-minha-mentoria
-:nofooter:
-:icons: font
-:imagesdir: ../../images
-ifdef::backend-pdf[]
-:imagesdir: build/images
-endif::[]
-:linkcss:
+include::common/default-header.adoc[]
 
 :uri-odysee: https://odysee.com/@paulojeronimo/
 :uri-mentoria: https://finisher.tech/mentoria.pdf
@@ -29,7 +22,7 @@ endif::[]
 :Solana: https://coinmarketcap.com/currencies/solana/[Solana]
 
 // https://valiantceo.com/dapp-development-process/
-image::posts/{doctitle}/capa.png[]
+image::posts/{postdir}/capa.png[]
 
 *Saúde e Cripto para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
 por aqui!* +

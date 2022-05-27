@@ -1,35 +1,29 @@
-ifndef::backend-pdf[]
-= {postdir}
-endif::[]
-:nofooter:
-:icons: font
-:imagesdir: ../../images
-ifdef::backend-pdf[]
-:imagesdir: build/images
-endif::[]
-:linkcss:
+include::common/default-header.adoc[]
 
+:uri-saudeecripto: https://bio.link/saudeecripto
 :uri-odysee: https://odysee.com/@paulojeronimo/
+:uri-ironman: https://pt.wikipedia.org/wiki/Ironman_Triathlon
 
-
+:SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
 :PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
+:Ironman: {uri-ironman}[Ironman]
 
 // https://valiantceo.com/dapp-development-process/
 image::posts/{postdir}/capa.png[]
 
-*Saúde e Cripto para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
+*{SaudeECripto} para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
 por aqui!* +
 
 Há exatos nove anos, *https://www.youtube.com/watch?v=Hxr0bJLDzzs[no dia
 26 de Maio de 2013]*, pela primeira vez eu escutei o grito, com toda a
-entonação merecida, que muitos que se prepararam durante um ano ou mais
-de treinamento, irão escutar neste próximo domingo, no
+entonação merecida, que muitos que se prepararam, durante um ano ou mais
+de treinamento, irão escutar neste próximo domingo,
 https://www.ironman.com/im-brazil[dia 29 de Maio de 2022].
 
 [.text-center]
 *https://www.youtube.com/watch?v=wE108-27BxA[YOUUUUU AREEEEE AN IRONMAN!!!!!!]*
 
-Ser um Ironman é ser uma pessoa que está decidida a persistir na luta
+Ser um {Ironman} é ser uma pessoa que está decidida a persistir na luta
 para finalizar um grande desafio.
 
 Ironman é o apelido de alguém que se dedica, brava e incansavelmente a
@@ -53,6 +47,6 @@ desafio neste próximo domingo, bastante força mental e física para
 atingirem suas metas. icon:smile-o[]*
 
 *{PauloJeronimo}* +
-*https://bio.link/saudeecripto*
+*{uri-saudeecripto}*
 
 *26 de Maio de 2022*.
