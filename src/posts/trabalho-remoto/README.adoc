@@ -9,6 +9,7 @@ include::common/default-header.adoc[]
 :uri-ilia: https://ilia.digital
 :uri-livelo: https://www.livelo.com.br/
 :uri-video-ilia-linkedin: https://www.linkedin.com/feed/update/urn:li:activity:6933085839577030657/
+:uri-post-linkedin: https://www.linkedin.com/posts/paulojeronimo_trabalho-remoto-activity-6940992487494672385-r1Vz
 
 :SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
 :PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
@@ -85,9 +86,9 @@ ele deu uma bola fora ao exigir que seus colaboradores retornem ao
 trabalho presencial e parem de "fingir que trabalham".
 
 Recentemente, passei por uma situação onde uma empresa para a qual eu
-estava prestando serviços, enviou uma uma comunicação a seus
-colaboradores dizendo que quem não retornasse ao trabalho presencial
-poderia pedir suas contas.
+estava prestando serviços, enviou uma comunicação a seus colaboradores
+dizendo que quem não retornasse ao trabalho presencial poderia pedir
+suas contas.
 Fui o primeiro, numa lista de cerca de 20 colalaboradores, a encerrar
 minha participação nessa empresa.
 Fiz isso sem nenhuma hesitação.
@@ -107,8 +108,8 @@ Então, essa é apenas mais uma razão para minha escrita desse post!
 icon:smile-o[]
 
 [.text-center]
-*E você, o que acha do trabalho remoto? Comente nesse meu post no
-linkedin!*
+*E você, o que acha do trabalho remoto? Comente nesse
+{uri-post-linkedin}[meu post no LinkedIn]!*
 
 ifdef::backend-html5[]
 *Versão em PDF: https://paulojeronimo.com/posts/{postdir}.pdf*
