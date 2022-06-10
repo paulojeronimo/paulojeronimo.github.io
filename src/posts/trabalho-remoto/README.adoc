@@ -1,0 +1,118 @@
+include::common/default-header.adoc[]
+
+:uri-saudeecripto: https://bio.link/saudeecripto
+:uri-odysee: https://odysee.com/@paulojeronimo/
+:uri-login-informatica: https://paulojeronimo.com/cv/en/#_1995-04-self-employed-at-login-informatica
+:uri-playlist-ethereum: https://www.youtube.com/playlist?list=PL3jVhh9mXmz8KSba2NOENx_8qb58Ws7hr
+:uri-cotidiano: https://cotidiano.com.br/
+:uri-ciclismo-em-rolo: https://www.instagram.com/tv/dPTpaRtf9F/
+:uri-ilia: https://ilia.digital
+:uri-livelo: https://www.livelo.com.br/
+:uri-video-ilia-linkedin: https://www.linkedin.com/feed/update/urn:li:activity:6933085839577030657/
+
+:SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
+:PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
+
+image::posts/{postdir}/capa.png[]
+
+*Brasília, 10 de Junho de 2022*.
+
+*{SaudeECripto} para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
+por aqui!* +
+
+*[red]#Como programador#*, desde que {uri-login-informatica}[abri minha
+primeira empresa de software em 1995], eu sempre gostei de ter meu
+próprio espaço de trabalho.
+Nele eu passo várias horas do meu dia.
+Eu invisto, bastante, nesse meu ambiente.
+
+Na foto de capa desse post, tirada em 3 de Março de 2018, registrei um
+momento único em que eu assistia https://vitalik.ca[Vitalik Buterin] em
+uma de suas _talks_.
+Eu estava trabalhando em _Home Office_.
+Nessa época eu morava, temporariamente, em lugar em Lisboa.
+Poucos dias antes, ocupando esse espaço solitário, eu havia gravado e
+feito o upload de uma {uri-playlist-ethereum}[playlist sobre o
+Ethereum].
+Isso era o resultado de uma mentoria que havia feito para um hackathon
+de uma {uri-cotidiano}[aceleradora de startups].
+
+[.text-center]
+*Pelos anos de experiência que tenho, trabalhando como programador desde
+1993, meus melhores momentos em frente ao computador sempre foram em
+ambientes próprios e particulares.*
+
+*[red]#Como artista (_considero o desenvolvimento de software uma
+arte_)#*, percebo que minha criatividade fica bem mais aguçada logo após
+momentos em que, após uma prática esportiva (como um
+{uri-ciclismo-em-rolo}[ciclismo utilizando um rolo]), sento-me em frente
+ao computador para solucionar um problema ou criar algum texto ou vídeo.
+
+[.text-center]
+*Para mim, _essas atividades exigem silêncio, concentração, e um
+ambiente agradável_.*
+*Além disso, a prática esportiva do triatlo (natação, ciclismo e
+corrida) amplia minha criativiade e concentração.*
+
+Ao trabalhar em equipes, as possibilidades que hoje a Internet e as
+ferramentas atuais nos trazem são inúmeras.
+
+<<<
+Eu gosto da interação com pessoas através das ferramentas de comunicação
+atuais.
+Percebo, entretanto, que muitas pessoas, especialmente as mais jovens,
+fecham suas câmeras ao participar de reuniões em grupo.
+Particularmente, eu acho isso desagradável pois, se estou com outra
+pessoa ao meu lado, mesmo que virtualmente, gosto de vê-la.
+
+Não discordo de que as interações humanas, com o trabalho remoto, tenham
+ficado limitadas.
+Por outro lado, vejo que as ferramentas de comunicação atuais quebram
+barreiras impostas em trabalhos criativos como esses que estou citando.
+Acho, também, que a evolução dessas ferramentas removerá, em breve,
+várias das limitações atuais da comunicação remota.
+
+Mas, *é papel das pessoas fazer um bom uso das ferramentas de
+comunicação*.
+Veremos, em pouco tempo, a popularização de "vestimentas" como óculos,
+relógios e outras "coisas" que tem adquirido "inteligência" e ampliarão,
+ainda mais, nossa capacidade de comunicação.
+
+De certo, apertar parafusos, contruir peças e até mesmo veículos já é
+coisa de robôs.
+Apesar de curtir várias das ideias do bilionário Elon Musk, penso que
+ele deu uma bola fora ao exigir que seus colaboradores retornem ao
+trabalho presencial e parem de "fingir que trabalham".
+
+Recentemente, passei por uma situação onde uma empresa para a qual eu
+estava prestando serviços, enviou uma uma comunicação a seus
+colaboradores dizendo que quem não retornasse ao trabalho presencial
+poderia pedir suas contas.
+Fui o primeiro, numa lista de cerca de 20 colalaboradores, a encerrar
+minha participação nessa empresa.
+Fiz isso sem nenhuma hesitação.
+
+[.text-center]
+*Poucos dias após surgiu a opportunidade de trabalhar para a
+{uri-ilia}[ília digital], como descrevi {uri-video-ilia-linkedin}[nesse
+vídeo].*
+
+A ília é uma empresa séria, antenada, e com um quadro de excelentes
+profissionais.
+Penso que vários deles compartilharem pensamentos similares aos meus no
+que diz respeito ao trabalho remoto, tanto que, nesta semana, eles estão
+incentivando (até mesmo financeiramente usando {uri-livelo}[pontos
+Livelo]) que seus colaboradores escrevam sobre esse tópico.
+Então, essa é apenas mais uma razão para minha escrita desse post!
+icon:smile-o[]
+
+[.text-center]
+*E você, o que acha do trabalho remoto? Comente nesse meu post no
+linkedin!*
+
+ifdef::backend-html5[]
+*Versão em PDF: https://paulojeronimo.com/posts/{postdir}.pdf*
+endif::[]
+ifdef::backend-pdf[]
+*Versão online: https://paulojeronimo.com/posts/{postdir}/*
+endif::[]
