@@ -31,7 +31,7 @@ Na foto de capa desse post, tirada em 3 de Março de 2018, registrei um
 momento único em que eu assistia https://vitalik.ca[Vitalik Buterin] em
 uma de suas _talks_.
 Eu estava trabalhando em _Home Office_.
-Nessa época eu morava, temporariamente, em lugar em Lisboa.
+Nessa época eu morava, temporariamente, em algum lugar em Lisboa.
 Poucos dias antes, ocupando esse espaço solitário, eu havia gravado e
 feito o upload de uma {uri-playlist-ethereum}[playlist sobre o
 Ethereum].
