@@ -9,7 +9,7 @@ include::common/default-header.adoc[]
 :SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
 :PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
 
-image::posts/{postdir}/capa.png[]
+image::posts/{postdir}/encontro-2.png[]
 
 [.text-center]
 *[red]#Link para participação no <<encontro-2,Encontro 2>>:#*
@@ -43,8 +43,8 @@ pelo WhatsApp] (número +5561998073864).
 
 *Aguardo você! icon:smile-o[]*
 
-.Imagem de divulgação do Encontro 2
-image::posts/{postdir}/encontro-2.png[]
+.Imagem divulgada na primeira publicação desse post
+image::posts/{postdir}/capa.png[]
 
 '''
 *Link para o vídeo do <<encontro-1,Encontro 1>>:*
