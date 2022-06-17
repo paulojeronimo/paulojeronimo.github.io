@@ -1,0 +1,233 @@
+include::common/default-header.adoc[]
+:toc: left
+:toc-title: {doctitle}
+:figure-caption!:
+:numbered:
+:idprefix:
+:idseparator: -
+:sectanchors:
+
+:uri-saudeecripto: https://bio.link/saudeecripto
+:uri-odysee: https://odysee.com/@paulojeronimo/
+:uri-nft-pt: https://pt.wikipedia.org/wiki/Token_n%C3%A3o_fung%C3%ADvel
+
+:SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
+:PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
+
+== Introdução
+
+image::posts/nft-week-1/encontro-2.png[]
+
+*Rio de Janeiro, 17 de Junho de 2022*.
+
+*{SaudeECripto} para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
+por aqui!* +
+
+Esses são alguns dos links que apresentam conteúdo que eu leio ou
+guardo, para explicar as pessoas, <<o-que-sao-nfts,o que são NFTs>>, os
+<<marketplaces,marketplaces>> onde eles podem ser negociados, e vários
+dos <<projetos-existentes,projetos que tem feito uso deles>>.
+
+Iniciado por <<pioneiros,apps pioneiros>>, logo que os NFTs cairam no
+entendimento de alguns famosos, começou-se a fazer bastante <<aue,auê>>
+que, bem ou mal, ajudou a tecnologia a ser popularizada.  Hoje estamos
+iniciando uma migração de <<grandes-app,grandes apps>> que passarão a
+suportar essa tecnologia.
+Toda a <<nft-na-musica,indústria da música>> talvez passe por uma grande
+mudança.
+Não demorarará muito, com a popularização do <<metaverso,Metaverso>>,
+veremos muitas soluções inovadoras, e realmente interessantes, no
+<<nft-no-varejo,varejo e nas indústrias>>.
+Até mesmo <<nft-no-governo,no governo>> é possível vislumbrar a
+aplicação massiva de NFTs.
+
+NFTs estão aparecendo em soluções bastante interessantes nas
+<<nft-na-saude,áreas de saúde e esportes>>.
+
+Nesse texto eu também trago links para <<ideias-do-pj,minhas próprias
+ideias>> a respeito desse novo mundo que está sendo criado através dessa
+tecnologia, com foco na área de bem-estar, que é o foco de
+{uri-saudeecripto}[meus projetos pessoais].
+
+[[o-que-sao-nfts]]
+== O que são NFTs?
+
+. https://www.forbes.com/advisor/investing/cryptocurrency/nft-non-fungible-token/
+. https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq
+. https://nftnow.com/guides/what-is-nft-meaning/
+. https://www.youtube.com/watch?v=OhcZLtrVdsg - Seu Direito Digital: o que é um NFT e como criar e vender?
+
+[[metaverso]]
+== O que é o Metaverso?
+
+. https://pt.wikipedia.org/wiki/Metaverso
+. https://www.infomoney.com.br/guias/metaverso/
+. https://www.uol.com.br/tilt/faq/metaverso-o-que-e-como-entrar-e-mais.htm
+. https://www.moneytimes.com.br/metaverso-quais-sao-os-7-mundos-virtuais-mais-populares-do-momento-segundo-insider/
+. https://www.tecmundo.com.br/internet/239105-metaverso-implicacoes-mundo-real.htm
+. https://epocanegocios.globo.com/Tudo-sobre/noticia/2022/04/o-que-e-metaverso-entenda-origem-do-termo-e-saiba-como-entrar-nesse-universo-virtual.html
+
+[[marketplaces]]
+== Marketplaces (para compra/venda)
+
+. https://www.bitmag.com.br/nft-os-5-melhores-mercados-para-criar-comprar-e-vender/
+. https://www.uol.com.br/tilt/noticias/redacao/2022/04/18/opensea-e-looksrare-conheca-as-plataformas-milionarias-que-negociam-nfts.htm
+. http://nonfungible.com/market-tracker
+
+[[aue]]
+== Auê (que faz a tecnologia NFT aparecer - bem ou mal)
+
+NFTs que traders, famosos, filhinhos de papai, ou gente estranha, pagam
+(ou criam):
+
+. Famosos (Neymar, Sylvester Stalone, Madonna, etc):
+.. https://www.bitmag.com.br/web-stories/famosos-que-ja-gastaram-milhoes-com-nfts/
+.. https://www.bitmag.com.br/neymar-compra-nova-nft-por-valor-chocante-e-aumenta-colecao/
+.. https://www.bitmag.com.br/sylvester-stallone-quer-ampliar-fortuna-vendendo-nfts/
+.. https://www.bitmag.com.br/madonna-quer-lucrar-milhoes-com-nft-de-parte-intima/
+.. https://www.bitmag.com.br/parceria-entre-the-weekend-e-binance-rendera-novos-nfts/
+.. https://www.bitmag.com.br/milton-nascimento-anuncia-grande-surpresa-para-quem-investe-em-nft/
+.. https://www.bitmag.com.br/vera-fischer-pretende-lucrar-fortuna-vendendo-nft-de-foto-polemica/
+. O surfista do BBB:
+.. https://istoe.com.br/nft-de-r-90-mil-lancado-por-pedro-scooby-da-direito-ao-comprador-passar-ferias-com-o-surfista-entenda/
+. O filho de João Doria:
+.. https://www.bitmag.com.br/filho-de-joao-doria-lucra-fortuna-espantosa-com-nft/
+. O cineasta do terror:
+.. https://www.bitmag.com.br/nft-por-que-essas-pedras-de-rins-valem-uma-fortuna/
+. A guerra na Ucrânia:
+.. https://www.bitmag.com.br/ucrania-lancara-colecao-de-nft-retratando-horror-da-guerra/
+
+[[projetos-existentes]]
+== Projetos fazendo uso de NFTs
+
+[[pioneiros]]
+=== Pioneiros
+
+. Pokémon Go (???):
+.. https://en.wikipedia.org/wiki/Pok%C3%A9mon_Go
+.. https://www.pokemon.com/
+. Cripto Kitties:
+.. https://en.wikipedia.org/wiki/CryptoKitties
+.. https://www.cryptokitties.co/
+
+[[nft-na-musica]]
+=== Na música
+
+. https://www.youtube.com/results?search_query=Music+NFTs
+. https://www.youtube.com/results?search_query=NFT+na+musica
+
+[[nft-no-varejo]]
+=== No varejo ou nas indústrias
+
+. Prada:
+.. https://www.moneytimes.com.br/prada-lanca-100-nfts-na-ethereum-eth/
+.. https://www.bitmag.com.br/nfts-da-prada-grife-de-luxo-inova-no-mercado-de-criptoativos/
+.. https://olhardigital.com.br/2022/05/30/pro/prada-lanca-colecao-de-nfts/
+.. https://www.revistalofficiel.com.br/hommes/prada-timecapsule-nft
+.. https://www.voguebusiness.com/technology/prada-expands-web3-offer-with-product-linked-nft-drop-and-discord-launch
+. Adidas:
+.. https://www.moneytimes.com.br/adidas-originals-arrecada-us-23-milhoes-em-seu-primeiro-lancamento-de-nfts/
+.. https://www.moneytimes.com.br/tag/adidas/
+. Nike:
+.. https://www.bitmag.com.br/nft-de-tenis-da-nike-e-vendido-por-valor-chocante/
+. Louis Vuitton:
+.. https://www.bitmag.com.br/louis-vuitton-quer-lucrar-milhoes-com-novidade-no-metaverso/
+. Volkswagen:
+.. https://www.bitmag.com.br/volkswagen-lanca-colecao-de-cards-em-nft/
+
+[[nft-no-governo]]
+=== No governo (???)
+
+. https://www.bitmag.com.br/certidoes-de-nascimento-dos-seus-filhos-podem-virar-nfts/
+. https://www.bitmag.com.br/governo-do-reino-unido-planeja-criar-seu-nft-em-breve/
+
+=== No aprendizado (Learn-To-Earn)
+
+. https://www.cryptoglobe.com/latest/2022/04/you-can-now-earn-nfts-by-learning-about-blockchain-technology/
+. https://nftb.io/learn-earn/
+. https://www.letmespeak.org/?lng=en
+. https://bootcamp.web3dev.com.br/
+
+=== Em provas de participação
+
+. https://www.binance.com/pt-BR/blog/nft/um-guia-simples-e-completo-para-nfts-poap-421499824684903848
+. https://www.binance.com/pt-BR/support/announcement/6208774748534bdb9bf8ce9cee991a59
+. https://poap.xyz/
+. https://poap.delivery/
+
+[[nft-na-saude]]
+=== Nas áreas de saúde e esportes
+
+NFTs nos esportes::
+. https://www.mktesportivo.com/?s=NFT
+. https://stadiumgo.io/
+. https://www.infomoney.com.br/colunistas/cesar-grafietti/nfts-criam-revolucao-no-mundo-dos-colecionaveis-no-esporte/
+. https://exame.com/future-of-money/nfts-sao-o-futuro-dos-ativos-digitais-nos-esportes-segundo-a-pwc/
+. https://sportheca.io/o-mercado-de-nft-e-os-caminhos-dentro-do-esporte-2/
+. https://www.criptofacil.com/5-colecoes-de-nfts-para-fas-de-esportes/
+. https://cointimes.com.br/mercado-nft-nos-esportes-pode-duplicar-em-2022-entenda-a-tendencia-segundo-a-deloitte/
+. https://ataquemarketing.com/licenciamento/nft-no-esporte-tudo-o-que-voce-precisa-sobre-nft-no-mercado-esportivo/
+. https://www.blawesome.life/journal/four-ways-to-use-nfts-in-your-wellness-creator-business
+. https://www.gohealthhero.com/blog/blockchaintechnologyinhealthcare
+. https://www.gohealthhero.com/blog/health-hero-integrates-wellness-nfts-into-tiktok-and-facebook-messenger
+. https://crypto.news/health-hero-wellness-nft-tiktok-facebook-messenger/
+. https://belyoung.com.br/inovacoes-tecnologicas-no-esporte/
+
+Move-To-Earn::
+. https://finisher.tech/move-to-earn
+
+Basquete (NBA)::
+. https://www.forbes.com/advisor/investing/cryptocurrency/nba-top-shot/
+. https://www.bitmag.com.br/nba-vai-lancar-nfts-em-ethereum/
+.. https://nbatopshot.com/marketplace
+
+Baseball::
+. https://www.mlbc.app/
+.. https://opensea.io/collection/mlb-champions
+
+Futebol::
+. https://sorare.com/
+. https://www.bitmag.com.br/esporte-clube-bahia-entra-no-mundo-do-nft/
+. https://www.socios.com/new-at-socios-com-nfts/
+. https://www.proxxima.com.br/home/proxxima/noticias/2022/05/13/felipe-da-socios-com-tudo-vai-ser-tokenizado.html
+. https://opensea.io/collection/socios-com
+
+Martial Arts (including Japan MMA)::
+. https://cointelegraph.com/press-releases/japans-mixed-martial-arts-federation-sets-to-launch-nft-marketplace-on-iost-blockchain
+.. https://rizinfc.com/teaser/en/index.html
+. https://www.bsc.news/post/first-3d-martial-arts-gamefi-with-metaverse-and-nfts-readies-for-launch
+. https://www.lifestyleasia.com/ind/gear/tech/bruce-lee-honoured-in-nft-collection/
+
+Karate::
+. https://nftcalendar.io/event/karateverse/
+. https://oncyber.io/karatekid
+
+[[grandes-apps]]
+== Grandes apps sendo alterados para usar NFTs
+
+. Instagram:
+.. https://www.youtube.com/watch?v=zNQfbNCbHH8 - Meta inicia testes com NFTs no Instagram
+.. https://nftnow.com/features/what-does-instagram-nfts-mean-for-artists/
+.. https://www.bitmag.com.br/mark-zuckerberg-anuncia-que-nfts-chegarao-ao-instagram/
+.. https://www.uol.com.br/tilt/noticias/redacao/2022/05/10/testes-nfts-no-instagram.htm
+. TikTok:
+.. https://influencermarketinghub.com/tiktok-nfts/
+
+[[ideias-do-pj]]
+== Algumas ideias para projetos com NFTs (imaginadas durante minhas caminhadas)
+
+. *Incentive alguém que você ama a praticar atividades físicas através
+de um NFT*.
+.. https://odysee.com/@paulojeronimo:4/como-voce-fara-um-amigo-sair-do-sedentarismo-com-um-nft:7[Áudio
+da ideia] (discutida com um amigo durante uma caminhada).
+. *Treine seu esporte preferido, com um treinador distância, por meio de
+  NFTs e tokens fungíveis*.
+.. Exemplo de aplicação: *Karatê, com o
+http://www.flaviocosta-karatedo.com/[Sensei Flávio Costa], no "Dojo mais
+lindo e carioca do Brasil" (atrás de onde era o Porcão, no bairro do
+Flamengo)*.
+
+== Outros links
+
+. https://www.amazon.com.br/Digital-Marketing-Metaverse-NFTs-Health-ebook/dp/B09P5SXYWD
+. https://insights.invillia.com/pt/2022/05/19/bored-devs-nft/
