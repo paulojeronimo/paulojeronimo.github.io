@@ -1,4 +1,5 @@
 include::common/default-header.adoc[]
+:figure-caption!:
 
 :uri-saudeecripto: https://bio.link/saudeecripto
 :uri-odysee: https://odysee.com/@paulojeronimo/
@@ -10,6 +11,10 @@ include::common/default-header.adoc[]
 
 image::posts/{postdir}/capa.png[]
 
+[.text-center]
+*[red]#Link para participação no <<encontro-2,Encontro 2>>:#*
+*https://meet.google.com/zvc-gzjq-xnw*
+
 *Brasília, 14 de Junho de 2022*.
 
 *{SaudeECripto} para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
@@ -18,19 +23,29 @@ por aqui!* +
 *Farei dois encontros sobre {uri-nft-pt}[Non-Fungible Token (NFT)], nessa
 semana, com dois públicos diferentes:*
 
+[[encontro-1]]
 No *primeiro encontro, para programadores* que estão participando da
 http://finisher.tech/mentoria.pdf[minha mentoria] (ftecm221) e ouvintes
 (público externo que poderá apenas ver/ouvir a palestra sem interação
 comigo ou com os metorados durante o encontro), minha apresentação será
 técnica.
 
-No *segundo econtro, para pessoas de negócios* ligadas em
+[[encontro-2]]
+No *segundo encontro, para pessoas de negócios* ligadas em
 {uri-tecnologia-disruptiva}[tecnologias disrupivas], apresentarei
 algumas ideias sobre como NFTs podem ser muito interessantes em várias
 áreas.
-Contudo, meu foco maior será na aplicação de NFTs nos esportes.
+Contudo, meu foco maior será na aplicação de NFTs nas áreas de esportes
+e de bem-estar.
 
-Para participar, https://wa.me/5561998073864[envie-me uma mensagem pelo
-WhatsApp] (número +5561998073864).
+Para tirar qualquer dúvida, https://wa.me/5561998073864[envie-me uma mensagem
+pelo WhatsApp] (número +5561998073864).
 
 *Aguardo você! icon:smile-o[]*
+
+.Imagem de divulgação do Encontro 2
+image::posts/{postdir}/encontro-2.png[]
+
+'''
+*Link para o vídeo do <<encontro-1,Encontro 1>>:*
+*https://odysee.com/@paulojeronimo:4/ftecm221-nft-1:2*
