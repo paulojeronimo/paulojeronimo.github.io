@@ -1,0 +1,130 @@
+include::common/default-header.adoc[]
+:figure-caption!:
+:numbered:
+:idprefix:
+:idseparator: -
+:sectanchors:
+
+:uri-saudeecripto: https://bio.link/saudeecripto
+:uri-odysee: https://odysee.com/@paulojeronimo/
+:uri-nft-pt: https://pt.wikipedia.org/wiki/Token_n%C3%A3o_fung%C3%ADvel
+
+:SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
+:PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
+
+image::posts/web3-para-confianca/capa.png[]
+
+*Brasília, 27 de Julho de 2022*.
+
+*{SaudeECripto} para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
+por aqui!*
+
+*Um exemplo sobre confiança:* você confia na empresa para a qual
+trabalha.
+O cliente da sua empresa confia nela pois, caso contrário, não a
+contrataria.
+É assim que sempre funcionou e que sempre funcionará.
+Confiança é a base para que você seja contratado e também para que o
+cliente da sua empresa a contrate.
+
+*Sobre desafios que comprovam suas habilidades (_skills_):* se uma
+empresa te contratou para trabalhar, em desafios que resolvem problemas
+de seus clientes, então, pelo menos para entrar nessa empresa, você
+talvez tenha executado algum desafio que validou seus _skills_, correto?
+Isso é chato, desgastante e te sobrecarrega.
+Mas, talvez seja necessário (caso você não consiga, facilmente,
+comprovar suas habilidades).
+
+[[problema]]
+*Um problema surge* quando você está contratado por uma empresa que você
+imaginava ser diferente mas que, no fim das contas, parece atuar apenas
+como *um intermediador*.
+Nesse caso, ele desempenha o papel de alocar você em projetos dentro de
+seus clientes.
+Só que, para isso, você é convidado por um desses clientes a passar por
+mais um "desafio" (elaborado por ele).
+
+*Seu momento de vida* é o de uma pessoa que, por vários anos (e muitos
+clientes), já provou ser capaz de superar desafios, tanto em projetos
+pessoais quanto empresariais.
+Você já participou de vários projetos que validaram seus _skills_, tanto
+em outras empresas para as quais já trabalhou quanto na atual.
+Isso está em seu currículo.
+*Dessa forma, a sua expectativa ao trabalhar para um intermediador*, que
+já te reconheceu como diferenciado no mercado, seria, no mínimo, que a
+sua inserção em novos projetos fosse algo lhe gerasse *pouco estresse*.
+
+<<<
+[[estresse]]
+*Você não espera ter que provar o seu conhecimento em algo que você já
+trabalha, diariamente, em um desafio elaborado por um cliente do seu
+intermediador*.
+E pior: apenas para que esse cliente o julge de forma errada, rasa,
+superficial, sem lhe dar um retorno adequado e, por fim, causando-lhe
+uma sensação de que você não tem competência em algo.
+Você não tem dúvidas sobre a sua capacidade própria em superar desafios.
+Mas, simplesmente, você não está afim de fazê-lo, quando não há
+necessidade, pois isso lhe gera um *estresse desnecessário*.
+Dessa forma, o mínimo que o seu intermediador deveria fazer, nesse caso,
+seria blindá-lo contra esse tipo de situação.
+Do contrário, você não precisa dele.
+
+*Na Web3, intermediadores que não agregam valor não sobreviverão*.
+<<problema,Problemas>> como o descrito nesse artigo são muito comuns.
+No mundo tradicional, com um número infinito de sistemas centralizados e
+intermediadores que somam pouco valor, veremos que estes serão
+substituídos por *Contratos Inteligentes (_Smart Contracts_)* que, pelo
+menos, são transparentes (vemos o seu código) e incorruptíveis
+(imutáveis).
+
+*_Smart Contracts_ criados e executados em uma Blockchain*.
+*A Web3 é composta por Blockchains, _Smart Contracts_, Tokens fungíveis
+e não fungíveis (NFTs), organizações autônomas descentralizadas (DAOs)
+e*, agora, também, pelo conceito que vem se formando com o nome de
+*Metaverso*.
+
+*Se você ainda não conhece a Web3, você pode imaginar que a solução para
+<<problema,o problema>> apresentado nesse artigo* é oferecida pelos
+[[certificados]]certificados que você possui e pelos sistemas de
+validação de _skills_ que você conhece.
+Dessa forma, com uma visão limitada, você ainda acredita
+que isso, por si só, já diminui a sua necessidade de um intermediador.
+Sim e não!
+
+[.text-center]
+*Sem conhecer a Web3, a sua visão é como a de alguém que ainda não sabe
+nada sobre a Matrix e muito menos sobre duas pílulas (uma azul e uma
+vermelha)!*
+
+*Na Web2 (os sistemas tradicionais que você conhece e usa diariamente)
+seus dados estão amarrados a intermediadores*.
+Você não é dono de seus dados!
+E não se engane: não existe nada gratuito!
+Se você não está pagando por um serviço em um sistema centralizado (como
+YouTube, Instagram, Gmail, etc) é porque as informações que você passa a
+esses sistemas estão lhe sendo muito úteis (financeiramente).
+
+*Sistemas centralizados são criados por intermediadores* e te mantém
+refém.
+Suas informações são utilizadas por eles e são, facilmente, corrompíveis
+e deletáveis.
+
+[.text-center]
+*A Web3 é uma completa disrupção. Entenda isso!*
+
+*_Smart Contracts_*, executando em aplicações descentralizadas (DApps),
+dimuirão, bastante, o <<estresse>> que você poderia ter em um
+<<problema>> como o apresentado nesse artigo.
+*Certificados*, digitais e assinados por uma entidade confiável no mundo
+centralizado, *na Web3 dão lugar a NFTs*.
+Certificados (*NFTs na na Web3*), são emitidos não mais por uma entidade
+confiável mas, sim, por uma *Blockchain* que é uma rede descentralizada,
+imparável e autônoma, de participantes conectecados via consenso, com a
+rede do *Bitcoin*.
+
+*O futuro dos intermedidadores que não agregam valor está claro:
+deixarão de existir.*
+
+Participe do https://blockchainrio.com.br/[Blockchain Rio], o maior
+evento sobre Blockchain da América Latina.
+Eu estarei presente nele!
