@@ -55,7 +55,8 @@ tecnologia, com foco na área de bem-estar, que é o foco de
 . https://www.forbes.com/advisor/investing/cryptocurrency/nft-non-fungible-token/
 . https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq
 . https://nftnow.com/guides/what-is-nft-meaning/
-. https://www.youtube.com/watch?v=OhcZLtrVdsg - Seu Direito Digital: o que é um NFT e como criar e vender?
+. https://www.youtube.com/watch?v=OhcZLtrVdsg <- Seu Direito Digital: o
+  que é um NFT e como criar e vender?
 
 [[metaverso]]
 == O que é o Metaverso?
@@ -83,6 +84,8 @@ NFTs que traders, famosos, filhinhos de papai, ou gente estranha, pagam
 . Famosos (Neymar, Sylvester Stalone, Madonna, etc):
 .. https://www.bitmag.com.br/web-stories/famosos-que-ja-gastaram-milhoes-com-nfts/
 .. https://www.bitmag.com.br/neymar-compra-nova-nft-por-valor-chocante-e-aumenta-colecao/
+.. https://www.youtube.com/watch?v=fhcmh4eeHEc <- NEYMAR JR GASTOU MAIS
+DE 5 MILHÕES DE REAIS EM 2 NFTs
 .. https://www.bitmag.com.br/sylvester-stallone-quer-ampliar-fortuna-vendendo-nfts/
 .. https://www.bitmag.com.br/madonna-quer-lucrar-milhoes-com-nft-de-parte-intima/
 .. https://www.bitmag.com.br/parceria-entre-the-weekend-e-binance-rendera-novos-nfts/
@@ -206,7 +209,8 @@ Karate::
 == Grandes apps sendo alterados para usar NFTs
 
 . Instagram:
-.. https://www.youtube.com/watch?v=zNQfbNCbHH8 - Meta inicia testes com NFTs no Instagram
+.. https://www.youtube.com/watch?v=zNQfbNCbHH8 <- Meta inicia testes com
+NFTs no Instagram
 .. https://nftnow.com/features/what-does-instagram-nfts-mean-for-artists/
 .. https://www.bitmag.com.br/mark-zuckerberg-anuncia-que-nfts-chegarao-ao-instagram/
 .. https://www.uol.com.br/tilt/noticias/redacao/2022/05/10/testes-nfts-no-instagram.htm
@@ -226,6 +230,12 @@ da ideia] (discutida com um amigo durante uma caminhada).
 http://www.flaviocosta-karatedo.com/[Sensei Flávio Costa], no "Dojo mais
 lindo e carioca do Brasil" (atrás de onde era o Porcão, no bairro do
 Flamengo)*.
+
+== Críticas a NFT
+
+. https://www.youtube.com/watch?v=kHUnzRuRk9Y <- Bill Gates diz que
+  CRIPTOMOEDAS e NFT só tem valor devido a TEORIA DO MAIS TOLO AINDA,
+mas será?
 
 == Outros links
 
