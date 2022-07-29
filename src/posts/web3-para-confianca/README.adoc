@@ -117,14 +117,20 @@ dimuirão, bastante, o <<estresse>> que você poderia ter em um
 <<problema>> como o apresentado nesse artigo.
 *Certificados*, digitais e assinados por uma entidade confiável no mundo
 centralizado, *na Web3 dão lugar a NFTs*.
-Certificados (*NFTs na na Web3*), são emitidos não mais por uma entidade
+Certificados (*NFTs na Web3*), são emitidos não mais por uma entidade
 confiável mas, sim, por uma *Blockchain* que é uma rede descentralizada,
 imparável e autônoma, de participantes conectecados via consenso, com a
 rede do *Bitcoin*.
 
-*O futuro dos intermedidadores que não agregam valor está claro:
+*O futuro dos intermediadores que não agregam valor está claro:
 deixarão de existir.*
 
 Participe do https://blockchainrio.com.br/[Blockchain Rio], o maior
 evento sobre Blockchain da América Latina.
 Eu estarei presente nele!
+
+[[contribuicoes]]
+*Contribuições (para correções neste post)*:
+
+* *Ana Lídia M. R. R*.
+* *Anderson Carlos Campolina -> https://airbnb.com/h/sitioipanema*.
