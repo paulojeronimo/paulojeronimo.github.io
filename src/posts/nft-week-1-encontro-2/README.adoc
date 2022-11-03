@@ -11,6 +11,7 @@ include::common/default-header.adoc[]
 :uri-odysee: https://odysee.com/@paulojeronimo/
 :uri-nft-pt: https://pt.wikipedia.org/wiki/Token_n%C3%A3o_fung%C3%ADvel
 
+:PostDate: 17 de Junho de 2022
 :SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
 :PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
 
@@ -18,7 +19,7 @@ include::common/default-header.adoc[]
 
 image::posts/nft-week-1/encontro-2.png[]
 
-*Rio de Janeiro, 17 de Junho de 2022*.
+*Rio de Janeiro, {PostDate}*.
 
 *{SaudeECripto} para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
 por aqui!* +

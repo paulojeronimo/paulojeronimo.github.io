@@ -1,0 +1,27 @@
+:uri-pj: https://paulojeronimo.com
+:uri-pj-cv: {uri-pj}/cv/en
+:uri-pj-resume: {uri-pj}/cv/en/resume.html
+:uri-pj-docs: {uri-pj}/docs
+:uri-pj-avatar: https://avatars2.githubusercontent.com/u/66204?s=400&v=4
+:uri-pj-twitter: https://twitter.com/paulojeronimo
+:uri-pj-github: https://github.com/paulojeronimo
+:uri-pj-github-website: https://github.com/paulojeronimo/paulojeronimo.github.io
+:uri-pj-linkedin: https://www.linkedin.com/in/paulojeronimo/
+:uri-pj-youtube: https://www.youtube.com/~paulojeronimo
+:uri-pj-whatsapp: https://wa.me/5561998073864
+:uri-pj-sitemap: {uri-pj}/sitemap
+:uri-pj-email: mailto:paulojeronimo@gmail.com
+:uri-pj-skype: https://join.skype.com/invite/nepGdOPZU0Nt
+:uri-pj-keybase: https://keybase.io/paulojeronimo
+:uri-what-is-asciidoc: https://asciidoctor.org/docs/what-is-asciidoc/
+:uri-ironman: https://en.wikipedia.org/wiki/Ironman_Triathlon
+:uri-finishertech-project: https://finisher.tech/slides/projeto.A4.9slides.pdf
+:uri-finishertech: https://finisher.tech
+:uri-finishersdao: https://finisher.tech/dao
+:uri-finishersdao-desafio1: https://finisher.tech/dao/finisher-tech-desafio1.html
+:uri-saudeecripto: https://finisher.tech/saudeecripto.pdf
+
+:pt-br: https://en.wikipedia.org/wiki/Brazilian_Portuguese[pt-br^]
+:FinishersDAO: {uri-finishersdao}[Finishers.DAO^]
+:sitemapIcon: icon:sitemap[2x]
+:sitemapLink: {uri-pj-sitemap}[{sitemapIcon}^]

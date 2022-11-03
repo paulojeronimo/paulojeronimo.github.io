@@ -11,12 +11,13 @@ include::common/default-header.adoc[]
 :uri-video-ilia-linkedin: https://www.linkedin.com/feed/update/urn:li:activity:6933085839577030657/
 :uri-post-linkedin: https://www.linkedin.com/posts/paulojeronimo_trabalho-remoto-activity-6940992487494672385-r1Vz
 
+:PostDate: 10 de Junho de 2022
 :SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
 :PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
 
 image::posts/{postdir}/capa.png[]
 
-*Brasília, 10 de Junho de 2022*.
+*Brasília, {PostDate}*.
 
 *{SaudeECripto} para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
 por aqui!* +

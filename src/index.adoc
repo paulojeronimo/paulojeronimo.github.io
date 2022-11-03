@@ -1,5 +1,6 @@
-= paulojeronimo.com
-Page last updated in {localdatetime}
+= *paulojeronimo.com*
+Paulo Jerônimo
+v1.0.0, {localdatetime}: -> 15 km running challenger <-
 :source-highlighter: coderay
 :stylesdir: css
 :linkcss:
@@ -7,26 +8,7 @@ Page last updated in {localdatetime}
 :nofooter:
 :docinfo2:
 
-:uri-pj: https://paulojeronimo.com
-:uri-pj-cv: {uri-pj}/cv/en
-:uri-pj-resume: {uri-pj}/cv/en/resume.html
-:uri-pj-docs: {uri-pj}/docs
-:uri-pj-avatar: https://avatars2.githubusercontent.com/u/66204?s=400&v=4
-:uri-pj-twitter: https://twitter.com/paulojeronimo
-:uri-pj-github: https://github.com/paulojeronimo
-:uri-pj-linkedin: https://www.linkedin.com/in/paulojeronimo/
-:uri-pj-youtube: https://www.youtube.com/~paulojeronimo
-:uri-pj-whatsapp: https://wa.me/5561998073864
-:uri-pj-sitemap: {uri-pj}/sitemap
-:uri-pj-email: mailto:paulojeronimo@gmail.com
-:uri-pj-skype: https://join.skype.com/invite/nepGdOPZU0Nt
-:uri-pj-keybase: https://keybase.io/paulojeronimo
-:uri-what-is-asciidoc: https://asciidoctor.org/docs/what-is-asciidoc/
-:uri-ironman: https://en.wikipedia.org/wiki/Ironman_Triathlon
-:uri-finishertech: https://finisher.tech/slides/projeto.A4.9slides.pdf
-:uri-saudeecripto: https://finisher.tech/saudeecripto.pdf
-
-:pt-br: https://en.wikipedia.org/wiki/Brazilian_Portuguese[pt-br^]
+include::uris-and-attributes.adoc[]
 
 [.text-center]
 {uri-pj-email}[icon:envelope[2x]^] |
@@ -36,42 +18,54 @@ Page last updated in {localdatetime}
 {uri-pj-github}[icon:github[2x]^] |
 {uri-pj-twitter}[icon:twitter[2x]^] |
 {uri-pj-youtube}[icon:youtube[2x]^] |
-{uri-pj-sitemap}[icon:sitemap[2x]^]
+{sitemapLink}
 
 '''
 
 [.left.text-center.rounded]
 image::{uri-pj-avatar}[width=40%]
 
-Hi! *My name is Paulo Jerônimo*.
-Welcome to my *very very simple website* (almost completely text-based
-and written in {uri-what-is-asciidoc}[AsciiDoc format^]).
+Hi! *[red]#My name is {author}#*.
+Welcome to my *straightforward website* (almost entirely text-based and
+written in {uri-what-is-asciidoc}[AsciiDoc format^]).
+[green]#{uri-pj-github-website}[Here is the code of this site^] if you
+are interested in it#.
 
-I work as a *Software Architect/ Developer* and, sometimes, as a
-*DevOps* guy.
-I am always working with *[red]#security in mind#*
-(see {uri-pj-keybase}[my keybase account]).
+.I'm an Entrepeneur and a *Software Architect/ Developer*
+****
+Sometimes, I also work as a *DevOps* guy.
+I am always working with *[red]#security in mind#* (see
+{uri-pj-keybase}[my keybase account^]).
 I have some skills and many years of experience developing software
 (since 1993).
 
+You can also read all about my past works in {uri-pj-resume}[my résumé^]
+or {uri-pj-cv}[my complete CV^].
+****
+
 Currently, *I live in Brazil* and in addition to my work as a software
 developer, +
-*I also founded and maintain a project named
-{uri-finishertech}[Finisher.Tech^]*.
+*I also founded and maintain {uri-finishertech-project}[a project^] (and
+now a Brazilian company) named {uri-finishertech}[Finisher.Tech^]*.
 
-I'm an amateur triathlete practicing sports *daily* to get more
-healthy and life quality. +
-I have finished three (3) *{uri-ironman}[Ironman^]* races.
-Read {uri-saudeecripto}[my history about this] _(only in Brazilian
-Portuguese at this moment)_.
+[TIP]
+====
+*[red]#With my current focus on Web3 technologies#*, I'm inviting people
+(starting in my country and talking in Portuguese) to work with me in a
+*DAO (Distributed Autonomous Organization)* that I initiated with the
+name {FinishersDAO}. +
+I have plans to invite people from other countries soon (at the
+beginning of 2023) to participate in this DAO.
+====
+
+.I'm an *Amateur Triathlete (3x {uri-ironman}[Ironman^])* ...
+****
+\... practicing sports *daily* to get more healthy and life quality. +
+Read {uri-saudeecripto}[my history in Ironman races^] _(only in
+Brazilian Portuguese at this moment)_. +
+[[remark]] After a stop in my workouts, today, I'm a *{revremark}*
+{uri-finishersdao-desafio1}[(read more about this)^].
+****
 
 You can see some of the code, articles, and tutorials that I coded (or
-wrote) by accessing the {uri-pj-sitemap}[site map^].
-You can also see {uri-pj-resume}[my résumé^] or {uri-pj-cv}[my complete
-CV^].
-
-////
-https://discuss.asciidoctor.org/Borders-for-images-td1957.html
-https://blog.mrhaki.com/2015/04/awesome-asciidoctor-adding-custom.html
-https://docs.asciidoctor.org/asciidoctor/latest/docinfo/
-////
+wrote) by accessing my site map ({sitemapLink}).

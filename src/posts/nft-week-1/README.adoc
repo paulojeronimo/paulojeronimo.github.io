@@ -6,6 +6,7 @@ include::common/default-header.adoc[]
 :uri-nft-pt: https://pt.wikipedia.org/wiki/Token_n%C3%A3o_fung%C3%ADvel
 :uri-tecnologia-disruptiva: https://pt.wikipedia.org/wiki/Tecnologia_disruptiva
 
+:PostDate: 14 de Junho de 2022
 :SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
 :PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
 
@@ -15,7 +16,7 @@ image::posts/{postdir}/encontro-2.png[]
 *[red]#Link para participação no <<encontro-2,Encontro 2>>:#*
 *https://meet.google.com/zvc-gzjq-xnw*
 
-*Brasília, 14 de Junho de 2022*.
+*Brasília, {PostDate}*.
 
 *{SaudeECripto} para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
 por aqui!* +

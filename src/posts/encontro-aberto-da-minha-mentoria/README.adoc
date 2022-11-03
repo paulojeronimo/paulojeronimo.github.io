@@ -9,6 +9,7 @@ include::common/default-header.adoc[]
 :uri-saudeecripto-pdf: http://finisher.tech/saudeecripto.pdf
 :uri-ironman-brasil: https://ironmanbrasil.com.br/novo/fln/?lang=en
 
+:PostDate: 25 de Maio de 2022
 :PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
 :ilia: https://ilia.digital[ília]
 :Blockchain: https://www.youtube.com/playlist?list=PL3jVhh9mXmz_FvGpXNvAydlg_vxVaJj1V[Blockchain]
@@ -95,4 +96,4 @@ horário e na duração da mentoria. Participe!*
 *{PauloJeronimo}* +
 *https://bio.link/saudeecripto*
 
-*25 de Maio de 2022*.
+*{PostDate}*.

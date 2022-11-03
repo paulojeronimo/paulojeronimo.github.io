@@ -9,12 +9,13 @@ include::common/default-header.adoc[]
 :uri-odysee: https://odysee.com/@paulojeronimo/
 :uri-nft-pt: https://pt.wikipedia.org/wiki/Token_n%C3%A3o_fung%C3%ADvel
 
+:PostDate: 27 de Julho de 2022
 :SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
 :PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
 
 image::posts/web3-para-confianca/capa.png[]
 
-*Brasília, 27 de Julho de 2022*.
+*Brasília, {PostDate}*.
 
 *{SaudeECripto} para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
 por aqui!*

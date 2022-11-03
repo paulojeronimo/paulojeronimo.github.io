@@ -21,6 +21,10 @@ _clean() {
     -delete
 }
 
+_generate_posts_index() {
+  find posts -type f -name README.adoc | xargs grep '^:PostDate:'
+}
+
 op=${1:-build}
 type _$op &> /dev/null || exit 1
 _$op

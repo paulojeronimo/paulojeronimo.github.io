@@ -4,6 +4,7 @@ include::common/default-header.adoc[]
 :uri-odysee: https://odysee.com/@paulojeronimo/
 :uri-ironman: https://pt.wikipedia.org/wiki/Ironman_Triathlon
 
+:PostDate: 26 de Maio de 2022
 :SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
 :PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
 :Ironman: {uri-ironman}[Ironman]
@@ -49,4 +50,4 @@ atingirem suas metas. icon:smile-o[]*
 *{PauloJeronimo}* +
 *{uri-saudeecripto}*
 
-*26 de Maio de 2022*.
+*{PostDate}*.
