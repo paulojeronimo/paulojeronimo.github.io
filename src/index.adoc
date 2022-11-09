@@ -1,6 +1,6 @@
 = *paulojeronimo.com*
 Paulo Jerônimo
-v1.0.0, {localdatetime}: -> 15 km running challenger <-
+v1.0.0, {localdatetime}: 15 km running challenger
 :source-highlighter: coderay
 :stylesdir: css
 :linkcss:
@@ -63,7 +63,7 @@ beginning of 2023) to participate in this DAO.
 \... practicing sports *daily* to get more healthy and life quality. +
 Read {uri-saudeecripto}[my history in Ironman races^] _(only in
 Brazilian Portuguese at this moment)_. +
-[[remark]] After a stop in my workouts, today, I'm a *{revremark}*
+[[remark]] After a stop in my workouts, today, I'm a *-> {revremark} <-*
 {uri-finishersdao-desafio1}[(read more about this)^].
 ****
 
