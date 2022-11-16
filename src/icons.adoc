@@ -1,0 +1,10 @@
+[.text-center.icons]
+{HomeLink}
+{BlogPostsLink}
+{WhatsAppLink}
+{LinkedInLink}
+{GitHubLink}
+{YouTubeLink}
+{SitemapLink}
+
+'''

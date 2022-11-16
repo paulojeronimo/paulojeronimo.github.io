@@ -1,7 +1,7 @@
 :uri-pj: https://paulojeronimo.com
 :uri-pj-cv: {uri-pj}/cv/en
 :uri-pj-resume: {uri-pj}/cv/en/resume.html
-:uri-pj-docs: {uri-pj}/docs
+:uri-pj-resume-pt-br: {uri-pj}/cv/pt-br
 :uri-pj-avatar: https://avatars2.githubusercontent.com/u/66204?s=400&v=4
 :uri-pj-twitter: https://twitter.com/paulojeronimo
 :uri-pj-github: https://github.com/paulojeronimo
@@ -22,6 +22,22 @@
 :uri-saudeecripto: https://finisher.tech/saudeecripto.pdf
 
 :pt-br: https://en.wikipedia.org/wiki/Brazilian_Portuguese[pt-br^]
+:en: https://en.wikipedia.org/wiki/English_language[en^]
 :FinishersDAO: {uri-finishersdao}[Finishers.DAO^]
-:sitemapIcon: icon:sitemap[2x]
-:sitemapLink: {uri-pj-sitemap}[{sitemapIcon}^]
+:HomeIcon: icon:home[2x]
+:HomeLink: link:/[{HomeIcon}]
+:BlogPostsIcon: icon:rss[2x]
+:BlogPostsLink: link:/posts[{BlogPostsIcon}]
+:GitHubIcon: icon:github[2x]
+:GitHubLink: {uri-pj-github}[{GitHubIcon}^]
+:YouTubeIcon: icon:youtube[2x]
+:YouTubeLink: {uri-pj-youtube}[{YouTubeIcon}^]
+:HomeLink: link:/[{HomeIcon}]
+:SitemapIcon: icon:sitemap[2x]
+:SitemapLink: {uri-pj-sitemap}[{SitemapIcon}]
+:WhatsAppIcon: icon:whatsapp[2x]
+:WhatsAppLink: {uri-pj-whatsapp}[{WhatsAppIcon}^]
+:LinkedInIcon: icon:linkedin[2x]
+:LinkedInLink: {uri-pj-linkedin}[{LinkedInIcon}^]
+:YouTubeIcon: icon:youtube[2x]
+:YouTubeLink: {uri-pj-youtube}[{YouTubeIcon}^]

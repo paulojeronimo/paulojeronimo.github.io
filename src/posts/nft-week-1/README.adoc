@@ -10,7 +10,7 @@ include::common/default-header.adoc[]
 :SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
 :PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
 
-image::posts/{postdir}/encontro-2.png[]
+image::posts/nft-week-1-encontro-2/capa.png[]
 
 [.text-center]
 *[red]#Link para participação no <<encontro-2,Encontro 2>>:#*

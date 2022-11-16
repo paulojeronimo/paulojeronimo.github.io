@@ -17,7 +17,7 @@ include::common/default-header.adoc[]
 
 == Introdução
 
-image::posts/nft-week-1/encontro-2.png[]
+image::posts/nft-week-1-encontro-2/capa.png[]
 
 *Rio de Janeiro, {PostDate}*.
 

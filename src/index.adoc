@@ -5,25 +5,16 @@ v1.0.0, {localdatetime}: 15 km running challenger
 :stylesdir: css
 :linkcss:
 :icons: font
+:imagesdir: images
 :nofooter:
 :docinfo2:
 
 include::uris-and-attributes.adoc[]
 
-[.text-center]
-{uri-pj-email}[icon:envelope[2x]^] |
-{uri-pj-whatsapp}[icon:whatsapp[2x]^] |
-{uri-pj-skype}[icon:skype[2x]^] |
-{uri-pj-linkedin}[icon:linkedin[2x]^] |
-{uri-pj-github}[icon:github[2x]^] |
-{uri-pj-twitter}[icon:twitter[2x]^] |
-{uri-pj-youtube}[icon:youtube[2x]^] |
-{sitemapLink}
-
-'''
+include::icons.adoc[]
 
 [.left.text-center.rounded]
-image::{uri-pj-avatar}[width=40%]
+image::pj-2.jpg[width=40%]
 
 Hi! *[red]#My name is {author}#*.
 Welcome to my *straightforward website* (almost entirely text-based and
@@ -39,8 +30,14 @@ I am always working with *[red]#security in mind#* (see
 I have some skills and many years of experience developing software
 (since 1993).
 
-You can also read all about my past works in {uri-pj-resume}[my résumé^]
-or {uri-pj-cv}[my complete CV^].
+[.text-center]
+You can also read all about my past works in *my résumé (in
+{uri-pj-resume}[English^] or in {uri-pj-resume-pt-br}[Brazilian
+Portuguese^])*.
+
+Note that in the icons above you can see links to all my blog posts (
+{BlogPostsLink} ), code ( {GitHubLink} ), articles and tutorials (
+{SitemapLink} ), that I've been written.
 ****
 
 Currently, *I live in Brazil* and in addition to my work as a software
@@ -67,5 +64,4 @@ Brazilian Portuguese at this moment)_. +
 {uri-finishersdao-desafio1}[(read more about this)^].
 ****
 
-You can see some of the code, articles, and tutorials that I coded (or
-wrote) by accessing my site map ({sitemapLink}).
+

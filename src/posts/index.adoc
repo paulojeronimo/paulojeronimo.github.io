@@ -1,1 +1,98 @@
-= Blog
+= Paulo Jerônimo's blog posts
+:basedir: ..
+:stylesdir: {basedir}/css
+:linkcss:
+:icons: font
+:imagesdir: {basedir}/images
+:nofooter:
+:docinfodir: {basedir}
+:docinfo: shared
+
+include::{basedir}/uris-and-attributes.adoc[]
+:pt-br-post: pt-br
+:english-post: en
+
+include::{basedir}/icons.adoc[]
+
+Hi! Many of my blog posts are written in Portuguese in a non technical
+language and for Brazilians ({pt-br}).
+Some of them are in English ({en}) and high technical to normal people
+(non programmers).
+
+.*Web3 para confiança, desafios e problemas com intermediadores*
+****
+[.text-center]
+{pt-br-post}, 27 de Julho de 2022
+
+image:posts/web3-para-confianca/capa.mini.png[role="related left"] Um
+exemplo sobre confiança: você confia na empresa para a qual trabalha. O
+cliente da sua empresa confia nela pois, caso contrário, não a
+contrataria. É assim que sempre funcionou e que sempre funcionará.
+
+*link:/posts/web3-para-confianca/[Leia mais]*
+****
+
+.*Non-Fungible Token (NFT) para pesssoas da área de negócios*
+****
+[.text-center]
+{pt-br-post}, 17 de Junho de 2022
+
+image:posts/nft-week-1-encontro-2/capa.mini.png[role="related left"]
+Esses são alguns dos links que apresentam conteúdo que eu leio e guardo,
+para explicar as pessoas, o que são NFTs, os marketplaces onde eles
+podem ser negociados, e vários dos projetos que tem feito uso deles.
+
+*link:/posts/nft-week-1-encontro-2/[Leia mais]*
+****
+
+.*Non-Fungible Token (NFT) para pesssoas da área de negócios*
+****
+[.text-center]
+{pt-br-post}, 14 de Junho de 2022
+
+image:posts/nft-week-1/capa.mini.png[role="related left"] Farei dois
+encontros sobre Non-Fungible Token (NFT), nessa semana, com dois
+públicos diferentes:
+
+*link:/posts/nft-week-1/[Leia mais]*
+****
+
+.*Trabalho remoto*
+****
+[.text-center]
+{pt-br-post}, 10 de Junho de 2022
+
+image:posts/trabalho-remoto/capa.mini.png[role="related left"] Como
+programador, desde que abri minha primeira empresa de software em 1995,
+eu sempre gostei de ter meu próprio espaço de trabalho. Nele eu passo
+várias horas do meu dia. Eu invisto, bastante, nesse meu ambiente.
+
+*link:/posts/trabalho-remoto/[Leia mais]*
+****
+
+.*Há exatos 9 anos, em 26 de Maio de 2013, nesse momento eu já sabia ...*
+****
+[.text-center]
+{pt-br-post}, 26 de Maio de 2022
+
+image:posts/ha-nove-anos-me-tornei-um-ironman/capa.mini.png[role="related
+left"] Há exatos nove anos, no dia 26 de Maio de 2013, pela primeira vez
+eu escutei o grito, com toda a entonação merecida, que muitos que se
+prepararam, durante um ano ou mais de treinamento, irão escutar neste
+próximo domingo, dia 29 de Maio de 2022.
+
+*link:/posts/ha-nove-anos-me-tornei-um-ironman/[Leia mais]*
+****
+
+.*Encontro aberto da minha mentoria em Blockchain e Ethereum*
+****
+[.text-center]
+{pt-br-post}, 25 de Maio de 2022
+
+image:posts/encontro-aberto-da-minha-mentoria/capa.mini.png[role="related
+left"] Bem ... Agora vou ao ponto que pode interessar a todos que estão
+lendo esse texto: na minha mentoria, o encontro online é sempre às
+terças-feiras, às 13 horas e 21 minutos, e dura 34 minutos.
+
+*link:/posts/encontro-aberto-da-minha-mentoria/[Leia mais]*
+****
