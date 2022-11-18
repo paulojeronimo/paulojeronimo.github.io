@@ -1,0 +1,15 @@
+ifndef::backend-pdf[]
+= {postdir}
+endif::[]
+ifdef::backend-html5[]
+:nofooter:
+endif::[]
+:icons: font
+:imagesdir: ../../images
+ifdef::backend-pdf[]
+:imagesdir: images
+endif::[]
+:linkcss:
+:!copycss:
+:stylesdir: ../../css
+:EdicoesAposPublicacao: Edições após a publicação deste texto

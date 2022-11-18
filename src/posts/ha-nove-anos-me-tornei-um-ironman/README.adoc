@@ -4,22 +4,27 @@ include::common/default-header.adoc[]
 :uri-odysee: https://odysee.com/@paulojeronimo/
 :uri-ironman: https://pt.wikipedia.org/wiki/Ironman_Triathlon
 
+:PostTitle: Há exatos 9 anos, em 26 de Maio de 2013, nesse momento eu já sabia ...
 :PostDate: 26 de Maio de 2022
 :SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
 :PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
 :Ironman: {uri-ironman}[Ironman]
 
-// https://valiantceo.com/dapp-development-process/
 image::posts/{postdir}/capa.png[]
 
 *{SaudeECripto} para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
 por aqui!* +
 
+[.text-center]
+*<<edicoes-apos-publicacao,!! {EdicoesAposPublicacao} foram realizadas
+!!>>*
+
+[.abstract]
 Há exatos nove anos, *https://www.youtube.com/watch?v=Hxr0bJLDzzs[no dia
 26 de Maio de 2013]*, pela primeira vez eu escutei o grito, com toda a
 entonação merecida, que muitos que se prepararam, durante um ano ou mais
 de treinamento, irão escutar neste próximo domingo,
-https://www.ironman.com/im-brazil[dia 29 de Maio de 2022].
+https://www.ironman.com/im-brazil[dia 29 de Maio de 2022^].
 
 [.text-center]
 *https://www.youtube.com/watch?v=wE108-27BxA[YOUUUUU AREEEEE AN IRONMAN!!!!!!]*
@@ -40,7 +45,7 @@ fisicamente.*
 
 Se quiser ler uma história que lhe possivelmente lhe dirá o porquê de de
 um simples Ironman (eu) se desafiar a tanto a uma meta, abra o site
-http://saudeecripto.com[saudeecripto.com].
+http://saudeecripto.com[saudeecripto.com^].
 Isso lhe mostrará um PDF que talvez lhe traga alguma inspiração!
 
 *Além da benção de Deus, eu também desejo a todos que enfrentarão seu
@@ -48,6 +53,17 @@ desafio neste próximo domingo, bastante força mental e física para
 atingirem suas metas. icon:smile-o[]*
 
 *{PauloJeronimo}* +
-*{uri-saudeecripto}*
-
+*{uri-saudeecripto}* +
 *{PostDate}*.
+
+ifdef::backend-html5[]
+'''
+endif::[]
+<<<
+[[edicoes-apos-publicacao]]
+.{EdicoesAposPublicacao}:
+****
+* 17/Nov/2022 - Adição:
+  https://odysee.com/@paulojeronimo:4/ha-nove-anos-me-tornei-um-ironman:e[Link
+para o vídeo em que apresento este conteúdo.^]
+****

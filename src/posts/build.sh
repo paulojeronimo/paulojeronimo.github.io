@@ -1,6 +1,17 @@
 #!/usr/bin/env bash
+: <<'USAGE'
+$ pwd
+/home/pj/paulojeronimo.github.io
+
+# using <tab> completion:
+$ ./src/posts/build.sh src/posts/ha-nove-anos-me-tornei-um-ironman/
+USAGE
+
 set -eou pipefail
 cd $(dirname $0)
+
+# configure docker-asciidoctor-builder to not use docker
+export USE_DOCKER=${USE_DOCKER:-false}
 
 BASE_DIR=../..
 config_dir=..
@@ -26,13 +37,27 @@ do
     continue
   fi
 
-  # rsync common files
-  rsync -a --delete common/ $post/common/
-  rsync -a --delete $BASE_DIR/images/ $post/images/
-
-  # post build
   cd $post
+
+  # fix required directories locations
+  if $USE_DOCKER
+  then
+    rsync -a --delete ../common ./
+    rsync -a --delete ../$BASE_DIR/images ./
+  else
+    rm -rf common images
+    ln -s ../common
+    ln -s ../$BASE_DIR/images
+  fi
+
   GENERATE_PDF=true docker-asciidoctor-builder -a postdir=$post
+
+  post_title=$(grep '^:PostTitle:' README.adoc | cut -d: -f3 | xargs) || \
+    post_title="$post"
+  echo Updating title on build/$post.pdf to \"$post_title\"
+  post_title=$(sed 's/,/\\,/g' <<< "$post_title")
+  post_title=$(iconv -f UTF-8 -t ISO-8859-15 <<< "$post_title")
+  sed -i "s,\(/Title \)\((Untitled)\),\1\($post_title\),g" build/$post.pdf
   cd ..
 
   # post artifacts copy
@@ -43,6 +68,9 @@ do
   then
     mv "$f" "$posts_dir"
   fi
+
+  # fix the behaviour of copycss (wich is not working)
+  rm -f "$posts_dir"/$post/asciidoctor.css
 
   echo
 done
