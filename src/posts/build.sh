@@ -1,13 +1,18 @@
 #!/usr/bin/env bash
-: <<'USAGE'
-$ pwd
-/home/pj/paulojeronimo.github.io
+set -eou pipefail
+usage_file=$(mktemp)
+trap 'rm -f -- "$usage_file"' EXIT
+cat <<USAGE > "$usage_file"
+Usage:
 
-# using <tab> completion:
-$ ./src/posts/build.sh src/posts/ha-nove-anos-me-tornei-um-ironman/
+NOTE -> You can use <tab> to point the 'specific-dir':
+$ $0 <all|specific-dir>
+
+Examples:
+$ $0 all
+$ $0 src/posts/ha-nove-anos-me-tornei-um-ironman/
 USAGE
 
-set -eou pipefail
 cd $(dirname $0)
 
 # configure docker-asciidoctor-builder to not use docker
@@ -16,7 +21,8 @@ export USE_DOCKER=${USE_DOCKER:-false}
 BASE_DIR=../..
 config_dir=..
 
-selected_post=${1:-all}
+[ $# = 1 ] || { cat "$usage_file"; exit 0; }
+selected_post=$1
 selected_post=${selected_post%/}
 selected_post=${selected_post##*/}
 
