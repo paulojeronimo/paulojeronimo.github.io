@@ -2,14 +2,25 @@ ifndef::backend-pdf[]
 = {postdir}
 endif::[]
 ifdef::backend-html5[]
+:basedir: ../..
 :nofooter:
 endif::[]
 :icons: font
-:imagesdir: ../../images
+:imagesdir: {basedir}/images
 ifdef::backend-pdf[]
 :imagesdir: images
 endif::[]
 :linkcss:
 :!copycss:
-:stylesdir: ../../css
+:stylesdir: {basedir}/css
+include::../../../../src/uris-and-attributes.adoc[]
 :EdicoesAposPublicacao: Edições após a publicação deste texto
+
+[.text-center]
+ifdef::backend-html5[]
+*Versão em PDF: link:/posts/{postdir}.pdf[{postdir}.pdf]* +
+endif::[]
+ifdef::backend-pdf[]
+*Versão online: {uri-pj}/posts/{postdir}*
+endif::[]
+

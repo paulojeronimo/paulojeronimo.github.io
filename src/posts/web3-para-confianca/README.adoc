@@ -126,6 +126,7 @@ rede do *Bitcoin*.
 *O futuro dos intermediadores que não agregam valor está claro:
 deixarão de existir.*
 
+<<<
 Participe do https://blockchainrio.com.br/[Blockchain Rio], o maior
 evento sobre Blockchain da América Latina.
 Eu estarei presente nele!

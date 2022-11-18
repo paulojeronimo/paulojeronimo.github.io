@@ -112,9 +112,3 @@ icon:smile-o[]
 *E você, o que acha do trabalho remoto? Comente nesse
 {uri-post-linkedin}[meu post no LinkedIn]!*
 
-ifdef::backend-html5[]
-*Versão em PDF: https://paulojeronimo.com/posts/{postdir}.pdf*
-endif::[]
-ifdef::backend-pdf[]
-*Versão online: https://paulojeronimo.com/posts/{postdir}/*
-endif::[]

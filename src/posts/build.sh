@@ -13,7 +13,7 @@ $ $0 all
 $ $0 src/posts/ha-nove-anos-me-tornei-um-ironman/
 USAGE
 
-cd $(dirname $0)
+cd "$(dirname "$0")"
 
 # configure docker-asciidoctor-builder to not use docker
 export USE_DOCKER=${USE_DOCKER:-false}
@@ -28,11 +28,11 @@ selected_post=${selected_post##*/}
 
 config=$config_dir/build.conf
 [ -r $config ] || config=$config.sample
-source $config
+source "$config"
 
 posts=$(find . -maxdepth 1 -type d ! \( -name . -o -name common \))
 
-posts_dir=$(mkdir -p $BASE_DIR/$html_dir/posts && cd $_ && pwd)
+posts_dir=$(mkdir -p "$BASE_DIR/$html_dir"/posts && cd "$_" && pwd)
 for post in $posts
 do
   post=${post##./}
@@ -43,7 +43,7 @@ do
     continue
   fi
 
-  cd $post
+  cd "$post"
 
   # fix required directories locations
   if $USE_DOCKER
