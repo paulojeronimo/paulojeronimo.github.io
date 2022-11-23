@@ -3,7 +3,6 @@ set -eou pipefail
 
 BASE_DIR=${BASE_DIR:-`cd "$(dirname "$0")"; pwd -P`}
 cd "$BASE_DIR"
-tmp_dir=.
 
 ####################
 # internal functions
@@ -16,8 +15,8 @@ source ./functions.sh
 ####################
 
 _generate-index() {
-  local index_txt_file=$tmp_dir/index.txt
-  local index_yaml_file=$tmp_dir/index.yaml
+  local index_txt_file=index.txt
+  local index_yaml_file=index.yaml
 
   find . -type f -name README.adoc | xargs grep '^:PostDate:' > $index_txt_file
   > $index_yaml_file

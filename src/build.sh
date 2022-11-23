@@ -32,7 +32,6 @@ _clean() {
 # main code
 ###########
 
-mkdir -p $tmp_dir
 op=${1:-build}
 type _$op &> /dev/null || exit 1
 shift || :
