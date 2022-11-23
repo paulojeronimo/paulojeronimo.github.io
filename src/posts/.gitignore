@@ -2,3 +2,5 @@ build
 /**/common
 !/common
 /**/images
+/index.txt
+/index.yaml

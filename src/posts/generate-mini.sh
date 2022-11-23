@@ -1,4 +1,5 @@
 #/usr/bin/env bash
+set -eou pipefail
 
 cd $(dirname $0)
 for d in ../../images/posts/*

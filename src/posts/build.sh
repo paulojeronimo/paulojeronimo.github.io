@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
 set -eou pipefail
+
 usage_file=$(mktemp)
 trap 'rm -f -- "$usage_file"' EXIT
 cat <<USAGE > "$usage_file"
 Usage:
 
 NOTE -> You can use <tab> to point the 'specific-dir':
-$ $0 <all|specific-dir>
+$ $0 <all|index[.yaml]|specific-dir>
 
 Examples:
 $ $0 all
+$ $0 index
 $ $0 src/posts/ha-nove-anos-me-tornei-um-ironman/
 USAGE
 
@@ -22,6 +24,11 @@ BASE_DIR=../..
 config_dir=..
 
 [ $# = 1 ] || { cat "$usage_file"; exit 0; }
+if [[ $1 =~ ^index(\.yaml)?$ ]]
+then
+  echo ./build.$1.sh
+  exit $?
+fi
 selected_post=$1
 selected_post=${selected_post%/}
 selected_post=${selected_post##*/}
@@ -29,6 +36,7 @@ selected_post=${selected_post##*/}
 config=$config_dir/build.conf
 [ -r $config ] || config=$config.sample
 source "$config"
+source ./functions.sh
 
 posts=$(find . -maxdepth 1 -type d ! \( -name . -o -name common \))
 
@@ -58,8 +66,7 @@ do
 
   GENERATE_PDF=true docker-asciidoctor-builder -a postdir=$post
 
-  post_title=$(grep '^:PostTitle:' README.adoc | cut -d: -f3 | xargs) || \
-    post_title="$post"
+  post_title=$(get-post-title) || post_title="$post"
   echo Updating title on build/$post.pdf to \"$post_title\"
   post_title=$(sed 's/,/\\,/g' <<< "$post_title")
   post_title=$(iconv -f UTF-8 -t ISO-8859-15 <<< "$post_title")
