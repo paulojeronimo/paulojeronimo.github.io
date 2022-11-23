@@ -1,16 +1,4 @@
-include::common/default-header.adoc[]
-:figure-caption!:
-
-:uri-saudeecripto: https://bio.link/saudeecripto
-:uri-odysee: https://odysee.com/@paulojeronimo/
-:uri-nft-pt: https://pt.wikipedia.org/wiki/Token_n%C3%A3o_fung%C3%ADvel
-:uri-tecnologia-disruptiva: https://pt.wikipedia.org/wiki/Tecnologia_disruptiva
-
-:PostDate: 14 de Junho de 2022
-:SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
-:PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
-
-image::posts/nft-week-1-encontro-2/capa.png[]
+include::common/header.adoc[]
 
 [.text-center]
 *[red]#Link para participação no <<encontro-2,Encontro 2>>:#*
@@ -21,8 +9,7 @@ image::posts/nft-week-1-encontro-2/capa.png[]
 *{SaudeECripto} para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
 por aqui!* +
 
-*Farei dois encontros sobre {uri-nft-pt}[Non-Fungible Token (NFT)], nessa
-semana, com dois públicos diferentes:*
+include::abstract.adoc[]
 
 [[encontro-1]]
 No *primeiro encontro, para programadores* que estão participando da

@@ -18,7 +18,8 @@ _generate-index() {
   local index_txt_file=index.txt
   local index_yaml_file=index.yaml
 
-  find . -type f -name README.adoc | xargs grep '^:PostDate:' > $index_txt_file
+  find . -type f -name uris-and-attributes.adoc | \
+    xargs grep '^:PostDate:' > $index_txt_file
   > $index_yaml_file
   while read line
   do

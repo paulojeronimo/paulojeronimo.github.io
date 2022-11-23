@@ -13,9 +13,13 @@ endif::[]
 :linkcss:
 :!copycss:
 :stylesdir: {basedir}/css
+include::../header.adoc[]
+
 include::../../../../src/uris-and-attributes.adoc[]
+include::../uris-and-attributes.adoc[]
 :EdicoesAposPublicacao: Edições após a publicação deste texto
 
+ifdef::postdir[]
 [.text-center]
 ifdef::backend-html5[]
 *Versão em PDF: link:/posts/{postdir}.pdf[{postdir}.pdf]* +
@@ -24,3 +28,5 @@ ifdef::backend-pdf[]
 *Versão online: {uri-pj}/posts/{postdir}*
 endif::[]
 
+image::posts/{postdir}/capa.png[]
+endif::[]

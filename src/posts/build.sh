@@ -33,7 +33,10 @@ selected_post=$1
 selected_post=${selected_post%/}
 selected_post=${selected_post##*/}
 
-posts=$(find . -maxdepth 1 -type d ! \( -name . -o -name common \))
+posts=$(find . -maxdepth 1 -type d ! \( \
+  -name . -o \
+  -name common -o \
+  -name test-data \))
 
 posts_dir=$(mkdir -p "$BASE_DIR/$html_dir"/posts && cd "$_" && pwd)
 for post in $posts

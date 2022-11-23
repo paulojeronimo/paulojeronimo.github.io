@@ -1,16 +1,4 @@
-include::common/default-header.adoc[]
-
-:uri-saudeecripto: https://bio.link/saudeecripto
-:uri-odysee: https://odysee.com/@paulojeronimo/
-:uri-ironman: https://pt.wikipedia.org/wiki/Ironman_Triathlon
-
-:PostTitle: Há exatos 9 anos, em 26 de Maio de 2013, nesse momento eu já sabia ...
-:PostDate: 26 de Maio de 2022
-:SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
-:PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
-:Ironman: {uri-ironman}[Ironman]
-
-image::posts/{postdir}/capa.png[]
+include::common/header.adoc[]
 
 *{SaudeECripto} para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
 por aqui!* +
@@ -19,19 +7,13 @@ por aqui!* +
 *<<edicoes-apos-publicacao,!! {EdicoesAposPublicacao} foram realizadas
 !!>>*
 
-[.abstract]
-Há exatos nove anos, *https://www.youtube.com/watch?v=Hxr0bJLDzzs[no dia
-26 de Maio de 2013]*, pela primeira vez eu escutei o grito, com toda a
-entonação merecida, que muitos que se prepararam, durante um ano ou mais
-de treinamento, irão escutar neste próximo domingo,
-https://www.ironman.com/im-brazil[dia 29 de Maio de 2022^].
+include::abstract.adoc[]
 
 [.text-center]
 *https://www.youtube.com/watch?v=wE108-27BxA[YOUUUUU AREEEEE AN IRONMAN!!!!!!]*
 
 Ser um {Ironman} é ser uma pessoa que está decidida a persistir na luta
-para finalizar um grande desafio.
-
+para finalizar um grande desafio. +
 Ironman é o apelido de alguém que se dedica, brava e incansavelmente a
 cruzar uma linha de chegada, a concluir um desafio que ele mesmo se
 propoz.
@@ -53,7 +35,6 @@ desafio neste próximo domingo, bastante força mental e física para
 atingirem suas metas. icon:smile-o[]*
 
 *{PauloJeronimo}* +
-*{uri-saudeecripto}* +
 *{PostDate}*.
 
 ifdef::backend-html5[]

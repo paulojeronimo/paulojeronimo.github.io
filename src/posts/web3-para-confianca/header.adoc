@@ -1,0 +1,5 @@
+:figure-caption!:
+:numbered:
+:idprefix:
+:idseparator: -
+:sectanchors:

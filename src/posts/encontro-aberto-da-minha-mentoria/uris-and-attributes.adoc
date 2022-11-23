@@ -1,0 +1,22 @@
+:uri-odysee: https://odysee.com/@paulojeronimo/
+:uri-mentoria: https://finisher.tech/mentoria.pdf
+:uri-serie-de-fibo: https://finisher.tech/fibonacci-app/docs/fibonacci.pt.html
+:uri-meeting: https://meet.google.com/bmu-vuej-zuf
+:uri-video: https://www.linkedin.com/feed/update/urn:li:activity:6933085839577030657/
+:uri-web3dev: https://www.web3dev.com.br/
+:uri-saudeecripto-pdf: http://finisher.tech/saudeecripto.pdf
+:uri-ironman-brasil: https://ironmanbrasil.com.br/novo/fln/?lang=en
+
+:PostDate: 25 de Maio de 2022
+:PostTitle: Encontro aberto da minha mentoria em Blockchain e Ethereum
+:PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
+:ilia: https://ilia.digital[ília]
+:Blockchain: https://www.youtube.com/playlist?list=PL3jVhh9mXmz_FvGpXNvAydlg_vxVaJj1V[Blockchain]
+:Ethereum: https://ethereum.org/en/[Ethereum]
+:NEAR: https://near.org/[NEAR]
+:CoinMarketCap: https://coinmarketcap.com/[CoinMarketCap]
+:Chainlink: https://coinmarketcap.com/currencies/chainlink/[Chainlink]
+:Polygon: https://coinmarketcap.com/currencies/polygon/[Polygon]
+:Avalanche: https://coinmarketcap.com/currencies/avalanche/[Avalanche]
+:Polkadot: https://coinmarketcap.com/currencies/polkadot-new/[Polkadot]
+:Solana: https://coinmarketcap.com/currencies/solana/[Solana]

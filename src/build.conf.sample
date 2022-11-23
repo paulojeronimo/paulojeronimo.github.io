@@ -1,5 +1,10 @@
-# vi: set ft=sh:
+# vi: ft=sh:
+
+# the directories below are relative to parent of this dir!
 html_dir=.
 css_dir=./css
 doc=src/index.adoc
+
+# Mustache templates in pure bash ( https://github.com/tests-always-included/mo )
 get_mo=true
+get_mo_link=https://git.io/get-mo

@@ -1,32 +1,11 @@
-include::common/default-header.adoc[]
-
-:uri-saudeecripto: https://bio.link/saudeecripto
-:uri-odysee: https://odysee.com/@paulojeronimo/
-:uri-login-informatica: https://paulojeronimo.com/cv/en/#_1995-04-self-employed-at-login-informatica
-:uri-playlist-ethereum: https://www.youtube.com/playlist?list=PL3jVhh9mXmz8KSba2NOENx_8qb58Ws7hr
-:uri-cotidiano: https://cotidiano.com.br/
-:uri-ciclismo-em-rolo: https://www.instagram.com/tv/dPTpaRtf9F/
-:uri-ilia: https://ilia.digital
-:uri-livelo: https://www.livelo.com.br/
-:uri-video-ilia-linkedin: https://www.linkedin.com/feed/update/urn:li:activity:6933085839577030657/
-:uri-post-linkedin: https://www.linkedin.com/posts/paulojeronimo_trabalho-remoto-activity-6940992487494672385-r1Vz
-
-:PostDate: 10 de Junho de 2022
-:SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
-:PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
-
-image::posts/{postdir}/capa.png[]
+include::common/header.adoc[]
 
 *Brasília, {PostDate}*.
 
 *{SaudeECripto} para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
 por aqui!* +
 
-*[red]#Como programador#*, desde que {uri-login-informatica}[abri minha
-primeira empresa de software em 1995], eu sempre gostei de ter meu
-próprio espaço de trabalho.
-Nele eu passo várias horas do meu dia.
-Eu invisto, bastante, nesse meu ambiente.
+include::abstract.adoc[]
 
 Na foto de capa desse post, tirada em 3 de Março de 2018, registrei um
 momento único em que eu assistia https://vitalik.ca[Vitalik Buterin] em

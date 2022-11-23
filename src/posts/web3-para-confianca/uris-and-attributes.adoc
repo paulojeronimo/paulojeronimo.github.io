@@ -1,0 +1,8 @@
+:uri-saudeecripto: https://bio.link/saudeecripto
+:uri-odysee: https://odysee.com/@paulojeronimo/
+:uri-nft-pt: https://pt.wikipedia.org/wiki/Token_n%C3%A3o_fung%C3%ADvel
+
+:PostDate: 27 de Julho de 2022
+:PostTitle: Web3 para confiança, desafios e problemas com intermediadores
+:SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
+:PauloJeronimo: {uri-odysee}[Paulo Jerônimo]

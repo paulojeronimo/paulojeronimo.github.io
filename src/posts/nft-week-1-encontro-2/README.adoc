@@ -1,33 +1,14 @@
-include::common/default-header.adoc[]
-:toc: left
-:toc-title: {doctitle}
-:figure-caption!:
-:numbered:
-:idprefix:
-:idseparator: -
-:sectanchors:
+include::common/header.adoc[]
 
-:uri-saudeecripto: https://bio.link/saudeecripto
-:uri-odysee: https://odysee.com/@paulojeronimo/
-:uri-nft-pt: https://pt.wikipedia.org/wiki/Token_n%C3%A3o_fung%C3%ADvel
-
-:PostDate: 17 de Junho de 2022
-:SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
-:PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
-
+<<<
 == Introdução
-
-image::posts/nft-week-1-encontro-2/capa.png[]
 
 *Rio de Janeiro, {PostDate}*.
 
 *{SaudeECripto} para você \o/! {PauloJeronimo} "falando" icon:smile-o[]
 por aqui!* +
 
-Esses são alguns dos links que apresentam conteúdo que eu leio ou
-guardo, para explicar as pessoas, <<o-que-sao-nfts,o que são NFTs>>, os
-<<marketplaces,marketplaces>> onde eles podem ser negociados, e vários
-dos <<projetos-existentes,projetos que tem feito uso deles>>.
+include::abstract.adoc[]
 
 Iniciado por <<pioneiros,apps pioneiros>>, logo que os NFTs cairam no
 entendimento de alguns famosos, começou-se a fazer bastante <<aue,auê>>

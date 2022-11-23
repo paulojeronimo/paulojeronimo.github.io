@@ -1,7 +1,7 @@
 # vim: syntax=bash
 
 get-post-title() {
-  local f=${1:-README.adoc}
+  local f=${1:-uris-and-attributes.adoc}
   grep '^:PostTitle:' $f | cut -d: -f3 | xargs
 }
 
@@ -44,9 +44,8 @@ get-mo() {
   then
     if ! [ -x mo ]
     then
-      echo Downloading \"mo\" script from \"$mo_link\" ...
-      mo_link=https://git.io/get-mo
-      if ! curl -sSL $mo_link -o mo
+      echo Downloading \"mo\" script from \"$get_mo_link\" ...
+      if ! curl -sSL $get_mo_link -o mo
       then
         echo Fail! Aborting.
         exit 1
@@ -56,10 +55,20 @@ get-mo() {
   else
     if ! [ -x mo ]
     then
-      echo Script \"mo\" no found in $PWD! Aborting.
+      echo Script \"mo\" no found in \"$PWD\"! Aborting.
       exit 1
     fi
   fi
+}
+
+create-abstract-doc() {
+  local doc=$1
+
+  cat<<'EOF' > $doc
+include::common/header.adoc[]
+
+include::abstract.adoc[]
+EOF
 }
 
 create-yaml() {
@@ -68,17 +77,19 @@ create-yaml() {
   local readme_adoc_file=$(cut -d: -f1 <<< "$index_txt_line")
   local post_id=$(cut -d/ -f2 <<< "$readme_adoc_file")
   local post_date=$(get-iso-date "$(cut -d: -f4 <<< "$index_txt_line" | xargs)")
-  local post_title=$(get-post-title "$readme_adoc_file") || :
+  local post_title=$(get-post-title "$readme_adoc_file")
+  local abstract_doc_adoc_file=$post_id/abstract-doc.adoc
+
+  create-abstract-doc $abstract_doc_adoc_file
+
+  local post_abstract=$(asciidoctor --no-header -o - $abstract_doc_adoc_file \
+    | sed -e 's/<[^>]*>//g' | xargs)
 
   get-mo
 
-  export post_id post_date post_title
-  cat <<EOF | ./mo | tee -a $index_yaml_file
-{{post_id}}:
-  date: {{post_date}}
-{{#post_title}}
-  title: {{post_title}}
-{{/post_title}}
-EOF
-  unset post_id post_date post_title
+  export post_id post_date post_title post_abstract
+  ./mo < $src_dir/posts/index.yaml.mo | tee -a $index_yaml_file
+
+  unset post_id post_date post_title post_abstract
+  rm -f $abstract_doc_adoc_file
 }
