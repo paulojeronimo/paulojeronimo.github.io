@@ -8,7 +8,7 @@ cd "$BASE_DIR"
 # internal functions
 ####################
 
-source ./functions.sh
+src_dir=..; source $src_dir/common.sh
 
 ####################
 # callable functions
@@ -26,7 +26,7 @@ _generate-index() {
   done < $index_txt_file
 }
 
-source ./test-functions.sh
+source $src_dir/test-functions.sh
 
 ###########
 # main code

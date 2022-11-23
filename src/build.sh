@@ -4,9 +4,7 @@ set -eou pipefail
 BASE_DIR=${BASE_DIR:-`cd "$(dirname "$0")"/..; pwd -P`}
 cd "$BASE_DIR"
 
-config=src/build.conf
-[ -r $config ] || config=$config.sample
-source $config
+src_dir=src; source $src_dir/common.sh
 
 ####################
 # callable functions

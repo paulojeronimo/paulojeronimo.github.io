@@ -39,22 +39,46 @@ get-iso-date() {
   fi
 }
 
+get-mo() {
+  if $get_mo
+  then
+    if ! [ -x mo ]
+    then
+      echo Downloading \"mo\" script from \"$mo_link\" ...
+      mo_link=https://git.io/get-mo
+      if ! curl -sSL $mo_link -o mo
+      then
+        echo Fail! Aborting.
+        exit 1
+      fi
+      chmod +x mo
+    fi
+  else
+    if ! [ -x mo ]
+    then
+      echo Script \"mo\" no found in $PWD! Aborting.
+      exit 1
+    fi
+  fi
+}
+
 create-yaml() {
   local index_yaml_file=$1
   local index_txt_line=$2
   local readme_adoc_file=$(cut -d: -f1 <<< "$index_txt_line")
   local post_id=$(cut -d/ -f2 <<< "$readme_adoc_file")
-  local post_date=$(cut -d: -f4 <<< "$index_txt_line" | xargs)
+  local post_date=$(get-iso-date "$(cut -d: -f4 <<< "$index_txt_line" | xargs)")
   local post_title=$(get-post-title "$readme_adoc_file") || :
 
-  if [ "$post_title" ]
-  then
-    post_title="title: $post_title"
-  fi
+  get-mo
 
-  cat <<EOF | tee -a $index_yaml_file
-$post_id:
-  date: $(get-iso-date "$post_date")
-  $post_title
+  export post_id post_date post_title
+  cat <<EOF | ./mo | tee -a $index_yaml_file
+{{post_id}}:
+  date: {{post_date}}
+{{#post_title}}
+  title: {{post_title}}
+{{/post_title}}
 EOF
+  unset post_id post_date post_title
 }

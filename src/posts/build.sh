@@ -21,7 +21,7 @@ cd "$(dirname "$0")"
 export USE_DOCKER=${USE_DOCKER:-false}
 
 BASE_DIR=../..
-config_dir=..
+src_dir=..; source $src_dir/common.sh
 
 [ $# = 1 ] || { cat "$usage_file"; exit 0; }
 if [[ $1 =~ ^index(\.yaml)?$ ]]
@@ -32,11 +32,6 @@ fi
 selected_post=$1
 selected_post=${selected_post%/}
 selected_post=${selected_post##*/}
-
-config=$config_dir/build.conf
-[ -r $config ] || config=$config.sample
-source "$config"
-source ./functions.sh
 
 posts=$(find . -maxdepth 1 -type d ! \( -name . -o -name common \))
 
