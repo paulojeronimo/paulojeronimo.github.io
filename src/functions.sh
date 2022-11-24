@@ -62,9 +62,7 @@ get-mo() {
 }
 
 create-abstract-doc() {
-  local doc=$1
-
-  cat<<'EOF' > $doc
+  cat<<'EOF' > $1
 include::common/header.adoc[]
 
 include::abstract.adoc[]
@@ -85,11 +83,8 @@ create-yaml() {
   local post_abstract=$(asciidoctor --no-header -o - $abstract_doc_adoc_file \
     | sed -e 's/<[^>]*>//g' | xargs)
 
-  get-mo
+  get-mo; . mo
+  mo < index.yaml.mo >> $index_yaml_file
 
-  export post_id post_date post_title post_abstract
-  ./mo < $src_dir/posts/index.yaml.mo | tee -a $index_yaml_file
-
-  unset post_id post_date post_title post_abstract
   rm -f $abstract_doc_adoc_file
 }

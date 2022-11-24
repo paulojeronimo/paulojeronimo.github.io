@@ -2,7 +2,7 @@ build
 /**/common
 !/common
 /**/images
-/index.txt
 /index.yaml
+/index.adoc
 /mo
 /**/abstract-doc.adoc

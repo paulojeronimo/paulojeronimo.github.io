@@ -7,11 +7,11 @@ cat <<USAGE > "$usage_file"
 Usage:
 
 NOTE -> You can use <tab> to point the 'specific-dir':
-$ $0 <all|index[.yaml]|specific-dir>
+$ $0 <all [links]|index.[yaml|adoc]|specific-dir>
 
 Examples:
 $ $0 all
-$ $0 index
+$ $0 index.adoc
 $ $0 src/posts/ha-nove-anos-me-tornei-um-ironman/
 USAGE
 
@@ -23,10 +23,10 @@ export USE_DOCKER=${USE_DOCKER:-false}
 BASE_DIR=../..
 src_dir=..; source $src_dir/common.sh
 
-[ $# = 1 ] || { cat "$usage_file"; exit 0; }
-if [[ $1 =~ ^index(\.yaml)?$ ]]
+[ $# = 1 -o $# = 2 ] || { cat "$usage_file"; exit 0; }
+if [[ $1 =~ ^index\.(yaml|adoc)?$ ]]
 then
-  echo ./build.$1.sh
+  ./$1.sh
   exit $?
 fi
 selected_post=$1
@@ -61,6 +61,8 @@ do
     ln -s ../common
     ln -s ../$BASE_DIR/images
   fi
+
+  ! [ "$2" = links ] || { cd ..; continue; }
 
   GENERATE_PDF=true docker-asciidoctor-builder -a postdir=$post
 

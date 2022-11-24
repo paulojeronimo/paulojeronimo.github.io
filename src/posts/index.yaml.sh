@@ -15,16 +15,18 @@ src_dir=..; source $src_dir/common.sh
 ####################
 
 _generate-index() {
-  local index_txt_file=index.txt
   local index_yaml_file=index.yaml
 
-  find . -type f -name uris-and-attributes.adoc | \
-    xargs grep '^:PostDate:' > $index_txt_file
+  ./build.sh all links
+
+  echo Building \"$index_yaml_file\" ...
   > $index_yaml_file
-  while read line
+
+  while IFS= read -r line
   do
     create-yaml $index_yaml_file "$line"
-  done < $index_txt_file
+  done < <(find . -type f -name uris-and-attributes.adoc | \
+    xargs grep '^:PostDate:')
 }
 
 source $src_dir/test-functions.sh
