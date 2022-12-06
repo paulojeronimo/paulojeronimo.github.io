@@ -62,15 +62,10 @@ do
     ln -s ../$BASE_DIR/images
   fi
 
-  ! [ "$2" = links ] || { cd ..; continue; }
+  ! [ "${2:-}" = links ] || { cd ..; continue; }
 
   GENERATE_PDF=true docker-asciidoctor-builder -a postdir=$post
 
-  post_title=$(get-post-title) || post_title="$post"
-  echo Updating title on build/$post.pdf to \"$post_title\"
-  post_title=$(sed 's/,/\\,/g' <<< "$post_title")
-  post_title=$(iconv -f UTF-8 -t ISO-8859-15 <<< "$post_title")
-  sed -i "s,\(/Title \)\((Untitled)\),\1\($post_title\),g" build/$post.pdf
   cd ..
 
   # post artifacts copy

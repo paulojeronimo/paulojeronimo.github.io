@@ -1,14 +1,14 @@
-ifndef::backend-pdf[]
 = {postdir}
-endif::[]
 ifdef::backend-html5[]
 :basedir: ../..
 :nofooter:
+:toc-title: {doctitle}
 endif::[]
 :icons: font
 :imagesdir: {basedir}/images
 ifdef::backend-pdf[]
 :imagesdir: images
+:toc-title!:
 endif::[]
 :linkcss:
 :!copycss:
