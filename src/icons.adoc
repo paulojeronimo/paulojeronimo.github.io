@@ -1,11 +1,12 @@
 [.text-center.icons]
 {HomeLink}
-{TelegramLink}
 {BlogPostsLink}
+{SitemapLink}
+icon:i-cursor[2x]
 {WhatsAppLink}
+{TelegramLink}
 {LinkedInLink}
 {GitHubLink}
 {YouTubeLink}
-{SitemapLink}
 
 '''
