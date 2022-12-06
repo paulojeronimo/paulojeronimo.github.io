@@ -1,0 +1,6 @@
+:toc: left
+:figure-caption!:
+:numbered:
+:idprefix:
+:idseparator: -
+:sectanchors:

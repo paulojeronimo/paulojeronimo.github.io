@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.18">
+<title>bash-api-test</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="../../css/asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>bash-api-test</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">bash-api-test</div>
+<ul class="sectlevel1">
+<li><a href="#introdução">1. Introdução</a>
+<ul class="sectlevel2">
+<li><a href="#motivacoes">1.1. Minhas motivações na escrita deste framework</a></li>
+<li><a href="#a-ideia">1.2. O surgimento da ideia</a></li>
+</ul>
+</li>
+<li><a href="#tutorial">2. Tutorial: como testar uma API com o bash-api-test?</a>
+<ul class="sectlevel2">
+<li><a href="#no-termux">2.1. No Termux</a></li>
+<li><a href="#via-docker">2.2. Via Docker</a></li>
+</ul>
+</li>
+<li><a href="#frameworks-para-teste-de-apis">3. Frameworks para teste de APIs</a>
+<ul class="sectlevel2">
+<li><a href="#para-programadores-javascript">3.1. Para programadores JavaScript</a></li>
+<li><a href="#para-quem-gosta-de-shell">3.2. Para quem gosta de Shell</a></li>
+</ul>
+</li>
+<li><a href="#proximos-tutoriais">4. Próximos Tutoriais</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph text-center">
+<p><strong>Versão em PDF: <a href="/posts/bash-api-test.pdf">bash-api-test.pdf</a></strong><br></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../images/posts/bash-api-test/capa.png" alt="capa">
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="introdução"><a class="anchor" href="#introdução"></a>1. Introdução</h2>
+<div class="sectionbody">
+<div id="ferramentas" class="paragraph">
+<p>O <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noopener">Bash</a> se torna super poderoso para testes de APIs quando aliado a
+ferramentas como <a href="https://curl.se/" target="_blank" rel="noopener">curl</a>, <a href="https://httpie.io/" target="_blank" rel="noopener">httpie</a> e <a href="https://stedolan.github.io/jq/" target="_blank" rel="noopener">jq</a>.
+Ao escrever código com essa <em>stack</em>, você verá que ele é sucinto e
+eficiente para trabalhar com requisições e respostas na chamada a APIs.
+Conheça o <a href="https://github.com/paulojeronimo/bash-api-test" target="_blank" rel="noopener">bash-api-test</a>, um <em>framework</em> que te ajudará nisso.</p>
+</div>
+<div class="paragraph">
+<p><a href="#frameworks-para-teste-de-apis">Frameworks para teste de APIs</a> são numerosos nas linguagens de
+programação mais apropriadas para este finalidade.
+Eu confesso que, <a href="#para-programadores-javascript">Para programadores JavaScript</a> (ou Typescript),
+alguns <em>frameworks</em> ainda podem ser mais simples de serem usados
+do que esse que estou desenvolvendo.
+Porém, em se tratando de opções para teste de APIs via linha de comando,
+e <a href="#para-quem-gosta-de-shell">Para quem gosta de Shell</a>, essas <a href="#ferramentas">ferramentas</a> são incríveis!</p>
+</div>
+<div class="paragraph">
+<p>Quando surgiu-me <a href="#a-ideia">a ideia de desenvolver um <em>framework</em> que
+automatiza a execução de testes de APIs</a>, o que eu queria mesmo era
+responder a pergunta: <strong><span class="underline">será que eu consigo aprimorar meu
+conhecimento em Bash</span> enquanto desenvolvo scripts mais simples criar
+testes usando essas <a href="#ferramentas">ferramentas</a> que gosto?</strong>
+<a id="conhecimento-em-jq"></a> Nessa época faltava-me conhecimento em uma peça
+fundamental para escrever esse <em>framework</em>: o <a href="https://stedolan.github.io/jq/" target="_blank" rel="noopener">jq</a>.
+Mas, <a href="#desenvolvendo-habilidades-no-jq">desenvolvi minhas habilidades
+nele</a> e, hoje, isso tem sido peça chave na construção do
+<a href="https://github.com/paulojeronimo/bash-api-test" target="_blank" rel="noopener">bash-api-test</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="motivacoes"><a class="anchor" href="#motivacoes"></a>1.1. Minhas motivações na escrita deste framework</h3>
+<div id="testes-leves-e-rapidos" class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Testes leves e rápidos</strong>.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Até mesmo utilizando o <a href="https://github.com/termux/termux-app" target="_blank" rel="noopener">Termux</a> em meu celular.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div id="aprendizado" class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Aprendizado</strong>.<br>
+Eu posso te garantir que, mesmo desenvolvendo soluções em Bash há
+vários anos (desde 2007), todo vez que eu crio algo novo com ele eu
+aprendo, ainda, muito mais.
+Portanto, meu objetivo na construção desse framework é meu
+aperfeiçoamento tanto no Bash quanto <a href="#ferramentas">nessas ferramentas</a>
+Além disso, eu também espero conseguir te ajudar a entender um pouco
+mais sobre elas.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="a-ideia"><a class="anchor" href="#a-ideia"></a>1.2. O surgimento da ideia</h3>
+<div class="paragraph">
+<p>A ideia de criação deste framework surgiu em Junho de 2020 quando eu
+criei <a href="https://github.com/paulojeronimo/spring-boot-api-sample" target="_blank" rel="noopener">um exemplo de como utilizar essas
+ferramentas</a> na utilização de testes automatizados.
+<a id="desenvolvendo-habilidades-no-jq"></a> <a href="#conhecimento-em-jq">Como escrevi</a>,
+nesse tempo eu não dominava o <a href="https://stedolan.github.io/jq/" target="_blank" rel="noopener">jq</a>.
+Mas, comecei a trabalhar bastante com o ele para fazer testes de
+integração de APIs com o <a href="https://www.keycloak.org/" target="_blank" rel="noopener">Keycloak</a>, uma ferramenta que
+<a href="https://paulojeronimo.com/sitemap/#keycloak" target="_blank" rel="noopener">já me deu muito trabalho</a> (no
+bom sentido dessa expressão).</p>
+</div>
+<div class="paragraph">
+<p>Em fevereiro de 2021, <a href="https://paulojeronimo.com/cv/en/resume.html">trabalhei em um
+projeto na</a> <a href="https://oso.sh/" target="_blank" rel="noopener">OSO DevOps</a> no qual aprimorei bastante meu
+conhecimento no <a href="https://stedolan.github.io/jq/" target="_blank" rel="noopener">jq</a>.
+Para expressar um pouco desse conhecimento de forma pública, e me
+aprimorar um pouco mais, também <a href="https://github.com/paulojeronimo?tab=repositories&amp;q=jq" target="_blank" rel="noopener">desenvolvi
+alguns brinquedos</a>.</p>
+</div>
+<div class="paragraph">
+<p>Hoje eu sei o enorme poder que a junção dessas ferramentas oferece e,
+dessa forma, acho importante compartilhar esse
+<a href="#aprendizado">aprendizado</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="tutorial"><a class="anchor" href="#tutorial"></a>2. Tutorial: como testar uma API com o bash-api-test?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Neste primeiro tutorial (<a href="#proximos-tutoriais">de uma série</a>) eu te
+mostrarei como testar uma API utilizando o <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noopener">Bash</a> para excutar o
+<a href="https://github.com/paulojeronimo/bash-api-test" target="_blank" rel="noopener">bash-api-test</a> de duas formas diferentes.
+A primeira será no seu próprio celular, se ele for um Android.
+Você fará isso <a href="#no-termux">No Termux</a>.</p>
+</div>
+<div class="paragraph">
+<p>Outra forma que você poderá executar o <a href="https://github.com/paulojeronimo/bash-api-test" target="_blank" rel="noopener">bash-api-test</a>, neste tutorial,
+será <a href="#via-docker">Via Docker</a>.
+Em <a href="#proximos-tutoriais">Próximos Tutoriais</a> eu te explicarei, em detalhes, como escrever
+seus próprios testes para que eles sejam executados pelo
+<a href="https://github.com/paulojeronimo/bash-api-test" target="_blank" rel="noopener">bash-api-test</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="no-termux"><a class="anchor" href="#no-termux"></a>2.1. No Termux</h3>
+<div class="paragraph">
+<p>Copie e cole os comandos abaixo em seu shell.
+Se tiver dúvidas sobre como instalar o Termux ou sobre como executar os
+comandos abaixo dentro dele, veja <a href="#videos-termux">esses vídeos</a>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">source &lt;(curl -sSL https://raw.githubusercontent.com/paulojeronimo/bash-api-test/main/termux-setup.sh) v0.5.0</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Inicie o script <code>api-server.sh</code> em uma nova sessão <a href="https://github.com/tmux/tmux" target="_blank" rel="noopener">tmux</a> com esse
+comando:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>./api-server.sh start --with-tmux</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Esse comando abrirá o tmux com dois (2) paineis.
+O de baixo executará o <a href="https://github.com/typicode/json-server" target="_blank" rel="noopener">JSON Server</a> e uma API que testaremos.</p>
+</div>
+<div class="paragraph">
+<p>No painel de cima você testará essa API através do seguinte comando:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>./sample-tests.runner.sh</pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="vídeos"><a class="anchor" href="#vídeos"></a>2.1.1. Vídeos</h4>
+<div id="videos-termux" class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Instalação do Termux no Android.</p>
+</li>
+<li>
+<p>Configuração e execução do bash-api-test no Termux.</p>
+</li>
+</ol>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="via-docker"><a class="anchor" href="#via-docker"></a>2.2. Via Docker</h3>
+<div class="paragraph">
+<p>Você pode testar o <a href="https://github.com/paulojeronimo/bash-api-test" target="_blank" rel="noopener">bash-api-test</a> se tiver o <a href="https://www.docker.com/" target="_blank" rel="noopener">Docker</a> instalado em sua
+máquina.
+Particularmente eu, até o momento, só realizei testes utilizando o
+Docker que tenho instalado em um sistema operacional Ubuntu e em um
+macOS.
+Para utilizar o Windows, você deverá ter o <a href="https://learn.microsoft.com/en-us/windows/wsl/install" target="_blank" rel="noopener">WSL 2</a> instalado executando
+um Linux (além do Docker) e executar os procedimentos a seguir.</p>
+</div>
+<div class="paragraph">
+<p>Até mesmo para iniciar este projeto via Docker eu utilizo um script que
+desenvolvi, em <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noopener">Bash</a>, e que chamei de <a href="https://github.com/paulojeronimo/dotfiles/blob/master/.scripts/docker/docker-termux" target="_blank" rel="noopener">docker-termux</a>.</p>
+</div>
+<div class="paragraph">
+<p>O procedimento abaixo é ligeiramente diferente do que eu descrevo no
+<a href="https://github.com/paulojeronimo/bash-api-test" target="_blank" rel="noopener">README.adoc</a> do projeto (em
+inglês) e que está publicado também (em HTML) em
+<a href="https://paulojeronimo.com/bash-api-test/#through-docker" class="bare">https://paulojeronimo.com/bash-api-test/#through-docker</a>.</p>
+</div>
+<div class="paragraph">
+<p>Na prática, a forma que eu apresento a execução do projeto a seguir é
+interessante pois ela não te obriga a ter nenhuma outra ferramenta, além
+de um Bash (na versão igual ou superior a que vem instalada por padrão
+no macOS) e do <a href="https://www.docker.com/" target="_blank" rel="noopener">Docker</a>.
+Porém, quem já possui um ambiente de desenvolvimento instalado é
+beneficiado com o procedimento que descrevi no README.adoc do projeto
+<a href="https://github.com/paulojeronimo/bash-api-test" target="_blank" rel="noopener">bash-api-test</a>.</p>
+</div>
+<div class="paragraph">
+<p>De qualquer forma, vamos lá:</p>
+</div>
+<div class="paragraph">
+<p>Baixe o script <a href="https://github.com/paulojeronimo/dotfiles/blob/master/.scripts/docker/docker-termux" target="_blank" rel="noopener">docker-termux</a> em sua máquina e coloque-o em execução
+(ele criará um contêiner Docker que utilizo para testar, localmente em
+meu notebook e fora de um Android, minhas aplicações no <a href="https://github.com/termux/termux-app" target="_blank" rel="noopener">Termux</a>):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ curl -sSL
+https://raw.githubusercontent.com/paulojeronimo/dotfiles/master/.scripts/docker/docker-termux
+-o docker-termux
+
+$ ./docker-termux</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Após obter acesso ao shell do contêiner Docker você pode testar os
+mesmos passos que descrevo para a execução <a href="#no-termux">No Termux</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="vídeos-2"><a class="anchor" href="#vídeos-2"></a>2.2.1. Vídeos</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Programando fora da caixa com o Termux.</p>
+</li>
+<li>
+<p>Executando o bash-api-test via docker-termux.</p>
+</li>
+</ol>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="frameworks-para-teste-de-apis"><a class="anchor" href="#frameworks-para-teste-de-apis"></a>3. Frameworks para teste de APIs</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="para-programadores-javascript"><a class="anchor" href="#para-programadores-javascript"></a>3.1. Para programadores JavaScript</h3>
+<div id="jest-e-supertest" class="dlist">
+<dl>
+<dt class="hdlist1"><a href="https://jestjs.io/" target="_blank" rel="noopener">Jest</a> e <a href="https://github.com/ladjs/supertest" target="_blank" rel="noopener">SuperTest</a></dt>
+<dd>
+<p>Se você programa em JavaScript (ou TypeScript) e deseja utilizar o
+Jest unido ao SuperTest, essa é uma ótima opção! <span class="icon"><i class="fa fa-smile-o"></i></span><br></p>
+<div class="paragraph">
+<p>Com eles você terá ainda mais facilidade e rapidez na codificação de
+testes para APIs.</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="para-quem-gosta-de-shell"><a class="anchor" href="#para-quem-gosta-de-shell"></a>3.2. Para quem gosta de Shell</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://stackoverflow.com/questions/29042593/rest-api-testing-from-commandline" class="bare">https://stackoverflow.com/questions/29042593/rest-api-testing-from-commandline</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/melezhik/swat" class="bare">https://github.com/melezhik/swat</a></p>
+</li>
+<li>
+<p><a href="https://github.com/subeshb1/api-test" class="bare">https://github.com/subeshb1/api-test</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="proximos-tutoriais"><a class="anchor" href="#proximos-tutoriais"></a>4. Próximos Tutoriais</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>O objetivo dessa série de tutoriais é ajudá-lo a conhecer um pouco mais
+sobre a junção que cola todas as <a href="#ferramentas">ferramentas</a> no framework
+<a href="https://github.com/paulojeronimo/bash-api-test" target="_blank" rel="noopener">bash-api-test</a> (o <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noopener">Bash</a>) além de, obviamente, melhorar seus <em>skills</em>
+em todas elas.</p>
+</div>
+<div class="paragraph">
+<p>Caso deseje ser notificado da criação ou da atualiação desse conteúdo,
+por favor, assine meu canal no Telegram:
+<a href="https://t.me/paulojeronimo_com" class="bare">https://t.me/paulojeronimo_com</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

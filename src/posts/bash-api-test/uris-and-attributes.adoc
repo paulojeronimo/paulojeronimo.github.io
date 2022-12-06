@@ -1,0 +1,54 @@
+:PostTitle: Aprenda Bash, httpie e jq no Teste de APIs usando o bash-api-test em Android utilizando o Termux
+:PostDate: 6 de Dezembro de 2022
+
+// URIs
+:uri-bash-api-test: https://github.com/paulojeronimo/bash-api-test
+:uri-bash-api-test-termux-setup: https://raw.githubusercontent.com/paulojeronimo/bash-api-test/main/termux-setup.sh
+:uri-spring-boot-api-sample: https://github.com/paulojeronimo/spring-boot-api-sample
+:uri-paulojeronimo-en-resume: https://paulojeronimo.com/cv/en/resume.html
+:uri-paulojeronimo-posts-bash-test-api: https://paulojeronimo.com/posts/bash-test-api
+:uri-paulojeronimo-sitemap-keycloak: https://paulojeronimo.com/sitemap/#keycloak
+:uri-paulojeronimo-email-list: https://paulojeronimo.com/email-list
+:uri-paulojeronimo-telegram-channel: https://t.me/paulojeronimo_com
+:uri-paulojeronimo-bash-api-test-through-docker: https://paulojeronimo.com/bash-api-test/#through-docker
+:uri-github-paulojeronimo-bash-api-test: https://github.com/paulojeronimo/bash-api-test
+:uri-github-paulojeronimo-jq: https://github.com/paulojeronimo?tab=repositories&q=jq
+:uri-bash: https://www.gnu.org/software/bash/
+:uri-curl: https://curl.se/
+:uri-httpie: https://httpie.io/
+:uri-jq: https://stedolan.github.io/jq/
+:uri-termux: https://github.com/termux/termux-app
+:uri-keycloak: https://www.keycloak.org/
+:uri-jest: https://jestjs.io/
+:uri-supertest: https://github.com/ladjs/supertest
+:uri-asciidoctor: https://asciidoctor.org/
+:uri-docbook: https://docbook.org/
+:uri-pandoc: https://pandoc.org/
+:uri-gfm: https://github.github.com/gfm/
+:uri-tmux: https://github.com/tmux/tmux
+:uri-json-server: https://github.com/typicode/json-server
+:uri-docker: https://www.docker.com/
+:uri-docker-termux: https://github.com/paulojeronimo/dotfiles/blob/master/.scripts/docker/docker-termux
+:uri-wsl2: https://learn.microsoft.com/en-us/windows/wsl/install
+:uri-oso-devops: https://oso.sh/
+
+// External Attributes
+:bash-api-test: {uri-bash-api-test}[bash-api-test^]
+:Bash: {uri-bash}[Bash^]
+:Docker: {uri-docker}[Docker^]
+:curl: {uri-curl}[curl^]
+:tmux: {uri-tmux}[tmux^]
+:httpie: {uri-httpie}[httpie^]
+:jq: {uri-jq}[jq^]
+:Termux: {uri-termux}[Termux^]
+:Keycloak: {uri-keycloak}[Keycloak^]
+:Jest: {uri-jest}[Jest^]
+:SuperTest: {uri-supertest}[SuperTest^]
+:pandoc: {uri-pandoc}[pandoc^]
+:json-server: {uri-json-server}[JSON Server^]
+:docker-termux: {uri-docker-termux}[docker-termux^]
+:WSL2: {uri-wsl2}[WSL 2^]
+
+// Internal Attributes
+:ferramentas: <<ferramentas,ferramentas>>
+

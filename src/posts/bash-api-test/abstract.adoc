@@ -1,0 +1,7 @@
+[[ferramentas]]
+O {Bash} se torna super poderoso para testes de APIs quando aliado a
+ferramentas como {curl}, {httpie} e {jq}.
+Ao escrever código com essa _stack_, você verá que ele é sucinto e
+eficiente para trabalhar com requisições e respostas na chamada a APIs.
+Conheça o {bash-api-test}, um _framework_ que te ajudará nisso.
+

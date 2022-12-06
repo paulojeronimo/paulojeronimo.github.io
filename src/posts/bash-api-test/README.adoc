@@ -1,0 +1,210 @@
+include::common/header.adoc[]
+
+<<<
+== Introdução
+
+include::abstract.adoc[]
+
+ifdef::backend-docbook5[]
+*NOTA*: Este documento foi convertido (via {pandoc}) de
+{uri-asciidoctor}[AsciiDoc^] para {uri-docbook}[DocBook^] e, por fim,
+para {uri-gfm}[GitHub Flavored Markdown^] (o formato menos rico desses
+três).
+Essa conversão, infelizmente, perde detalhes em formatação e deixa
+alguns links quebrados.
+Então, para ver este documento renderizado sem imperfeições, acesse
+{uri-paulojeronimo-posts-bash-test-api}
+endif::[]
+
+<<frameworks-para-teste-de-apis>> são numerosos nas linguagens de
+programação mais apropriadas para este finalidade.
+Eu confesso que, <<para-programadores-javascript>> (ou Typescript),
+alguns _frameworks_ ainda podem ser mais simples de serem usados
+do que esse que estou desenvolvendo.
+Porém, em se tratando de opções para teste de APIs via linha de comando,
+e <<para-quem-gosta-de-shell>>, essas {ferramentas} são incríveis!
+
+Quando surgiu-me <<a-ideia,a ideia de desenvolver um _framework_ que
+automatiza a execução de testes de APIs>>, o que eu queria mesmo era
+responder a pergunta: *[.underline]#será que eu consigo aprimorar meu
+conhecimento em Bash# enquanto desenvolvo scripts mais simples criar
+testes usando essas {ferramentas} que gosto?*
+[[conhecimento-em-jq]] Nessa época faltava-me conhecimento em uma peça
+fundamental para escrever esse _framework_: o {jq}.
+Mas, <<desenvolvendo-habilidades-no-jq,desenvolvi minhas habilidades
+nele>> e, hoje, isso tem sido peça chave na construção do
+{bash-api-test}.
+
+[[motivacoes]]
+=== Minhas motivações na escrita deste framework
+
+[[testes-leves-e-rapidos]]
+. *Testes leves e rápidos*.
+.. Até mesmo utilizando o {Termux} em meu celular.
+
+[[aprendizado]]
+. *Aprendizado*. +
+Eu posso te garantir que, mesmo desenvolvendo soluções em Bash há
+vários anos (desde 2007), todo vez que eu crio algo novo com ele eu
+aprendo, ainda, muito mais.
+Portanto, meu objetivo na construção desse framework é meu
+aperfeiçoamento tanto no Bash quanto <<ferramentas, nessas ferramentas>>
+Além disso, eu também espero conseguir te ajudar a entender um pouco
+mais sobre elas.
+
+[[a-ideia]]
+=== O surgimento da ideia
+
+A ideia de criação deste framework surgiu em Junho de 2020 quando eu
+criei {uri-spring-boot-api-sample}[um exemplo de como utilizar essas
+ferramentas^] na utilização de testes automatizados.
+[[desenvolvendo-habilidades-no-jq]] <<conhecimento-em-jq,Como escrevi>>,
+nesse tempo eu não dominava o {jq}.
+Mas, comecei a trabalhar bastante com o ele para fazer testes de
+integração de APIs com o {Keycloak}, uma ferramenta que
+{uri-paulojeronimo-sitemap-keycloak}[já me deu muito trabalho^] (no
+bom sentido dessa expressão).
+
+Em fevereiro de 2021, {uri-paulojeronimo-en-resume}[trabalhei em um
+projeto na] {uri-oso-devops}[OSO DevOps^] no qual aprimorei bastante meu
+conhecimento no {jq}.
+Para expressar um pouco desse conhecimento de forma pública, e me
+aprimorar um pouco mais, também {uri-github-paulojeronimo-jq}[desenvolvi
+alguns brinquedos^].
+
+Hoje eu sei o enorme poder que a junção dessas ferramentas oferece e,
+dessa forma, acho importante compartilhar esse
+<<aprendizado,aprendizado>>.
+
+[[tutorial]]
+== Tutorial: como testar uma API com o bash-api-test?
+
+Neste primeiro tutorial (<<proximos-tutoriais,de uma série>>) eu te
+mostrarei como testar uma API utilizando o {Bash} para excutar o
+{bash-api-test} de duas formas diferentes.
+A primeira será no seu próprio celular, se ele for um Android.
+Você fará isso <<no-termux>>.
+
+Outra forma que você poderá executar o {bash-api-test}, neste tutorial,
+será <<via-docker>>.
+Em <<proximos-tutoriais>> eu te explicarei, em detalhes, como escrever
+seus próprios testes para que eles sejam executados pelo
+{bash-api-test}.
+
+[[no-termux]]
+=== No Termux
+
+Copie e cole os comandos abaixo em seu shell.
+Se tiver dúvidas sobre como instalar o Termux ou sobre como executar os
+comandos abaixo dentro dele, veja <<videos-termux,esses vídeos>>.
+
+[source,bash,subs="attributes+"]
+----
+source <(curl -sSL {uri-bash-api-test-termux-setup}) v0.5.0
+----
+
+Inicie o script `api-server.sh` em uma nova sessão {tmux} com esse
+comando:
+
+----
+./api-server.sh start --with-tmux
+----
+
+Esse comando abrirá o tmux com dois (2) paineis.
+O de baixo executará o {json-server} e uma API que testaremos.
+
+No painel de cima você testará essa API através do seguinte comando:
+
+----
+./sample-tests.runner.sh
+----
+
+==== Vídeos
+
+[[videos-termux]]
+. Instalação do Termux no Android.
+. Configuração e execução do bash-api-test no Termux.
+
+<<<
+[[via-docker]]
+=== Via Docker
+
+Você pode testar o {bash-api-test} se tiver o {Docker} instalado em sua
+máquina.
+Particularmente eu, até o momento, só realizei testes utilizando o
+Docker que tenho instalado em um sistema operacional Ubuntu e em um
+macOS.
+Para utilizar o Windows, você deverá ter o {WSL2} instalado executando
+um Linux (além do Docker) e executar os procedimentos a seguir.
+
+Até mesmo para iniciar este projeto via Docker eu utilizo um script que
+desenvolvi, em {Bash}, e que chamei de {docker-termux}.
+
+O procedimento abaixo é ligeiramente diferente do que eu descrevo no
+{uri-github-paulojeronimo-bash-api-test}[README.adoc^] do projeto (em
+inglês) e que está publicado também (em HTML) em
+{uri-paulojeronimo-bash-api-test-through-docker}.
+
+Na prática, a forma que eu apresento a execução do projeto a seguir é
+interessante pois ela não te obriga a ter nenhuma outra ferramenta, além
+de um Bash (na versão igual ou superior a que vem instalada por padrão
+no macOS) e do {Docker}.
+Porém, quem já possui um ambiente de desenvolvimento instalado é
+beneficiado com o procedimento que descrevi no README.adoc do projeto
+{bash-api-test}.
+
+De qualquer forma, vamos lá:
+
+Baixe o script {docker-termux} em sua máquina e coloque-o em execução
+(ele criará um contêiner Docker que utilizo para testar, localmente em
+meu notebook e fora de um Android, minhas aplicações no {Termux}):
+
+----
+$ curl -sSL
+https://raw.githubusercontent.com/paulojeronimo/dotfiles/master/.scripts/docker/docker-termux
+-o docker-termux
+
+$ ./docker-termux
+----
+
+Após obter acesso ao shell do contêiner Docker você pode testar os
+mesmos passos que descrevo para a execução <<no-termux>>.
+
+==== Vídeos
+
+. Programando fora da caixa com o Termux.
+. Executando o bash-api-test via docker-termux.
+
+<<<
+[[frameworks-para-teste-de-apis]]
+== Frameworks para teste de APIs
+
+[[para-programadores-javascript]]
+=== Para programadores JavaScript
+
+[[jest-e-supertest]]
+{Jest} e {SuperTest}::
+Se você programa em JavaScript (ou TypeScript) e deseja utilizar o
+Jest unido ao SuperTest, essa é uma ótima opção! icon:smile-o[] +
++
+Com eles você terá ainda mais facilidade e rapidez na codificação de
+testes para APIs.
+
+[[para-quem-gosta-de-shell]]
+=== Para quem gosta de Shell
+
+* https://stackoverflow.com/questions/29042593/rest-api-testing-from-commandline
+** https://github.com/melezhik/swat
+** https://github.com/subeshb1/api-test
+
+[[proximos-tutoriais]]
+== Próximos Tutoriais
+
+O objetivo dessa série de tutoriais é ajudá-lo a conhecer um pouco mais
+sobre a junção que cola todas as {ferramentas} no framework
+{bash-api-test} (o {Bash}) além de, obviamente, melhorar seus _skills_
+em todas elas.
+
+Caso deseje ser notificado da criação ou da atualiação desse conteúdo,
+por favor, assine meu canal no Telegram:
+{uri-paulojeronimo-telegram-channel}.
