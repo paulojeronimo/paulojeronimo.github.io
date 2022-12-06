@@ -38,7 +38,6 @@ Mas, além disso, *eu estou participando de uma {uri-web3dev}[comunidade
 brasileira de desenvolvedores (bem animada) chamada web3dev]* e, também.
 desenvolvendo alguns conteúdos para ela.
 
-<<<
 include::abstract.adoc[]
 
 NOTE: Observe que todos os números que citei na frase anterior são

@@ -40,7 +40,7 @@ atingirem suas metas. icon:smile-o[]*
 ifdef::backend-html5[]
 '''
 endif::[]
-<<<
+
 [[edicoes-apos-publicacao]]
 .{EdicoesAposPublicacao}:
 ****

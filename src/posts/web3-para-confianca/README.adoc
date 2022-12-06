@@ -36,7 +36,6 @@ Isso está em seu currículo.
 já te reconheceu como diferenciado no mercado, seria, no mínimo, que a
 sua inserção em novos projetos fosse algo lhe gerasse *pouco estresse*.
 
-<<<
 [[estresse]]
 *Você não espera ter que provar o seu conhecimento em algo que você já
 trabalha, diariamente, em um desafio elaborado por um cliente do seu
@@ -107,7 +106,6 @@ rede do *Bitcoin*.
 *O futuro dos intermediadores que não agregam valor está claro:
 deixarão de existir.*
 
-<<<
 Participe do https://blockchainrio.com.br/[Blockchain Rio], o maior
 evento sobre Blockchain da América Latina.
 Eu estarei presente nele!
