@@ -13,18 +13,24 @@ endif::[]
 :linkcss:
 :!copycss:
 :stylesdir: {basedir}/css
+:docinfodir: {basedir}
+:docinfo: shared
 include::../header.adoc[]
+:srcdir: ../../../../src
 
-include::../../../../src/uris-and-attributes.adoc[]
+include::{srcdir}/uris-and-attributes.adoc[]
 include::../uris-and-attributes.adoc[]
 :EdicoesAposPublicacao: Edições após a publicação deste texto
 
 ifdef::postdir[]
-[.text-center]
 ifdef::backend-html5[]
+include::{srcdir}/icons.adoc[]
+
+[.text-center]
 *Versão em PDF: link:/posts/{postdir}.pdf[{postdir}.pdf]* +
 endif::[]
 ifdef::backend-pdf[]
+[.text-center]
 *Versão online: {uri-pj}/posts/{postdir}*
 endif::[]
 

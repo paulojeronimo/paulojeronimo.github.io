@@ -1,5 +1,6 @@
 [.text-center.icons]
 {HomeLink}
+{TelegramLink}
 {BlogPostsLink}
 {WhatsAppLink}
 {LinkedInLink}

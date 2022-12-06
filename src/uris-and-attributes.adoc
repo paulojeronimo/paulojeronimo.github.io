@@ -9,6 +9,7 @@
 :uri-pj-linkedin: https://www.linkedin.com/in/paulojeronimo/
 :uri-pj-youtube: https://www.youtube.com/~paulojeronimo
 :uri-pj-whatsapp: https://wa.me/5561998073864
+:uri-pj-telegram: https://t.me/paulojeronimo_com
 :uri-pj-sitemap: {uri-pj}/sitemap
 :uri-pj-email: mailto:paulojeronimo@gmail.com
 :uri-pj-skype: https://join.skype.com/invite/nepGdOPZU0Nt
@@ -26,6 +27,8 @@
 :FinishersDAO: {uri-finishersdao}[Finishers.DAO^]
 :HomeIcon: icon:home[2x]
 :HomeLink: link:/[{HomeIcon}]
+:TelegramIcon: icon:telegram[2x]
+:TelegramLink: {uri-pj-telegram}[{TelegramIcon}]
 :BlogPostsIcon: icon:rss[2x]
 :BlogPostsLink: link:/posts[{BlogPostsIcon}]
 :GitHubIcon: icon:github[2x]
