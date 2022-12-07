@@ -7,7 +7,6 @@
 :nofooter:
 :docinfodir: {basedir}
 :docinfo: shared
-
 include::{basedir}/uris-and-attributes.adoc[]
 :pt-br-post: pt-br
 :english-post: en

@@ -1,3 +1,6 @@
+// NOTE: DO NOT INSERT BLANK LINES ON THIS FILE!
+//       IF A BLANK LINE WAS DESIRED, START IT WITH A COMMENT
+// URIs
 :uri-pj: https://paulojeronimo.com
 :uri-pj-cv: {uri-pj}/cv/en
 :uri-pj-resume: {uri-pj}/cv/en/resume.html
@@ -21,7 +24,7 @@
 :uri-finishersdao: https://finisher.tech/dao
 :uri-finishersdao-desafio1: https://finisher.tech/dao/finisher-tech-desafio1.html
 :uri-saudeecripto: https://finisher.tech/saudeecripto.pdf
-
+// Attributes
 :pt-br: https://en.wikipedia.org/wiki/Brazilian_Portuguese[pt-br^]
 :en: https://en.wikipedia.org/wiki/English_language[en^]
 :FinishersDAO: {uri-finishersdao}[Finishers.DAO^]
@@ -44,3 +47,8 @@
 :LinkedInLink: {uri-pj-linkedin}[{LinkedInIcon}^]
 :YouTubeIcon: icon:youtube[2x]
 :YouTubeLink: {uri-pj-youtube}[{YouTubeIcon}^]
+// Operational Attributes
+:og-url: https://paulojeronimo.com
+:og-image: {og-url}/images/pj-2.jpg
+:og-title: Paulo Jerônimo's website
+:og-type: website

@@ -1,6 +1,3 @@
-:PostTitle: Aprenda Bash, httpie e jq no Teste de APIs usando o bash-api-test em Android utilizando o Termux
-:PostDate: 6 de Dezembro de 2022
-
 // URIs
 :uri-bash-api-test: https://github.com/paulojeronimo/bash-api-test
 :uri-bash-api-test-termux-setup: https://raw.githubusercontent.com/paulojeronimo/bash-api-test/main/termux-setup.sh
@@ -31,7 +28,9 @@
 :uri-docker-termux: https://github.com/paulojeronimo/dotfiles/blob/master/.scripts/docker/docker-termux
 :uri-wsl2: https://learn.microsoft.com/en-us/windows/wsl/install
 :uri-oso-devops: https://oso.sh/
-
+// Operational Attributes
+:PostTitle: Aprenda Bash, httpie e jq no Teste de APIs usando o bash-api-test em Android utilizando o Termux
+:PostDate: 6 de Dezembro de 2022
 // External Attributes
 :bash-api-test: {uri-bash-api-test}[bash-api-test^]
 :Bash: {uri-bash}[Bash^]
@@ -48,7 +47,5 @@
 :json-server: {uri-json-server}[JSON Server^]
 :docker-termux: {uri-docker-termux}[docker-termux^]
 :WSL2: {uri-wsl2}[WSL 2^]
-
 // Internal Attributes
 :ferramentas: <<ferramentas,ferramentas>>
-

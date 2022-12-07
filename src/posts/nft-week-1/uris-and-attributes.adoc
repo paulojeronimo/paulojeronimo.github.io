@@ -1,9 +1,6 @@
-:uri-saudeecripto: https://bio.link/saudeecripto
-:uri-odysee: https://odysee.com/@paulojeronimo/
+// URIs
 :uri-nft-pt: https://pt.wikipedia.org/wiki/Token_n%C3%A3o_fung%C3%ADvel
 :uri-tecnologia-disruptiva: https://pt.wikipedia.org/wiki/Tecnologia_disruptiva
-
+// Operational Attributes
 :PostDate: 14 de Junho de 2022
 :PostTitle: Non-Fungible Token (NFT) para pesssoas da área de negócios
-:SaudeECripto: {uri-saudeecripto}[Saúde e Cripto]
-:PauloJeronimo: {uri-odysee}[Paulo Jerônimo]
