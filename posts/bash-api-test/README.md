@@ -81,7 +81,7 @@ Após obter acesso ao shell do contêiner Docker você pode testar os mesmos pas
 
 ### Vídeos
 
-1.  [Desenvolvimento Mobile NÃO CONVENCIONAL utilizando o Termux](https://youtu.be/tZc3jQRC-Cw)
+1.  [Desenvolvimento Mobile NÃO CONVENCIONAL utilizando o Termux](https://youtu.be/tZc3jQRC-Cw).
 
 2.  Executando o bash-api-test via docker-termux. (← TODO)
 
