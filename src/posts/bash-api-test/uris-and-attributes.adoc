@@ -3,7 +3,7 @@
 :uri-bash-api-test-termux-setup: https://raw.githubusercontent.com/paulojeronimo/bash-api-test/main/termux-setup.sh
 :uri-spring-boot-api-sample: https://github.com/paulojeronimo/spring-boot-api-sample
 :uri-paulojeronimo-en-resume: https://paulojeronimo.com/cv/en/resume.html
-:uri-paulojeronimo-posts-bash-test-api: https://paulojeronimo.com/posts/bash-test-api
+:uri-paulojeronimo-posts-bash-api-test: https://paulojeronimo.com/posts/bash-api-test
 :uri-paulojeronimo-sitemap-keycloak: https://paulojeronimo.com/sitemap/#keycloak
 :uri-paulojeronimo-email-list: https://paulojeronimo.com/email-list
 :uri-paulojeronimo-telegram-channel: https://t.me/paulojeronimo_com

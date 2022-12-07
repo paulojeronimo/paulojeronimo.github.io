@@ -2,7 +2,7 @@
 
 O [Bash](https://www.gnu.org/software/bash/) se torna super poderoso para testes de APIs quando aliado a ferramentas como [curl](https://curl.se/), [httpie](https://httpie.io/) e [jq](https://stedolan.github.io/jq/). Ao escrever código com essa *stack*, você verá que ele é sucinto e eficiente para trabalhar com requisições e respostas na chamada a APIs. Conheça o [bash-api-test](https://github.com/paulojeronimo/bash-api-test), um *framework* que te ajudará nisso.
 
-**NOTA**: Este documento foi convertido (via [pandoc](https://pandoc.org/)) de [AsciiDoc](https://asciidoctor.org/) para [DocBook](https://docbook.org/) e, por fim, para [GitHub Flavored Markdown](https://github.github.com/gfm/) (o formato menos rico desses três). [Essa conversão](https://paulojeronimo.com/posts/bash-test-api/README.md), infelizmente, perde detalhes em formatação e deixa alguns links quebrados. Então, para ver este documento renderizado sem imperfeições, acesse <https://paulojeronimo.com/posts/bash-test-api>.
+**NOTA**: Este documento foi convertido (via [pandoc](https://pandoc.org/)) de [AsciiDoc](https://asciidoctor.org/) para [DocBook](https://docbook.org/) e, por fim, para [GitHub Flavored Markdown](https://github.github.com/gfm/) (o formato menos rico desses três). [Essa conversão](https://paulojeronimo.com/posts/bash-api-test/README.md), infelizmente, perde detalhes em formatação e deixa alguns links quebrados. Então, para ver este documento renderizado sem imperfeições, acesse <https://paulojeronimo.com/posts/bash-api-test>.
 
 [Frameworks para teste de APIs](#frameworks-para-teste-de-apis) são numerosos nas linguagens de programação mais apropriadas para este finalidade. Eu confesso que, [Para programadores JavaScript](#para-programadores-javascript) (ou Typescript), alguns *frameworks* ainda podem ser mais simples de serem usados do que esse que estou desenvolvendo. Porém, em se tratando de opções para teste de APIs via linha de comando, e [Para quem gosta de Shell](#para-quem-gosta-de-shell), essas [ferramentas](#ferramentas) são incríveis\!
 
@@ -90,7 +90,7 @@ Após obter acesso ao shell do contêiner Docker você pode testar os mesmos pas
 ## Para programadores JavaScript
 
   - [Jest](https://jestjs.io/) e [SuperTest](https://github.com/ladjs/supertest)  
-    Se você programa em JavaScript (ou TypeScript) e deseja utilizar o Jest unido ao SuperTest, essa é uma ótima opção\! ![smile o](./images/icons/smile-o.png)  
+    Se você programa em JavaScript (ou TypeScript) e deseja utilizar o Jest unido ao SuperTest, essa é uma ótima opção\!  
     
     Com eles você terá ainda mais facilidade e rapidez na codificação de testes para APIs.
 

@@ -10,11 +10,11 @@ ifdef::backend-docbook5[]
 {uri-asciidoctor}[AsciiDoc^] para {uri-docbook}[DocBook^] e, por fim,
 para {uri-gfm}[GitHub Flavored Markdown^] (o formato menos rico desses
 três).
-{uri-paulojeronimo-posts-bash-test-api}/README.md[Essa conversão^],
+{uri-paulojeronimo-posts-bash-api-test}/README.md[Essa conversão^],
 infelizmente, perde detalhes em formatação e deixa alguns links
 quebrados.
 Então, para ver este documento renderizado sem imperfeições, acesse
-{uri-paulojeronimo-posts-bash-test-api}.
+{uri-paulojeronimo-posts-bash-api-test}.
 endif::[]
 
 <<frameworks-para-teste-de-apis>> são numerosos nas linguagens de
@@ -187,7 +187,7 @@ mesmos passos que descrevo para a execução <<no-termux>>.
 [[jest-e-supertest]]
 {Jest} e {SuperTest}::
 Se você programa em JavaScript (ou TypeScript) e deseja utilizar o
-Jest unido ao SuperTest, essa é uma ótima opção! icon:smile-o[] +
+Jest unido ao SuperTest, essa é uma ótima opção! +
 +
 Com eles você terá ainda mais facilidade e rapidez na codificação de
 testes para APIs.
