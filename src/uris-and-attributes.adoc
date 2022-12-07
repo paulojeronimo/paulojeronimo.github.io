@@ -24,6 +24,7 @@
 :uri-finishersdao: https://finisher.tech/dao
 :uri-finishersdao-desafio1: https://finisher.tech/dao/finisher-tech-desafio1.html
 :uri-saudeecripto: https://finisher.tech/saudeecripto.pdf
+:uri-bash: https://www.gnu.org/software/bash/
 // Attributes
 :pt-br: https://en.wikipedia.org/wiki/Brazilian_Portuguese[pt-br^]
 :en: https://en.wikipedia.org/wiki/English_language[en^]
@@ -47,6 +48,7 @@
 :LinkedInLink: {uri-pj-linkedin}[{LinkedInIcon}^]
 :YouTubeIcon: icon:youtube[2x]
 :YouTubeLink: {uri-pj-youtube}[{YouTubeIcon}^]
+:Bash: {uri-bash}[Bash^]
 // Operational Attributes
 :og-url: https://paulojeronimo.com
 :og-image: {og-url}/images/pj-2.jpg

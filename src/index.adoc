@@ -13,11 +13,11 @@ include::uris-and-attributes.adoc[]
 include::icons.adoc[]
 
 [.left.text-center.rounded]
-image::{main-image}[width=40%]
+image::{og-image}[width=40%]
 
 Hi! *[red]#My name is {author}#*.
 Welcome to my *straightforward website* (almost entirely text-based and
-written in {uri-what-is-asciidoc}[AsciiDoc format^]).
+written in {uri-what-is-asciidoc}[AsciiDoc format^]) and {Bash}.
 [green]#{uri-pj-github-website}[Here is the code of this site^] if you
 are interested in it#.
 
@@ -62,5 +62,3 @@ Brazilian Portuguese at this moment)_. +
 [[remark]] After a stop in my workouts, today, I'm a *-> {revremark} <-*
 {uri-finishersdao-desafio1}[(read more about this)^].
 ****
-
-

@@ -26,6 +26,22 @@ _clean() {
     -delete
 }
 
+_all() {
+  echo_and_do() {
+    echo '----- BEGIN' \"$1\" -----
+    eval "$1"
+    echo '-----   END' \"$1\" -----
+    echo
+  }
+  cd src
+  for op in links index.{yaml,adoc}
+  do
+    echo_and_do "./posts/build.sh $op"
+  done
+  echo_and_do $0
+  echo_and_do "./posts/build.sh all"
+}
+
 ###########
 # main code
 ###########

@@ -26,6 +26,7 @@ src_dir=..; source $src_dir/common.sh
 [ $# = 1 -o $# = 2 ] || { cat "$usage_file"; exit 0; }
 if [[ $1 =~ ^index\.(yaml|adoc)?$ ]]
 then
+  ! [ "$1" = index.adoc ] || ./generate-mini.sh
   ./$1.sh
   exit $?
 fi
@@ -58,8 +59,8 @@ do
     rsync -a --delete ../$BASE_DIR/images ./
   else
     rm -rf common images
-    ln -s ../common
-    ln -s ../$BASE_DIR/images
+    ln -sf ../common
+    ln -sf ../$BASE_DIR/images
   fi
 
   ! [ "${2:-}" = links ] || { cd ..; continue; }

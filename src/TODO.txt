@@ -1,6 +1,6 @@
-1) Build the entire site with a unique call to build.sh
+OK -> 1) Build the entire site with a unique call to build.sh
 2) Fix: a call to './posts/build.sh all' should also call './posts/build.sh index.adoc'
-3) (Related to 1): Fix the current order to call the scripts to build the entire site which is:
+OK -> 3) (Related to 1): Fix the current order to call the scripts to build the entire site which is:
 ----
-./posts/build.sh index.adoc; ./build.sh ./posts/build.sh all
+./posts/build.sh index.{yaml,adoc}; ./build.sh ./posts/build.sh all
 ----   
