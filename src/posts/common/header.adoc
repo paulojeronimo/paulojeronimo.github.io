@@ -19,8 +19,9 @@ include::../header.adoc[]
 :srcdir: ../../../../src
 include::{srcdir}/uris-and-attributes.adoc[]
 // rewrite og-image (defined on the file above)
-:og-url: https://paulojeronimo.com/posts/{postdir}
-:og-image: {og-url}/capa.png
+:base-url: {og-url}
+:og-url: {base-url}/posts/{postdir}
+:og-image: {base-url}/images/posts/{postdir}/capa.png
 :og-image-type: image/png
 :og-image-width: 1280
 :og-image-height: 720
