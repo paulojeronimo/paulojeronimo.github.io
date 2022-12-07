@@ -10,10 +10,11 @@ ifdef::backend-docbook5[]
 {uri-asciidoctor}[AsciiDoc^] para {uri-docbook}[DocBook^] e, por fim,
 para {uri-gfm}[GitHub Flavored Markdown^] (o formato menos rico desses
 três).
-Essa conversão, infelizmente, perde detalhes em formatação e deixa
-alguns links quebrados.
+{uri-paulojeronimo-posts-bash-test-api}/README.md[Essa conversão^],
+infelizmente, perde detalhes em formatação e deixa alguns links
+quebrados.
 Então, para ver este documento renderizado sem imperfeições, acesse
-{uri-paulojeronimo-posts-bash-test-api}
+{uri-paulojeronimo-posts-bash-test-api}.
 endif::[]
 
 <<frameworks-para-teste-de-apis>> são numerosos nas linguagens de
@@ -122,8 +123,8 @@ No painel de cima você testará essa API através do seguinte comando:
 ==== Vídeos
 
 [[videos-termux]]
-. Instalação do Termux no Android.
-. Configuração e execução do bash-api-test no Termux.
+. Instalação do Termux no Android. (<- TODO)
+. Configuração e execução do bash-api-test no Termux. (<- TODO)
 
 <<<
 [[via-docker]]
@@ -172,8 +173,9 @@ mesmos passos que descrevo para a execução <<no-termux>>.
 
 ==== Vídeos
 
-. Programando fora da caixa com o Termux.
-. Executando o bash-api-test via docker-termux.
+. {uri-termux-video1}[Desenvolvimento Mobile NÃO CONVENCIONAL
+  utilizando o Termux^]
+. Executando o bash-api-test via docker-termux. (<- TODO)
 
 <<<
 [[frameworks-para-teste-de-apis]]

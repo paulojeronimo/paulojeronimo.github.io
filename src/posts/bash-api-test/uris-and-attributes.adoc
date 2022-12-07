@@ -15,6 +15,7 @@
 :uri-httpie: https://httpie.io/
 :uri-jq: https://stedolan.github.io/jq/
 :uri-termux: https://github.com/termux/termux-app
+:uri-termux-video1: https://youtu.be/tZc3jQRC-Cw
 :uri-keycloak: https://www.keycloak.org/
 :uri-jest: https://jestjs.io/
 :uri-supertest: https://github.com/ladjs/supertest

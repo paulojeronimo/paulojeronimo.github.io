@@ -65,8 +65,13 @@ do
 
   ! [ "${2:-}" = links ] || { cd ..; continue; }
 
-  GENERATE_PDF=true docker-asciidoctor-builder -a postdir=$post \
-    -a og-description="'$(<abstract.txt)'"
+  attrs="-a postdir=$post -a og-description='$(<abstract.txt)'"
+  if [ -x build.sh ]
+  then
+    ./build.sh "$attrs"
+  else
+    GENERATE_PDF=true docker-asciidoctor-builder $attrs
+  fi
 
   cd ..
 
