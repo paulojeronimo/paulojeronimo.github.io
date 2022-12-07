@@ -52,5 +52,8 @@
 // Operational Attributes
 :og-url: https://paulojeronimo.com
 :og-image: {og-url}/images/pj-2.jpg
+:og-image-type: image/jpeg
+:og-image-width: 644
+:og-image-height: 644
 :og-title: Paulo Jerônimo's website
 :og-type: website

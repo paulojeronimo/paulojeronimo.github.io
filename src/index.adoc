@@ -9,6 +9,7 @@ v1.0.0, {localdatetime}: 15 km running challenger
 :nofooter:
 :docinfo2:
 include::uris-and-attributes.adoc[]
+:og-description: Home page
 
 include::icons.adoc[]
 

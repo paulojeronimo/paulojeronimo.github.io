@@ -9,3 +9,5 @@ do
   echo Generating \"$d/capa.mini.png\" ...
   convert -resize 15% $d/capa.png $d/capa.mini.png
 done
+
+#find images/ -type f -name capa.png | xargs identify

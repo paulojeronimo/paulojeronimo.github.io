@@ -1,6 +1,7 @@
-OK -> 1) Build the entire site with a unique call to build.sh
-2) Fix: a call to './posts/build.sh all' should also call './posts/build.sh index.adoc'
-OK -> 3) (Related to 1): Fix the current order to call the scripts to build the entire site which is:
+#1 OK -> Build the entire site with a unique call to build.sh
+Fix: a call to './posts/build.sh all' should also call './posts/build.sh index.adoc'
+OK -> (Related to &1): Fix the current order to call the scripts to build the entire site which is:
 ----
 ./posts/build.sh index.{yaml,adoc}; ./build.sh ./posts/build.sh all
 ----   
+If the README.adoc in post is more recent than index.yaml, then we need to rebuild this last file and generate index.adoc again

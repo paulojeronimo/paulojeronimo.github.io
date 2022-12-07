@@ -1,5 +1,12 @@
 # vim: syntax=bash
 
+echo-and-do() {
+  echo '----- BEGIN' \"$1\" -----
+  eval "$1"
+  echo '-----   END' \"$1\" -----
+  echo
+}
+
 get-post-title() {
   local f=${1:-uris-and-attributes.adoc}
   grep '^:PostTitle:' $f | cut -d: -f3 | xargs
@@ -82,6 +89,9 @@ create-yaml() {
 
   local post_abstract=$(asciidoctor --no-header -o - $abstract_doc_adoc_file \
     | sed -e 's/<[^>]*>//g' | xargs)
+
+  echo Generating file \"$post_id/abstract.txt\" ...
+  echo "$post_abstract" > $post_id/abstract.txt
 
   get-mo; . mo
   mo < index.yaml.mo >> $index_yaml_file

@@ -21,6 +21,9 @@ include::{srcdir}/uris-and-attributes.adoc[]
 // rewrite og-image (defined on the file above)
 :og-url: https://paulojeronimo.com/posts/{postdir}
 :og-image: {og-url}/capa.png
+:og-image-type: image/png
+:og-image-width: 1280
+:og-image-height: 720
 :og-type: article
 // URIs (common to all posts)
 :uri-saudeecripto: https://bio.link/saudeecripto

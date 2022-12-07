@@ -11,11 +11,8 @@ src_dir=src; source $src_dir/common.sh
 ####################
 
 _build() {
-  # https://github.com/paulojeronimo/dotfiles/blob/master/.scripts/docker/docker-asciidoctor
-  docker-asciidoctor -D $html_dir $doc
-
-  # blog posts page:
-  asciidoctor -D $html_dir/posts src/posts/index.adoc
+  echo-and-do "docker-asciidoctor -D $html_dir $doc"
+  echo-and-do "asciidoctor -D $html_dir/posts src/posts/index.adoc"
 }
 
 _clean() {
@@ -27,25 +24,20 @@ _clean() {
 }
 
 _all() {
-  echo_and_do() {
-    echo '----- BEGIN' \"$1\" -----
-    eval "$1"
-    echo '-----   END' \"$1\" -----
-    echo
-  }
   cd src
   for op in links index.{yaml,adoc}
   do
-    echo_and_do "./posts/build.sh $op"
+    echo-and-do "./posts/build.sh $op"
   done
-  echo_and_do $0
-  echo_and_do "./posts/build.sh all"
+  (cd "$BASE_DIR"; _build)
+  echo-and-do "./posts/build.sh all"
 }
 
 ###########
 # main code
 ###########
 
+echo -e "BASE_DIR=$BASE_DIR\n"
 op=${1:-build}
 type _$op &> /dev/null || exit 1
 shift || :
