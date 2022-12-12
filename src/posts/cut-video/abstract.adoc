@@ -1,0 +1,4 @@
+I created <<cut-video,a Bash script for video trimming and compression>>
+using {FFmpeg} and {HandBrakeCLI}.
+It can be helpful if you are like me: I use command line tools to do
+everything in my daily work, including video transformations! ;)

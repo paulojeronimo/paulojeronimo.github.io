@@ -1,0 +1,29 @@
+:uri-paulojeronimo: https://paulojeronimo.com
+:uri-bash: https://www.gnu.org/software/bash/
+:uri-ffmpeg: https://ffmpeg.org/
+:uri-handbrakecli: https://handbrake.fr/docs/en/latest/cli/cli-options.html
+:uri-github-paulojeronimo-dotfiles: https://github.com/paulojeronimo/dotfiles/.scripts/cut-video
+:uri-fibonacci-app: https://finisher.tech/fibonacci-app
+:uri-yt-dlp: https://github.com/yt-dlp/yt-dlp
+:uri-shebang: https://en.wikipedia.org/wiki/Shebang_(Unix)#Examples
+:uri-yaml: https://en.wikipedia.org/wiki/YAML
+:uri-yq: https://github.com/mikefarah/yq
+:uri-youtube-mettalica-on-the-piano: https://www.youtube.com/watch?v=he_o9LmXYwg
+:uri-termux: https://github.com/termux/termux-app
+:uri-docker: https://docker.com
+// External Attributes
+:Bash: {uri-bash}[Bash^]
+:FFmpeg: {uri-ffmpeg}[FFmpeg^]
+:HandBrakeCLI: {uri-handbrakecli}[HandBrakeCLI^]
+:yt-dlp: {uri-yt-dlp}[yt-dlp^]
+:shebang: {uri-shebang}[shebang^]
+:YAML: {uri-yaml}[YAML^]
+:yq: {uri-yq}[yq^]
+:Termux: {uri-termux}[Termux^]
+:Docker: {uri-docker}[Docker^]
+// Internal Attributes
+:cut-video: <<cut-video,cut-video>>
+// Operational Attributes
+:PostDate: 12 de Dezembro de 2022
+:PostTitle: A video trimming (and compression) Bash script that you can use on your Termux
+// vim: tw=0

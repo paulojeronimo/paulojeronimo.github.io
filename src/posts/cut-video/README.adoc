@@ -1,0 +1,267 @@
+include::common/header.adoc[]
+
+*{PauloJeronimo} in {Brasilia} on {PostDate}*:
+include::abstract.adoc[]
+
+Please, also note that I created this article post to use for recording
+my first video in English.
+I am a Brazilian, developing in {Bash} since the early 2000s, but I
+never recorded any video (in English) about this.
+So I decided to create a new Bash script, and a related article, to use
+as input for recording this video.
+
+<<<
+[[cut-video]]
+== The cut-video script
+
+The `cut-video` script is a *55 lines {Bash} script* that I wrote to do
+video cuttings and compression using {ffmpeg} and {HandBrakeCLI}.
+
+NOTE: *55 is a "magic" Fibonacci number* and I love this kind of
+numbers!
+See another project that I developed (in JavaScript/ React):
+{uri-fibonacci-app}.
+
+<<details,I will explain the code below>>.
+In order to do this, I put some tags inside the code (using comments in
+the format "# ref-string") and will explain all of them.
+
+[source,bash]
+.Here is the entire content of the script:
+----
+include::cut-video[]
+----
+
+The more recent version of this script, maybe different and with more
+features, is also available in my `dotfiles` GitHub repository, here:
+{uri-github-paulojeronimo-dotfiles}.
+
+[[details]]
+== Details in the cut-video script
+
+.the first line
+[%collapsible]
+====
+In most of all Unix scripts, the first line contains an interpreter
+directive called <<shebang>>. +
+It "is like a comment" in the first line but, actually, it is a
+character sequence `#! ...` used by the program loader to interpret the
+rest of the script. +
+The loader executes the specified interpreter, passing it as an argument
+to the path initially used when attempting to run the script. +
+See <<shebang,more details in the references section>>.
+====
+
+.the comment lines in the header
+[%collapsible]
+====
+Sometimes I like to write the header of my scripts using another
+structured text.
+In this case, it is written in {YAML} format.
+You can test this by typing the following command on your terminal
+(assuming you have {yq} installed):
+
+[source,bash]
+----
+yq -o json <(sed -n '2,5p' cut-video | sed 's,^# ,,g')
+----
+
+This will be the output:
+
+[source,json]
+----
+{
+  "Author": "Paulo Jerônimo (paulojeronimo.com)",
+  "Links": [
+    "Article | https://paulojeronimo.com/posts/cut-video",
+    "Video | https://youtube.com/@PauloJeronimo"
+  ]
+}
+----
+====
+
+.ref-set
+[%collapsible]
+====
+*[red]#TODO#* -> Finish this topic.
+====
+
+.ref-cd-to-the-script-location
+[%collapsible]
+====
+*[red]#TODO#* -> Finish this topic.
+====
+
+.ref-source
+[%collapsible]
+====
+*[red]#TODO#* -> Finish this topic.
+====
+
+.ref-clips_file
+[%collapsible]
+====
+The _clips_file_ variable is file name, with a *Comma Separated Virgula
+(CSV)* content, that will be used to determine the positions where the
+file _original-file_ (a link to the file that will be processed) will be
+cutted.
+
+Here is a sample content for this file:
+
+[source,csv]
+----
+include::clips.csv[]
+----
+====
+
+.ref-video_var
+[%collapsible]
+====
+The _video_var_ variable will be configured to get last part of the
+name of the current directory (indicated by the `$PWD`), and will be
+used to compose the name of the generated file in the cutting (made by
+{ffmpeg}) and also in the compression (made by {HandBrakeCLI}).
+====
+
+.ref-mkv_tool
+[%collapsible]
+====
+*[red]#TODO#* -> Finish this topic.
+====
+
+.ref-go_ahead
+[%collapsible]
+====
+The code below this comment will vefify if we have the conditions to run
+this script satisfied.
+
+The first validation (*ref-command-isnt-in-path*) will verify if the
+required commands ({ffmpeg} and {HandBrakeCLI}) are available in the
+`PATH`.
+
+The second validation (*ref-file-not-found*) will check if the files
+(`$clips_file` and `original-video`) are present on the current
+directory.
+
+If one of these conditions aren't satisfied, the `go_ahead` variable
+will be `false`.
+In the *ref-abort* block, executed if `$go_ahead` is false, the script
+will print an aborting message and terminate its execution with an error
+code 1.
+====
+
+.ref-log
+[%collapsible]
+====
+*[red]#TODO#* -> Finish this topic.
+====
+
+.ref-read-csv
+[%collapsible]
+====
+This `while` will loop through the contents of the CSV (`$clips_file`).
+
+*[red]#TODO#* -> Finish this topic.
+====
+
+== Testing
+
+In order to do the next tests with {cut-video}, you can copy and paste
+the following commands directly into your shell.
+I'll be using two environments in these tests: {Termux} and Linux.
+
+=== Test 1
+
+To follow the steps that I will show you, you will need the following
+tools installed:
+
+. {yt-dlp}
+. {FFmpeg}
+
+I will demonstrate the commands below by doing this on my own mobile
+phone and using {Termux}.
+
+[NOTE]
+====
+To replicate the commands inside Termux, like me, first you will need to
+run the following script on it:
+
+[source,bash,subs=attributes+]
+----
+bash <(curl -sSL TODO(url)/termux-setup.sh)
+----
+====
+
+Let's download {uri-youtube-mettalica-on-the-piano}[a video containing
+some piano musics that I like^] (in low quality definition to speed up
+our test) and create a link called `original-file` to it:
+
+[source,bash,subs=attributes+]
+----
+d=/tmp/mettalica-on-the-piano; rm -rf $d; mkdir $d && cd $_ && \
+yt-dlp -f 160 '{uri-youtube-mettalica-on-the-piano}' && \
+ln -sf "$(echo *.mp4)" original-video
+----
+
+After that, we'll download the {cut-video} script and make it
+executable:
+
+[source,bash,subs=attributes+]
+----
+s=cut-video; curl -sSL TODO(url)/$s -o $s; chmod +x $s
+----
+
+Before calling this script we need to create a file called `clips.csv`
+with the following command:
+
+[source,bash]
+----
+cat <<'EOF'>clips.csv
+00:00:00,00:05:33,$video - 1.nothing-else-matters.mp4
+00:05:34,00:12:43,$video - 2.master-of-pupets.mp4
+00:12:44,00:18:09,$video - 3.fade-to-black.mp4
+00:18:10,00:23:18,$video - 4.the-unforgiven.mp4
+00:23:19,00:30:20,$video - 5.one.mp4
+EOF
+----
+
+We can now call execute the {cut-video} script:
+
+[source,bash]
+----
+./cut-video
+----
+
+If everything goes weel, the tree of files created in this testing will
+be equals to the output shown in command below:
+
+----
+include::tree-output.txt[]
+----
+
+=== Test 2
+
+*[red]#TODO#* -> Finish this topic.
+
+To follow this test we will need another environment and more some
+addional tools installed:
+
+. {Docker}
+. {HandBrakeCLI}
+
+----
+cat <<'EOF'>.cut-video
+# vim: syntax=bash
+
+mkv_compression=true
+echo .cut-video loaded!
+EOF
+----
+
+<<<
+== References
+
+* [[shebang]]*shebang*
+.. {uri-shebang}
+.. https://stackoverflow.com/questions/21612980/why-is-usr-bin-env-bash-superior-to-bin-bash
+.. https://www.baeldung.com/linux/bash-shebang-lines

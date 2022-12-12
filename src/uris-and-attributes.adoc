@@ -49,6 +49,7 @@
 :YouTubeIcon: icon:youtube[2x]
 :YouTubeLink: {uri-pj-youtube}[{YouTubeIcon}^]
 :Bash: {uri-bash}[Bash^]
+:Brasilia: https://goo.gl/maps/Wdgo8se79hfP1m7PA[Brasília^]
 // Operational Attributes
 :og-url: https://paulojeronimo.com
 :og-image: {og-url}/images/pj-2.jpg
@@ -57,3 +58,4 @@
 :og-image-height: 644
 :og-title: Paulo Jerônimo's website
 :og-type: website
+

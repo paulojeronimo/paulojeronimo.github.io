@@ -1,0 +1,15 @@
+$ tree
+.
+|-- Best Metallica songs on the piano [he_o9LmXYwg].mp4
+|-- clips.csv
+|-- cut-video
+|-- cut-video.log
+|-- last-cmd
+|-- metallica-on-the-piano - 1.nothing-else-matters.mp4
+|-- metallica-on-the-piano - 2.master-of-pupets.mp4
+|-- metallica-on-the-piano - 3.fade-to-black.mp4
+|-- metallica-on-the-piano - 4.the-unforgiven.mp4
+|-- metallica-on-the-piano - 5.one.mp4
+`-- original-video -> Best Metallica songs on the piano [he_o9LmXYwg].mp4
+
+0 directories, 11 files

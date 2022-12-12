@@ -6,15 +6,25 @@ trap 'rm -f -- "$usage_file"' EXIT
 cat <<USAGE > "$usage_file"
 Usage:
 
-NOTE -> You can use <tab> to point the 'specific-dir':
+$ # NOTE -> You can use <tab> to point to the 'specific-dir'
 $ $0 <all [links]|index.[yaml|adoc]|specific-dir>
 
 Examples:
+
+$ # generates all posts:
 $ $0 all
+
+$ # generates the index.adoc for all posts:
 $ $0 index.adoc
+
+$ # generates the existing post in the current directory:
+$ $0 . # generates the post in the current directory
+
+$ # generates the post in a specific directory:
 $ $0 src/posts/ha-nove-anos-me-tornei-um-ironman/
 USAGE
 
+START_DIR=$PWD
 cd "$(dirname "$0")"
 
 # configure docker-asciidoctor-builder to not use docker
@@ -29,6 +39,9 @@ then
   ! [ "$1" = index.adoc ] || ./generate-mini.sh
   ./$1.sh
   exit $?
+elif [[ $1 =~ ^\.$ ]]
+then
+  set -- "$START_DIR"
 fi
 selected_post=$1
 selected_post=${selected_post%/}
@@ -50,6 +63,7 @@ do
     continue
   fi
 
+  echo "Building $post ..."
   cd "$post"
 
   # fix required directories locations
@@ -67,10 +81,19 @@ do
 
   if [ -x build.sh ]
   then
-    ./build.sh -a postdir=$post -a og-description="'$(<abstract.txt)'"
-  else
-    GENERATE_PDF=true docker-asciidoctor-builder \
+    ./build.sh -a baseuri=${baseuri} \
       -a postdir=$post -a og-description="'$(<abstract.txt)'"
+  else
+    GENERATE_PDF=true docker-asciidoctor-builder -a baseuri=${baseuri} \
+      -a postdir=$post -a og-description="'$(<abstract.txt)'"
+  fi
+  if [ $? = 0 ]
+  then
+    images_dir=$(grep -e '^:imagesdir:' common/header.adoc | head -1 | cut -d: -f3 | xargs)
+    js_dir=../$BASE_DIR/js
+    mkdir -p $js_dir
+    js=copy-to-clipboard.js
+    sed "s,\$images_dir,$images_dir,g" common/$js > $js_dir/$js
   fi
 
   cd ..

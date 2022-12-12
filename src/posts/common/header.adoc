@@ -1,13 +1,18 @@
+[.doc]
 = {postdir}
 ifdef::backend-html5[]
 :basedir: ../..
 :nofooter:
+:sectanchors:
+:source-highlighter: highlight.js
 :toc-title: {doctitle}
 endif::[]
 :icons: font
-:imagesdir: {basedir}/images
+//:imagesdir: {basedir}/images
+:imagesdir: ../../images
 ifdef::backend-pdf[]
 :imagesdir: images
+:source-highlighter: rouge
 :toc-title!:
 endif::[]
 :linkcss:

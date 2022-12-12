@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.18">
+<title>cut-video</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="../../css/asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/github.min.css">
+<!-- https://developers.facebook.com/docs/sharing/webmasters/ -->
+<meta property="og:url" content="https://paulojeronimo.com">
+<meta property="og:image" content="https://paulojeronimo.com/images/pj-2.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="644">
+<meta property="og:image:height" content="644">
+<meta property="og:title" content="Paulo Jerônimo's website">
+<meta property="og:type" content="website">
+<meta property="og:description" content="I created a Bash script for video cuttings and compression using FFmpeg and HandBrakeCLI. It can be helpful to you if you are like me: I use command line tools to do everything in my daily work, including video transformations! ;)">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S4958NCZHG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S4958NCZHG');
+</script>
+
+<style>
+.imageblock.rounded img {
+  border-radius: 50%;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  text-align: center;
+}
+
+#header .details {
+  justify-content: center;
+}
+
+#header .details br+span::before {
+  content: none;
+}
+
+.icons > p > a {
+  padding-left: .2rem;
+  padding-right: .2rem;
+}
+</style>
+</head>
+<body class="article doc">
+<div id="header">
+<h1>cut-video</h1>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph text-center icons">
+<p><a href="/"><span class="icon"><i class="fa fa-home fa-2x"></i></span></a>
+<a href="/posts"><span class="icon"><i class="fa fa-rss fa-2x"></i></span></a>
+<a href="https://paulojeronimo.com/sitemap"><span class="icon"><i class="fa fa-sitemap fa-2x"></i></span></a>
+<span class="icon"><i class="fa fa-i-cursor fa-2x"></i></span>
+<a href="https://wa.me/5561998073864" target="_blank" rel="noopener"><span class="icon"><i class="fa fa-whatsapp fa-2x"></i></span></a>
+<a href="https://t.me/paulojeronimo_com"><span class="icon"><i class="fa fa-telegram fa-2x"></i></span></a>
+<a href="https://www.linkedin.com/in/paulojeronimo/" target="_blank" rel="noopener"><span class="icon"><i class="fa fa-linkedin fa-2x"></i></span></a>
+<a href="https://github.com/paulojeronimo" target="_blank" rel="noopener"><span class="icon"><i class="fa fa-github fa-2x"></i></span></a>
+<a href="https://www.youtube.com/~paulojeronimo" target="_blank" rel="noopener"><span class="icon"><i class="fa fa-youtube fa-2x"></i></span></a></p>
+</div>
+<hr>
+<div class="paragraph text-center">
+<p><strong>Versão em PDF: <a href="/posts/cut-video.pdf">cut-video.pdf</a></strong><br></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../images/posts/cut-video/capa.png" alt="capa">
+</div>
+</div>
+<div class="paragraph">
+<p><strong><a href="https://odysee.com/@paulojeronimo/" target="_blank" rel="noopener">Paulo Jerônimo</a> in <a href="https://goo.gl/maps/Wdgo8se79hfP1m7PA" target="_blank" rel="noopener">Brasília</a> on 12 de Dezembro de 2022</strong>:
+I created <a href="#cut-video">a Bash script for video trimming and compression</a>
+using <a href="https://ffmpeg.org/" target="_blank" rel="noopener">FFmpeg</a> and <a href="https://handbrake.fr/docs/en/latest/cli/cli-options.html" target="_blank" rel="noopener">HandBrakeCLI</a>.
+It can be helpful if you are like me: I use command line tools to do
+everything in my daily work, including video transformations! ;)</p>
+</div>
+<div class="paragraph">
+<p>Please, also note that I created this article post to use for recording
+my first video in English.
+I am a Brazilian, developing in <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noopener">Bash</a> since the early 2000s, but I
+never recorded any video (in English) about this.
+So I decided to create a new Bash script, and a related article, to use
+as input for recording this video.</p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cut-video"><a class="anchor" href="#cut-video"></a>The cut-video script</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <code>cut-video</code> script is a <strong>55 lines <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noopener">Bash</a> script</strong> that I wrote to do
+video cuttings and compression using <a href="https://ffmpeg.org/" target="_blank" rel="noopener">FFmpeg</a> and <a href="https://handbrake.fr/docs/en/latest/cli/cli-options.html" target="_blank" rel="noopener">HandBrakeCLI</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<strong>55 is a "magic" Fibonacci number</strong> and I love this kind of
+numbers!
+See another project that I developed (in JavaScript/ React):
+<a href="https://finisher.tech/fibonacci-app" class="bare">https://finisher.tech/fibonacci-app</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><a href="#details">I will explain the code below</a>.
+In order to do this, I put some tags inside the code (using comments in
+the format "# ref-string") and will explain all of them.</p>
+</div>
+<div class="listingblock">
+<div class="title">Here is the entire content of the script:</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">#!/usr/bin/env bash
+# Author: Paulo Jerônimo (paulojeronimo.com)
+# Links:
+#   - Article | https://paulojeronimo.com/posts/cut-video
+#   - Video | https://youtube.com/@PauloJeronimo
+set -eou pipefail # ref-set
+cd "$(dirname "$0")" # ref-cd-to-the-script-location
+script_name=$(basename "$0" .sh)
+source ./.$script_name 2&gt; /dev/null || { \
+  source ~/.$script_name 2&gt; /dev/null || :; } # ref-source
+clips_file=${clips_file:-clips.csv} # ref-clips_file
+video_var=${video_var:-${PWD##*/}} # ref-video_var
+mkv_compression=${mkv_compression:-false}
+mkv_tool=${mkv_tool:-HandBrakeCLI} #ref-mkv_tool
+$mkv_compression &amp;&amp; \
+  echo MKV compression will be made by $mkv_tool! || \
+  mkv_tool=
+go_ahead=true # ref-go_ahead
+for t in ffmpeg $mkv_tool
+do
+  command -v $t &gt; /dev/null || { # ref-command-isnt-in-path
+    echo Command \"$t\" not found ...
+    go_ahead=false
+  }
+done
+for f in "$clips_file" original-video
+do
+  [ -f "$f" ] || { # ref-file-not-found
+    echo File \"$f\" not found ...
+    go_ahead=false
+  }
+done
+$go_ahead || { # ref-abort
+  echo Aborting due to the problems reported above!
+  exit 1
+}
+log=$script_name.log; &gt; $log # ref-log
+while IFS=, read -r ss to video # ref-read-csv
+do
+  gen_file=$(sed "s,\$video,$video_var,g" &lt;&lt;&lt; "$video") #ref-gen_file
+  echo ffmpeg -nostdin -y -i original-video \
+    -ss $ss -to $to -c:v copy \"$gen_file\" | tee last-cmd # ref-ffmpeg
+  sed 's/^/\$ /g' last-cmd &gt;&gt; $log; bash &lt; last-cmd &amp;&gt;&gt; $log
+  ! $mkv_compression || { # ref-mkv_compression
+    [ -f ./$mkv_tool.$$ ] || echo "#!/usr/bin/env bash" &gt; $mkv_tool.$$
+    [ "$mkv_tool" = HandBrakeCLI ] &amp;&amp; \
+      cmd="$mkv_tool -i \"$gen_file\" -o \"${gen_file%.*}.mkv\"" || \
+      cmd="$mkv_tool \"$gen_file\""
+    echo -e "tee last-cmd &lt;&lt;&lt; '$cmd'\nsed 's/^/\$ /g' last-cmd &gt;&gt; \
+      $log\nbash &lt; last-cmd &amp;&gt;&gt; $log" &gt;&gt; $mkv_tool.$$
+  }
+done &lt; "$clips_file"
+! $mkv_compression || {
+  mv -f ./$mkv_tool.$$ ./$mkv_tool; chmod +x ./$mkv_tool; ./$mkv_tool; }
+# vim: tabstop=2 shiftwidth=2 colorcolumn=72</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The more recent version of this script, maybe different and with more
+features, is also available in my <code>dotfiles</code> GitHub repository, here:
+<a href="https://github.com/paulojeronimo/dotfiles/.scripts/cut-video" class="bare">https://github.com/paulojeronimo/dotfiles/.scripts/cut-video</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="details"><a class="anchor" href="#details"></a>Details in the cut-video script</h2>
+<div class="sectionbody">
+<details>
+<summary class="title">the first line</summary>
+<div class="content">
+<div class="paragraph">
+<p>In most of all Unix scripts, the first line contains an interpreter
+directive called <a href="#shebang">[shebang]</a>.<br>
+It "is like a comment" in the first line but, actually, it is a
+character sequence <code>#! &#8230;&#8203;</code> used by the program loader to interpret the
+rest of the script.<br>
+The loader executes the specified interpreter, passing it as an argument
+to the path initially used when attempting to run the script.<br>
+See <a href="#shebang">more details in the references section</a>.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">the comment lines in the header</summary>
+<div class="content">
+<div class="paragraph">
+<p>Sometimes I like to write the header of my scripts using another
+structured text.
+In this case, it is written in <a href="https://en.wikipedia.org/wiki/YAML" target="_blank" rel="noopener">YAML</a> format.
+You can test this by typing the following command on your terminal
+(assuming you have <a href="https://github.com/mikefarah/yq" target="_blank" rel="noopener">yq</a> installed):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yq -o json &lt;(sed -n '2,5p' cut-video | sed 's,^# ,,g')</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This will be the output:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "Author": "Paulo Jerônimo (paulojeronimo.com)",
+  "Links": [
+    "Article | https://paulojeronimo.com/posts/cut-video",
+    "Video | https://youtube.com/@PauloJeronimo"
+  ]
+}</code></pre>
+</div>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">ref-set</summary>
+<div class="content">
+<div class="paragraph">
+<p><strong><span class="red">TODO</span></strong> &#8594; Finish this topic.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">ref-cd-to-the-script-location</summary>
+<div class="content">
+<div class="paragraph">
+<p><strong><span class="red">TODO</span></strong> &#8594; Finish this topic.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">ref-source</summary>
+<div class="content">
+<div class="paragraph">
+<p><strong><span class="red">TODO</span></strong> &#8594; Finish this topic.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">ref-clips_file</summary>
+<div class="content">
+<div class="paragraph">
+<p>The <em>clips_file</em> variable is file name, with a <strong>Comma Separated Virgula
+(CSV)</strong> content, that will be used to determine the positions where the
+file <em>original-file</em> (a link to the file that will be processed) will be
+cutted.</p>
+</div>
+<div class="paragraph">
+<p>Here is a sample content for this file:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-csv hljs" data-lang="csv">00:00:00,00:05:33,$video.1 - nothing-else-matters.mp4
+00:05:34,00:12:43,$video.2 - master-of-pupets.mp4
+00:12:44,00:18:09,$video.3 - fade-to-black.mp4
+00:18:10,00:23:18,$video.4 - the-unforgiven.mp4
+00:23:19,00:30:20,$video.5 - one.mp4</code></pre>
+</div>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">ref-video_var</summary>
+<div class="content">
+<div class="paragraph">
+<p>The <em>video_var</em> variable will be configured to get last part of the
+name of the current directory (indicated by the <code>$PWD</code>), and will be
+used to compose the name of the generated file in the cutting (made by
+<a href="https://ffmpeg.org/" target="_blank" rel="noopener">FFmpeg</a>) and also in the compression (made by <a href="https://handbrake.fr/docs/en/latest/cli/cli-options.html" target="_blank" rel="noopener">HandBrakeCLI</a>).</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">ref-mkv_tool</summary>
+<div class="content">
+<div class="paragraph">
+<p><strong><span class="red">TODO</span></strong> &#8594; Finish this topic.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">ref-go_ahead</summary>
+<div class="content">
+<div class="paragraph">
+<p>The code below this comment will vefify if we have the conditions to run
+this script satisfied.</p>
+</div>
+<div class="paragraph">
+<p>The first validation (<strong>ref-command-isnt-in-path</strong>) will verify if the
+required commands (<a href="https://ffmpeg.org/" target="_blank" rel="noopener">FFmpeg</a> and <a href="https://handbrake.fr/docs/en/latest/cli/cli-options.html" target="_blank" rel="noopener">HandBrakeCLI</a>) are available in the
+<code>PATH</code>.</p>
+</div>
+<div class="paragraph">
+<p>The second validation (<strong>ref-file-not-found</strong>) will check if the files
+(<code>$clips_file</code> and <code>original-video</code>) are present on the current
+directory.</p>
+</div>
+<div class="paragraph">
+<p>If one of these conditions aren&#8217;t satisfied, the <code>go_ahead</code> variable
+will be <code>false</code>.
+In the <strong>ref-abort</strong> block, executed if <code>$go_ahead</code> is false, the script
+will print an aborting message and terminate its execution with an error
+code 1.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">ref-log</summary>
+<div class="content">
+<div class="paragraph">
+<p><strong><span class="red">TODO</span></strong> &#8594; Finish this topic.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">ref-read-csv</summary>
+<div class="content">
+<div class="paragraph">
+<p>This <code>while</code> will loop through the contents of the CSV (<code>$clips_file</code>).</p>
+</div>
+<div class="paragraph">
+<p><strong><span class="red">TODO</span></strong> &#8594; Finish this topic.</p>
+</div>
+</div>
+</details>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_testing"><a class="anchor" href="#_testing"></a>Testing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In order to do the next tests with <a href="#cut-video">cut-video</a>, you can copy and paste
+the following commands directly into your shell.
+I&#8217;ll be using two environments in these tests: <a href="https://github.com/termux/termux-app" target="_blank" rel="noopener">Termux</a> and Linux.</p>
+</div>
+<div class="sect2">
+<h3 id="_test_1"><a class="anchor" href="#_test_1"></a>Test 1</h3>
+<div class="paragraph">
+<p>To follow the steps that I will show you, you will need the following
+tools installed:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="https://github.com/yt-dlp/yt-dlp" target="_blank" rel="noopener">yt-dlp</a></p>
+</li>
+<li>
+<p><a href="https://ffmpeg.org/" target="_blank" rel="noopener">FFmpeg</a></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>I will demonstrate the commands below by doing this on my own mobile
+phone and using <a href="https://github.com/termux/termux-app" target="_blank" rel="noopener">Termux</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To replicate the commands inside Termux, like me, first you will need to
+run the following script on it:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">bash &lt;(curl -sSL TODO(url)/termux-setup.sh)</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s download <a href="https://www.youtube.com/watch?v=he_o9LmXYwg" target="_blank" rel="noopener">a video containing
+some piano musics that I like</a> (in low quality definition to speed up
+our test) and create a link called <code>original-file</code> to it:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">d=/tmp/mettalica-on-the-piano; rm -rf $d; mkdir $d &amp;&amp; cd $_ &amp;&amp; \
+yt-dlp -f 160 'https://www.youtube.com/watch?v=he_o9LmXYwg' &amp;&amp; \
+ln -sf "$(echo *.mp4)" original-video</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After that, we&#8217;ll download the <a href="#cut-video">cut-video</a> script and make it
+executable:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">s=cut-video; curl -sSL TODO(url)/$s -o $s; chmod +x $s</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Before calling this script we need to create a file called <code>clips.csv</code>
+with the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">cat &lt;&lt;'EOF'&gt;clips.csv
+00:00:00,00:05:33,$video - 1.nothing-else-matters.mp4
+00:05:34,00:12:43,$video - 2.master-of-pupets.mp4
+00:12:44,00:18:09,$video - 3.fade-to-black.mp4
+00:18:10,00:23:18,$video - 4.the-unforgiven.mp4
+00:23:19,00:30:20,$video - 5.one.mp4
+EOF</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>We can now call execute the <a href="#cut-video">cut-video</a> script:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./cut-video</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If everything goes weel, the tree of files created in this testing will
+be equals to the output shown in command below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ tree
+.
+|-- Best Metallica songs on the piano [he_o9LmXYwg].mp4
+|-- clips.csv
+|-- cut-video
+|-- cut-video.log
+|-- last-cmd
+|-- metallica-on-the-piano - 1.nothing-else-matters.mp4
+|-- metallica-on-the-piano - 2.master-of-pupets.mp4
+|-- metallica-on-the-piano - 3.fade-to-black.mp4
+|-- metallica-on-the-piano - 4.the-unforgiven.mp4
+|-- metallica-on-the-piano - 5.one.mp4
+`-- original-video -&gt; Best Metallica songs on the piano [he_o9LmXYwg].mp4
+
+0 directories, 11 files</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_test_2"><a class="anchor" href="#_test_2"></a>Test 2</h3>
+<div class="paragraph">
+<p><strong><span class="red">TODO</span></strong> &#8594; Finish this topic.</p>
+</div>
+<div class="paragraph">
+<p>To follow this test we will need another environment and more some
+addional tools installed:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="https://docker.com" target="_blank" rel="noopener">Docker</a></p>
+</li>
+<li>
+<p><a href="https://handbrake.fr/docs/en/latest/cli/cli-options.html" target="_blank" rel="noopener">HandBrakeCLI</a></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cat &lt;&lt;'EOF'&gt;.cut-video
+# vim: syntax=bash
+
+mkv_compression=true
+echo .cut-video loaded!
+EOF</pre>
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references"><a class="anchor" href="#_references"></a>References</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a id="shebang"></a><strong>shebang</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Shebang_(Unix)#Examples" class="bare">https://en.wikipedia.org/wiki/Shebang_(Unix)#Examples</a></p>
+</li>
+<li>
+<p><a href="https://stackoverflow.com/questions/21612980/why-is-usr-bin-env-bash-superior-to-bin-bash" class="bare">https://stackoverflow.com/questions/21612980/why-is-usr-bin-env-bash-superior-to-bin-bash</a></p>
+</li>
+<li>
+<p><a href="https://www.baeldung.com/linux/bash-shebang-lines" class="bare">https://www.baeldung.com/linux/bash-shebang-lines</a></p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
+<script>
+if (!hljs.initHighlighting.called) {
+  hljs.initHighlighting.called = true
+  ;[].slice.call(document.querySelectorAll('pre.highlight > code[data-lang]')).forEach(function (el) { hljs.highlightBlock(el) })
+}
+</script>
+<style>
+.doc .listingblock > .content {
+  position: relative;
+}
+
+.doc .listingblock code[data-lang]::before {
+  content: none;
+}
+
+.doc .source-toolbox {
+  display: flex;
+  position: absolute;
+  visibility: hidden;
+  top: 0.25rem;
+  right: 0.5rem;
+  color: #808080;
+  white-space: nowrap;
+  font-size: 0.85em;
+}
+
+.doc .listingblock:hover .source-toolbox {
+  visibility: visible;
+}
+
+.doc .source-toolbox .source-lang {
+  font-family: "Droid Sans Mono", "DejaVu Sans Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+
+.doc .source-toolbox > :not(:last-child)::after {
+  content: "|";
+  letter-spacing: 0;
+  padding: 0 1ch;
+}
+
+.doc .source-toolbox .copy-button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  color: inherit;
+  outline: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  width: 1em;
+  height: 1em;
+}
+
+.doc .source-toolbox .copy-icon {
+  flex: none;
+  width: inherit;
+  height: inherit;
+  filter: invert(50.2%);
+  margin-top: 0.05em;
+}
+
+.doc .source-toolbox .copy-toast {
+  flex: none;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 1em;
+  border-radius: 0.25em;
+  padding: 0.5em;
+  cursor: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease 0.75s;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.doc .source-toolbox .copy-toast::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1em;
+  height: 1em;
+  border: 0.55em solid transparent;
+  border-left-color: rgba(0, 0, 0, 0.8);
+  transform: rotate(-90deg) translateX(50%) translateY(50%);
+  transform-origin: left;
+}
+
+.doc .source-toolbox .copy-button.clicked .copy-toast {
+  opacity: 1;
+  transition: none;
+}
+</style>
+<script src="/./js/copy-to-clipboard.js"></script>
+</body>
+</html>

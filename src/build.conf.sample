@@ -4,6 +4,7 @@
 html_dir=.
 css_dir=./css
 doc=src/index.adoc
+baseuri=${baseuri:-/.}
 
 # Mustache templates in pure bash ( https://github.com/tests-always-included/mo )
 get_mo=true
