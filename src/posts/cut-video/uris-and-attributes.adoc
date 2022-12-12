@@ -24,6 +24,6 @@
 // Internal Attributes
 :cut-video: <<cut-video,cut-video>>
 // Operational Attributes
-:PostDate: 12 de Dezembro de 2022
+:PostDate: December 12, 2022
 :PostTitle: A video trimming (and compression) Bash script that you can use on your Termux
 // vim: tw=0

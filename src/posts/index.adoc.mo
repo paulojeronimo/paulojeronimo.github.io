@@ -23,12 +23,13 @@ Some of them are in English ({en}) and high technical to normal people
 .*{{__post__.title}}*
 ****
 [.text-center]
-{pt-br-post}, {{__post__.date}}
+{{__post__.language}},
+{{__post__.date}}
 
 image:posts/{{__post__.id}}/capa.mini.png[role="related left"]
 {{__post__.abstract}}
 
-*link:/posts/{{__post__.id}}/[Leia mais]*
+*link:/posts/{{__post__.id}}/[Read more]*
 ****
 
 {{/foreach-post}}

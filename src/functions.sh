@@ -29,18 +29,45 @@ get-pt-month() {
   (( $month <= 12 )) && echo -n $month || echo -n '??'
 }
 
-get-iso-date() {
-  local input_regex='^([0-9]{1,2})\ de\ ([a-zA-Z]{4,8})\ de\ ([0-9]{4})$'
+get-en-month() {
+  declare -r -A months=(
+    [januaray]=1
+    [february]=2
+    [march]=3
+    [april]=4
+    [may]=5
+    [june]=6
+    [july]=7
+    [august]=8
+    [september]=9
+    [october]=10
+    [november]=11
+    [december]=12
+  )
+  local month=${1,,}
+  local result=${months[$month]}
+  [ "$result" ] && echo -n $result || echo -n '??'
+}
+
+get-date-and-language() {
+  local pt_br_date='^([0-9]{1,2})\ de\ ([a-zA-Z]{4,8})\ de\ ([0-9]{4})$'
+  local en_date='^([a-zA-Z]{3,9}) ([0-9]{1,2}), ([0-9]{4})$'
   local day
   local month
   local year
 
-  if [[ "$1" =~ $input_regex ]]
+  if [[ "$1" =~ $pt_br_date ]]
   then
     day=${BASH_REMATCH[1]}
     month=$(get-pt-month ${BASH_REMATCH[2]})
     year=${BASH_REMATCH[3]}
-    printf '%04d-%02d-%02d' $year $month $day
+    printf '%04d-%02d-%02d,pt-br' $year $month $day
+  elif [[ "$1" =~ $en_date ]]
+  then
+    month=$(get-en-month ${BASH_REMATCH[1]})
+    day=${BASH_REMATCH[2]}
+    year=${BASH_REMATCH[3]}
+    printf '%04d-%02d-%02d,en' $year $month $day
   else
     echo \"$1\" is invalid!
   fi
@@ -81,7 +108,9 @@ create-yaml() {
   local index_txt_line=$2
   local readme_adoc_file=$(cut -d: -f1 <<< "$index_txt_line")
   local post_id=$(cut -d/ -f2 <<< "$readme_adoc_file")
-  local post_date=$(get-iso-date "$(cut -d: -f4 <<< "$index_txt_line" | xargs)")
+  local date_and_language=$(get-date-and-language "$(cut -d: -f4 <<< "$index_txt_line" | xargs)")
+  local post_date=$(cut -d, -f1 <<< "$date_and_language")
+  local post_language=$(cut -d, -f2 <<< "$date_and_language")
   local post_title=$(get-post-title "$readme_adoc_file")
   local abstract_doc_adoc_file=$post_id/abstract-doc.adoc
 

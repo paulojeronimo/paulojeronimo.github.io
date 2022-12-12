@@ -46,11 +46,11 @@ ifdef::backend-html5[]
 include::{srcdir}/icons.adoc[]
 
 [.text-center]
-*Versão em PDF: link:/posts/{postdir}.pdf[{postdir}.pdf]* +
+*PDF: link:/posts/{postdir}.pdf[{postdir}.pdf]* +
 endif::[]
 ifdef::backend-pdf[]
 [.text-center]
-*Versão online: {uri-pj}/posts/{postdir}*
+*HTML: {uri-pj}/posts/{postdir}*
 endif::[]
 
 image::posts/{postdir}/capa.png[]

@@ -11,14 +11,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/github.min.css">
 <!-- https://developers.facebook.com/docs/sharing/webmasters/ -->
-<meta property="og:url" content="https://paulojeronimo.com">
-<meta property="og:image" content="https://paulojeronimo.com/images/pj-2.jpg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="644">
-<meta property="og:image:height" content="644">
-<meta property="og:title" content="Paulo Jerônimo's website">
-<meta property="og:type" content="website">
-<meta property="og:description" content="I created a Bash script for video cuttings and compression using FFmpeg and HandBrakeCLI. It can be helpful to you if you are like me: I use command line tools to do everything in my daily work, including video transformations! ;)">
+<meta property="og:url" content="https://paulojeronimo.com/posts/cut-video">
+<meta property="og:image" content="https://paulojeronimo.com/images/posts/cut-video/capa.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
+<meta property="og:title" content="A video trimming (and compression) Bash script that you can use on your Termux">
+<meta property="og:type" content="article">
+<meta property="og:description" content="I created a Bash script for video trimming and compression using FFmpeg and HandBrakeCLI. It can be helpful if you are like me: I use command line tools to do everything in my daily work, including video transformations! ;)">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4958NCZHG"></script>
@@ -54,9 +54,23 @@ h1, h2, h3, h4, h5, h6
 }
 </style>
 </head>
-<body class="article doc">
+<body class="article toc2 toc-left doc">
 <div id="header">
 <h1>cut-video</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">cut-video</div>
+<ul class="sectlevel1">
+<li><a href="#cut-video">1. The cut-video script</a></li>
+<li><a href="#details">2. Details in the cut-video script</a></li>
+<li><a href="#testing">3. Testing</a>
+<ul class="sectlevel2">
+<li><a href="#test-1">3.1. Test 1</a></li>
+<li><a href="#test-2">3.2. Test 2</a></li>
+</ul>
+</li>
+<li><a href="#references">4. References</a></li>
+</ul>
+</div>
 </div>
 <div id="content">
 <div id="preamble">
@@ -74,7 +88,7 @@ h1, h2, h3, h4, h5, h6
 </div>
 <hr>
 <div class="paragraph text-center">
-<p><strong>Versão em PDF: <a href="/posts/cut-video.pdf">cut-video.pdf</a></strong><br></p>
+<p><strong>PDF: <a href="/posts/cut-video.pdf">cut-video.pdf</a></strong><br></p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -82,7 +96,7 @@ h1, h2, h3, h4, h5, h6
 </div>
 </div>
 <div class="paragraph">
-<p><strong><a href="https://odysee.com/@paulojeronimo/" target="_blank" rel="noopener">Paulo Jerônimo</a> in <a href="https://goo.gl/maps/Wdgo8se79hfP1m7PA" target="_blank" rel="noopener">Brasília</a> on 12 de Dezembro de 2022</strong>:
+<p><strong><a href="https://odysee.com/@paulojeronimo/" target="_blank" rel="noopener">Paulo Jerônimo</a> in <a href="https://goo.gl/maps/Wdgo8se79hfP1m7PA" target="_blank" rel="noopener">Brasília</a> on December 12, 2022</strong>:
 I created <a href="#cut-video">a Bash script for video trimming and compression</a>
 using <a href="https://ffmpeg.org/" target="_blank" rel="noopener">FFmpeg</a> and <a href="https://handbrake.fr/docs/en/latest/cli/cli-options.html" target="_blank" rel="noopener">HandBrakeCLI</a>.
 It can be helpful if you are like me: I use command line tools to do
@@ -100,7 +114,7 @@ as input for recording this video.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cut-video"><a class="anchor" href="#cut-video"></a>The cut-video script</h2>
+<h2 id="cut-video"><a class="anchor" href="#cut-video"></a>1. The cut-video script</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The <code>cut-video</code> script is a <strong>55 lines <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noopener">Bash</a> script</strong> that I wrote to do
@@ -194,7 +208,7 @@ features, is also available in my <code>dotfiles</code> GitHub repository, here:
 </div>
 </div>
 <div class="sect1">
-<h2 id="details"><a class="anchor" href="#details"></a>Details in the cut-video script</h2>
+<h2 id="details"><a class="anchor" href="#details"></a>2. Details in the cut-video script</h2>
 <div class="sectionbody">
 <details>
 <summary class="title">the first line</summary>
@@ -356,7 +370,7 @@ code 1.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_testing"><a class="anchor" href="#_testing"></a>Testing</h2>
+<h2 id="testing"><a class="anchor" href="#testing"></a>3. Testing</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>In order to do the next tests with <a href="#cut-video">cut-video</a>, you can copy and paste
@@ -364,7 +378,7 @@ the following commands directly into your shell.
 I&#8217;ll be using two environments in these tests: <a href="https://github.com/termux/termux-app" target="_blank" rel="noopener">Termux</a> and Linux.</p>
 </div>
 <div class="sect2">
-<h3 id="_test_1"><a class="anchor" href="#_test_1"></a>Test 1</h3>
+<h3 id="test-1"><a class="anchor" href="#test-1"></a>3.1. Test 1</h3>
 <div class="paragraph">
 <p>To follow the steps that I will show you, you will need the following
 tools installed:</p>
@@ -472,7 +486,7 @@ be equals to the output shown in command below:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_test_2"><a class="anchor" href="#_test_2"></a>Test 2</h3>
+<h3 id="test-2"><a class="anchor" href="#test-2"></a>3.2. Test 2</h3>
 <div class="paragraph">
 <p><strong><span class="red">TODO</span></strong> &#8594; Finish this topic.</p>
 </div>
@@ -505,7 +519,7 @@ EOF</pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_references"><a class="anchor" href="#_references"></a>References</h2>
+<h2 id="references"><a class="anchor" href="#references"></a>4. References</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>

@@ -4,10 +4,11 @@ _test-get-iso-date() {
   while read input_date
   do
     get-iso-date "$input_date"
-    echo
-  done < ./test-data/get-iso-date.txt
-}
-
-_test-get-pt-month() {
-  get-pt-month "$1" 
+    echo " - $post_language"
+  done < <(cat <<'EOF'
+1 de Janeiro de 2020
+31 de Dezembro de 2021
+December 12, 2022
+EOF
+)
 }

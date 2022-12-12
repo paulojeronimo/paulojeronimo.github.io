@@ -39,17 +39,23 @@ then
 fi
 
 declare -a posts
-yq_pipes='sort_by(.date)|reverse|map([.id,.date,.title,.abstract]|join("|"))|.[]'
+yq_pipes='sort_by(.date)|reverse|map([.id,.date,.language,.title,.abstract]|join("|"))|.[]'
+: << 'TEST_CODE_YQ_PIPES'
+yq "$yq_pipes" $input_file
+exit
+TEST_CODE_YQ_PIPES
+
 i=0
 while read -r line
 do
-  while IFS='|' read -r id date title abstract
+  while IFS='|' read -r id date language title abstract
   do
     post_idx=$(printf "post_%04d" $i)
     posts[$i]=$post_idx
     declare -A $post_idx
     eval "$post_idx[id]=$id"
     eval "$post_idx[date]=$date"
+    eval "$post_idx[language]=$language"
     eval "$post_idx[title]='$title'"
     eval "$post_idx[abstract]='$abstract'"
   done <<< "$line"
