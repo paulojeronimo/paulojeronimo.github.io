@@ -22,44 +22,51 @@ written in {uri-what-is-asciidoc}[AsciiDoc format^]) and {Bash}.
 [green]#{uri-pj-github-website}[Here is the code of this site^] if you
 are interested in it#.
 
-.I'm an Entrepeneur and a *Software Architect/ Developer*
-****
-Sometimes, I also work as a *DevOps* guy.
-I am always working with *[red]#security in mind#* (see
-{uri-pj-keybase}[my keybase account^]).
-I have some skills and many years of experience developing software
-(since 1993).
-
-[.text-center]
-You can also read all about my past works in *my résumé (in
-{uri-pj-resume}[English^] or in {uri-pj-resume-pt-br}[Brazilian
-Portuguese^])*.
-
 Note that in the icons above you can see links to all my blog posts (
-{BlogPostsLink} ), code ( {GitHubLink} ), articles and tutorials (
-{SitemapLink} ), that I've been written.
+{BlogPostsIcon1x} ), code ( {GitHubIcon1x} ), articles, and tutorials (
+{SitemapIcon1x} ), that I've written.
+
+.I'm an Entrepreneur and a *Software Architect/ Developer*
+****
+I sometimes also work as a *DevOps* guy because I really like to
+automate many things (even in my daily tasks).
+I am always working with {uri-pj-keybase}[security in mind^]).
+I have many developer skills and years of experience in software
+architecture and development.
+I am a programmer since 1993.
+My bachelor's degree in Computer Science was in 1994 and, in 2002, I
+concluded a specialization in Distributed Computing.
+
+You can also read about my past works in *my résumé (in
+{uri-pj-resume}[English^] or {uri-pj-resume-pt-br}[Brazilian
+Portuguese^])*.
 ****
 
-Currently, *I live in Brazil* and in addition to my work as a software
-developer, +
-*I also founded and maintain {uri-finishertech-project}[a project^] (and
-now a Brazilian company) named {uri-finishertech}[Finisher.Tech^]*.
+Currently, *I live in Brazil*.
+My current home is in {Brasilia} but I also spend many weeks of the year
+in {RioDeJaneiro} because my son lives there.
+
+In addition to my work as a software developer, *I also founded and
+maintain {uri-finishertech-project}[a project^] (which is now the name
+of my Brazilian company) named {FinisherTech}*.
 
 [TIP]
 ====
 *[red]#With my current focus on Web3 technologies#*, I'm inviting people
-(starting in my country and talking in Portuguese) to work with me in a
-*DAO (Distributed Autonomous Organization)* that I initiated with the
-name {FinishersDAO}. +
-I have plans to invite people from other countries soon (at the
-beginning of 2023) to participate in this DAO.
+(from all places of the world) to work with me in a *DAO (Distributed
+Autonomous Organization)* that I initiated with the name {FinishersDAO}.
+This DAO is focused on developing Web3 software for the wellness area in
+a category called {MoveToEarn}.
+Beyond this focus, by inviting people to join me in this DAO, one of my
+interests is to share knowledge while improving programming skills for
+the new Web era.
 ====
 
 .I'm an *Amateur Triathlete (3x {uri-ironman}[Ironman^])* ...
 ****
-\... practicing sports *daily* to get more healthy and life quality. +
-Read {uri-saudeecripto}[my history in Ironman races^] _(only in
-Brazilian Portuguese at this moment)_. +
+\... practicing sports *daily* to get more healthy and quality life. +
+You can read {uri-saudeecripto}[my history in Ironman races^] _(only in
+Brazilian Portuguese now)_. +
 [[remark]] After a stop in my workouts, today, I'm a *-> {revremark} <-*
 {uri-finishersdao-desafio1}[(read more about this)^].
 ****
