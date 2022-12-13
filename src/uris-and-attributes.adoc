@@ -58,4 +58,3 @@
 :og-image-height: 644
 :og-title: Paulo Jerônimo's website
 :og-type: website
-:PostLanguage: pt-br

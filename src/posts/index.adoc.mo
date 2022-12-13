@@ -9,8 +9,6 @@
 :docinfo: shared
 include::{basedir}/uris-and-attributes.adoc[]
 :og-description: Posts index page
-:pt-br-post: pt-br
-:english-post: en
 
 include::{basedir}/icons.adoc[]
 
@@ -23,13 +21,12 @@ Some of them are in English ({en}) and high technical to normal people
 .*{{__post__.title}}*
 ****
 [.text-center]
-{{__post__.language}},
-{{__post__.date}}
+{{__lang__.language}}, {{__post__.date}}
 
 image:posts/{{__post__.id}}/capa.mini.png[role="related left"]
 {{__post__.abstract}}
 
-*link:/posts/{{__post__.id}}/[Read more]*
+*link:/posts/{{__post__.id}}/[{{__lang__.read-more}}]*
 ****
 
 {{/foreach-post}}

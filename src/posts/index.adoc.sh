@@ -2,6 +2,7 @@
 set -eou pipefail
 
 cd $(dirname $0)
+source ../strings.sh
 
 :<<'TEST_CODE_1'
 declare -a posts
@@ -83,7 +84,8 @@ foreach-post() {
 
   for post in "${posts[@]}"
   do
-    sed "s/__post__/${post}/" <<< "$content"
+    lang=$(eval "echo \${$post[language]}")
+    sed "s/__post__/${post}/;s/__lang__/$lang/" <<< "$content"
   done
 }
 

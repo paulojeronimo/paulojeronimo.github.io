@@ -12,38 +12,21 @@ get-post-title() {
   grep '^:PostTitle:' $f | cut -d: -f3 | xargs
 }
 
-# TODO: write a better implementation using a map
 get-pt-month() {
-  local pt_months=(
-    'janeiro' 'fevereiro' 'março' 'abril'
-    'maio' 'junho' 'julho' 'agosto'
-    'setembro' 'outubro' 'novembro' 'dezembro'
-  )
-  local pt_month=${1,,}
-  month=1
-  while (( month <= 12 ))
-  do
-    [ "${pt_months[((month-1))]}" = "$pt_month" ] && break
-    (( month++ ))
-  done
-  (( $month <= 12 )) && echo -n $month || echo -n '??'
+  declare -r -A months=(
+    [janeiro]=1 [fevereiro]=2 [março]=3 [abril]=4
+    [maio]=5 [junho]=6 [julho]=7 [agosto]=8
+    [setembro]=9 [outubro]=10 [novembro]=11 [dezembro]=12)
+  local month=${1,,}
+  local result=${months[$month]}
+  [ "$result" ] && echo -n $result || echo -n '??'
 }
 
 get-en-month() {
   declare -r -A months=(
-    [januaray]=1
-    [february]=2
-    [march]=3
-    [april]=4
-    [may]=5
-    [june]=6
-    [july]=7
-    [august]=8
-    [september]=9
-    [october]=10
-    [november]=11
-    [december]=12
-  )
+    [january]=1 [february]=2 [march]=3 [april]=4
+    [may]=5 [june]=6 [july]=7 [august]=8
+    [september]=9 [october]=10 [november]=11 [december]=12)
   local month=${1,,}
   local result=${months[$month]}
   [ "$result" ] && echo -n $result || echo -n '??'
@@ -61,7 +44,7 @@ get-date-and-language() {
     day=${BASH_REMATCH[1]}
     month=$(get-pt-month ${BASH_REMATCH[2]})
     year=${BASH_REMATCH[3]}
-    printf '%04d-%02d-%02d,pt-br' $year $month $day
+    printf '%04d-%02d-%02d,pt_br' $year $month $day
   elif [[ "$1" =~ $en_date ]]
   then
     month=$(get-en-month ${BASH_REMATCH[1]})
