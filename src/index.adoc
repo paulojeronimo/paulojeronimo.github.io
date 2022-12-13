@@ -28,13 +28,13 @@ Note that in the icons above you can see links to all my blog posts (
 
 .I'm an Entrepreneur and a *Software Architect/ Developer*
 ****
-I sometimes also work as a *DevOps* guy because I really like to
-automate many things (even in my daily tasks).
+I sometimes work as a *DevOps* guy because I like automating many things
+(even in my daily tasks).
 I am always working with {uri-pj-keybase}[security in mind^]).
-I have many developer skills and years of experience in software
-architecture and development.
-I am a programmer since 1993.
-My bachelor's degree in Computer Science was in 1994 and, in 2002, I
+I have {uri-pj-sitemap}[knowledge of many technologies^] and more than
+two decades of experience in software architecture and development.
+I have been a programmer since 1993.
+My bachelor's degree in Computer Science was in 1994, and in 2002, I
 concluded a specialization in Distributed Computing.
 
 You can also read about my past works in *my résumé (in
@@ -43,12 +43,12 @@ Portuguese^])*.
 ****
 
 Currently, *I live in Brazil*.
-My current home is in {Brasilia} but I also spend many weeks of the year
-in {RioDeJaneiro} because my son lives there.
+My current is in {Brasilia}, but I also spend many weeks of the year in
+{RioDeJaneiro} because {uri-pedropaulo}[my son^] lives there.
 
-In addition to my work as a software developer, *I also founded and
-maintain {uri-finishertech-project}[a project^] (which is now the name
-of my Brazilian company) named {FinisherTech}*.
+In addition to my work as a software developer, *I founded and
+maintained {uri-finishertech-project}[a project^] (now the name of my
+Brazilian company) named {FinisherTech}*.
 
 [TIP]
 ====
