@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <link rel="stylesheet" href="../../css/asciidoctor.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/github.min.css">
 <!-- https://developers.facebook.com/docs/sharing/webmasters/ -->
 <meta property="og:url" content="{og-url}">
 <meta property="og:image" content="{og-image}">
@@ -53,7 +54,7 @@ h1, h2, h3, h4, h5, h6
 }
 </style>
 </head>
-<body class="article">
+<body class="article doc">
 <div id="header">
 <h1>nft-week-1</h1>
 </div>
@@ -71,7 +72,7 @@ h1, h2, h3, h4, h5, h6
 </div>
 <hr>
 <div class="paragraph text-center">
-<p><strong>Versão em PDF: <a href="/posts/nft-week-1.pdf">nft-week-1.pdf</a></strong><br></p>
+<p><strong>PDF: <a href="/posts/nft-week-1.pdf">nft-week-1.pdf</a></strong><br></p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -127,5 +128,106 @@ pelo WhatsApp</a> (número +5561998073864).</p>
 <strong><a href="https://odysee.com/@paulojeronimo:4/ftecm221-nft-1:2" class="bare">https://odysee.com/@paulojeronimo:4/ftecm221-nft-1:2</a></strong></p>
 </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
+<script>
+if (!hljs.initHighlighting.called) {
+  hljs.initHighlighting.called = true
+  ;[].slice.call(document.querySelectorAll('pre.highlight > code[data-lang]')).forEach(function (el) { hljs.highlightBlock(el) })
+}
+</script>
+<style>
+.doc .listingblock > .content {
+  position: relative;
+}
+
+.doc .listingblock code[data-lang]::before {
+  content: none;
+}
+
+.doc .source-toolbox {
+  display: flex;
+  position: absolute;
+  visibility: hidden;
+  top: 0.25rem;
+  right: 0.5rem;
+  color: #808080;
+  white-space: nowrap;
+  font-size: 0.85em;
+}
+
+.doc .listingblock:hover .source-toolbox {
+  visibility: visible;
+}
+
+.doc .source-toolbox .source-lang {
+  font-family: "Droid Sans Mono", "DejaVu Sans Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+
+.doc .source-toolbox > :not(:last-child)::after {
+  content: "|";
+  letter-spacing: 0;
+  padding: 0 1ch;
+}
+
+.doc .source-toolbox .copy-button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  color: inherit;
+  outline: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  width: 1em;
+  height: 1em;
+}
+
+.doc .source-toolbox .copy-icon {
+  flex: none;
+  width: inherit;
+  height: inherit;
+  filter: invert(50.2%);
+  margin-top: 0.05em;
+}
+
+.doc .source-toolbox .copy-toast {
+  flex: none;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 1em;
+  border-radius: 0.25em;
+  padding: 0.5em;
+  cursor: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease 0.75s;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.doc .source-toolbox .copy-toast::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1em;
+  height: 1em;
+  border: 0.55em solid transparent;
+  border-left-color: rgba(0, 0, 0, 0.8);
+  transform: rotate(-90deg) translateX(50%) translateY(50%);
+  transform-origin: left;
+}
+
+.doc .source-toolbox .copy-button.clicked .copy-toast {
+  opacity: 1;
+  transition: none;
+}
+</style>
+<script src="/./js/copy-to-clipboard.js"></script>
 </body>
 </html>
