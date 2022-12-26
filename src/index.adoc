@@ -17,14 +17,22 @@ include::icons.adoc[]
 image::{og-image}[width=40%]
 
 Hi! *[red]#My name is {author}#*.
-Welcome to my *straightforward website* (almost entirely text-based and
-written in {uri-what-is-asciidoc}[AsciiDoc format^]) and {Bash}.
+
+.{uri-pj-website-video}[Here's a video where I'm presenting this website^] __(uncollapse to details)__ ...
+[%collapsible]
+====
+It is a *straightforward website*, almost entirely text-based and
+written in {uri-what-is-asciidoc}[AsciiDoc format^]), {Bash} and a few
+scripts in {JavaScript}.
+These are the programming languages that I am currently using most of my
+time.
 [green]#{uri-pj-github-website}[Here is the code of this site^] if you
 are interested in it#.
 
 Note that in the icons above you can see links to all my blog posts (
 {BlogPostsIcon1x} ), code ( {GitHubIcon1x} ), articles, and tutorials (
 {SitemapIcon1x} ), that I've written.
+====
 
 .I'm an Entrepreneur and a *Software Architect/ Developer*
 ****
@@ -37,24 +45,21 @@ I have been a programmer since 1993.
 My bachelor's degree in Computer Science was in 1994, and in 2002, I
 concluded a specialization in Distributed Computing.
 
-You can also read about my past works in *my résumé (in
+*You can also read about my past works in [red]#my résumé (in
 {uri-pj-resume}[English^] or {uri-pj-resume-pt-br}[Brazilian
-Portuguese^])*.
+Portuguese^])#*.
 ****
 
-Currently, *I live in Brazil*.
-My current is in {Brasilia}, but I also spend many weeks of the year in
-{RioDeJaneiro} because {uri-pedropaulo}[my son^] lives there.
-
-In addition to my work as a software developer, *I founded and
-maintained {uri-finishertech-project}[a project^] (now the name of my
-Brazilian company) named {FinisherTech}*.
-
-[TIP]
+.As an Entrepreneur, I founded the project *Finisher.Tech* ...
+[%collapsible]
 ====
-*[red]#With my current focus on Web3 technologies#*, I'm inviting people
-(from all places of the world) to work with me in a *DAO (Distributed
-Autonomous Organization)* that I initiated with the name {FinishersDAO}.
+{FinisherTech} started as {uri-finishertech-project}[a project^]
+but is now the name of my Brazilian company.
+
+*Also, [red]#with my current focus on {Web3} technologies#*, I'm
+inviting people (from all places of the world) to work with me in a *DAO
+(Distributed Autonomous Organization)* that I initiated with the name
+{FinishersDAO}.
 This DAO is focused on developing Web3 software for the wellness area in
 a category called {MoveToEarn}.
 Beyond this focus, by inviting people to join me in this DAO, one of my
@@ -62,11 +67,22 @@ interests is to share knowledge while improving programming skills for
 the new Web era.
 ====
 
+.Currently, *I live in Brazil* {uri-pj-wife}[with my wife^] ...
+[%collapsible]
+====
+{uri-pj-marriage-photo}[We got married in 1997^] and
+now have two adults child ({uri-pj-daughter}[a married daughter^] and
+{uri-pj-son}[a son^]).
+My home is in {Brasilia}, but I also spend many weeks of the year in
+{RioDeJaneiro} because my son lives there.
+====
+
 .I'm an *Amateur Triathlete (3x {uri-ironman}[Ironman^])* ...
-****
+[%collapsible]
+====
 \... practicing sports *daily* to get more healthy and quality life. +
 You can read {uri-saudeecripto}[my history in Ironman races^] _(only in
 Brazilian Portuguese now)_. +
 [[remark]] After a stop in my workouts, today, I'm a *-> {revremark} <-*
 {uri-finishersdao-desafio1}[(read more about this)^].
-****
+====
