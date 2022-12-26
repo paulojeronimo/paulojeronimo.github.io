@@ -36,14 +36,14 @@ Note that in the icons above you can see links to all my blog posts (
 
 .I'm an Entrepreneur and a *Software Architect/ Developer*
 ****
-I sometimes work as a *DevOps* guy because I like automating many things
-(even in my daily tasks).
-I am always working with {uri-pj-keybase}[security in mind^]).
 I have {uri-pj-sitemap}[knowledge of many technologies^] and more than
 two decades of experience in software architecture and development.
 I have been a programmer since 1993.
 My bachelor's degree in Computer Science was in 1994, and in 2002, I
 concluded a specialization in Distributed Computing.
+I am always working with {security} in mind.
+Sometimes I work as a *DevOps* guy because I like automating tasks in
+private or public cloud or data centers.
 
 *You can also read about my past works in [red]#my résumé (in
 {uri-pj-resume}[English^] or {uri-pj-resume-pt-br}[Brazilian

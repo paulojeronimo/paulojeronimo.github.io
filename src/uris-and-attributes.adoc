@@ -63,6 +63,7 @@
 :YouTubeIcon: icon:youtube[2x]
 :YouTubeLink: {uri-pj-youtube}[{YouTubeIcon}^]
 //
+:security: {link-to}security[security^]
 :Bash: {link-to}bash[Bash^]
 :JavaScript: {link-to}javascript[JavaScript^]
 :Web3: {link-to}web3[Web3^]
