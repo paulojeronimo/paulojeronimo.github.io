@@ -3,7 +3,9 @@
 // URIs
 :uri-pj: https://paulojeronimo.com
 :uri-pj-cv: {uri-pj}/cv/en
+:uri-pj-cv-1993: {uri-pj-cv}/#_1993-02-cobol-programmer-at-embrace
 :uri-pj-resume: {uri-pj}/cv/en/resume.html
+:uri-pj-resume-specialist: {uri-pj-resume}#my-academic-background
 :uri-pj-resume-pt-br: {uri-pj}/cv/pt-br
 :uri-pj-avatar: https://avatars2.githubusercontent.com/u/66204?s=400&v=4
 :uri-pj-twitter: https://twitter.com/paulojeronimo
@@ -22,6 +24,7 @@
 :uri-pj-wife: https://www.instagram.com/p/CkEBj8rOVyl/
 :uri-pj-daughter: https://www.instagram.com/p/Cf-EsN_MskF/
 :uri-pj-son: https://www.instagram.com/p/Ch2l6EgrCmD/
+:uri-open-to-job: https://www.linkedin.com/feed/update/urn:li:activity:7013247326311870464/
 //
 :link-to: {uri-pj-sitemap}/#
 :uri-web3: {link-to}web3
@@ -34,6 +37,7 @@
 :uri-finishersdao-desafio1: https://finisher.tech/dao/finisher-tech-desafio1.html
 :uri-saudeecripto: {link-to}saudeecripto
 :uri-bash: {link-to}bash
+:uri-cloud-platforms: {link-to}cloud-platforms
 // Attributes
 :pt-br: https://en.wikipedia.org/wiki/Brazilian_Portuguese[pt-br^]
 :en: https://en.wikipedia.org/wiki/English_language[en^]

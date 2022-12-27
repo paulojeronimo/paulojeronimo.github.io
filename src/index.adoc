@@ -38,14 +38,19 @@ Note that in the icons above you can see links to all my blog posts (
 ****
 I have {uri-pj-sitemap}/#tags[knowledge of many technologies^] and more
 than two decades of experience in software architecture and development.
-I have been a programmer since 1993.
-My bachelor's degree in Computer Science was in 1994, and in 2002, I
-concluded a specialization in Distributed Computing.
+I have been a programmer {uri-pj-cv-1993}[since 1993^].
+My bachelor's degree in Computer Science was in 1994, and in 2002 I
+concluded a {uri-pj-resume-specialist}[specialization in Distributed
+Computing and Object Orientation^].
 I am always working with {security} in mind.
 Sometimes I work as a *DevOps* guy because I like automating tasks in
-private or public cloud or data centers.
+private or public {uri-cloud-platforms}[cloud platforms^] or data
+centers.
 
-*You can also read about my past works in [red]#my résumé (in
+*[blue]#I am {uri-open-to-job}[open to job opportunities^] as a
+<<web3,Web3>> or JavaScript/ TypeScript developer#*, or in the DevOps
+area, working full-time or part-time.
+*You can read about my past works in [red]#my résumé (in
 {uri-pj-resume}[English^] or {uri-pj-resume-pt-br}[Brazilian
 Portuguese^])#*.
 ****
@@ -56,6 +61,7 @@ Portuguese^])#*.
 {FinisherTech} started as {uri-finishertech-project}[a project^]
 but is now the name of my Brazilian company.
 
+[[web3]]
 *Also, [red]#with my current focus on {Web3} technologies#*, I'm
 inviting people (from all places of the world) to work with me in a *DAO
 (Distributed Autonomous Organization)* that I initiated with the name
