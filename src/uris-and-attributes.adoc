@@ -5,6 +5,8 @@
 :uri-pj-cv: {uri-pj}/cv/en
 :uri-pj-cv-1993: {uri-pj-cv}/#_1993-02-cobol-programmer-at-embrace
 :uri-pj-resume: {uri-pj}/cv/en/resume.html
+:uri-pj-resume-web3: {uri-pj}/cv/en/resume-web3.html
+:uri-pj-resume-devops: {uri-pj}/cv/en/resume-devops.html
 :uri-pj-resume-specialist: {uri-pj-resume}#my-academic-background
 :uri-pj-resume-pt-br: {uri-pj}/cv/pt-br
 :uri-pj-avatar: https://avatars2.githubusercontent.com/u/66204?s=400&v=4

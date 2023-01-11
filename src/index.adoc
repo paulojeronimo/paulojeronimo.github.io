@@ -18,7 +18,7 @@ image::{og-image}[width=40%]
 
 Hi! *[red]#My name is {author}#*.
 
-.{uri-pj-website-video}[Here's a video where I'm presenting this website^] __(uncollapse to details)__ ...
+.{uri-pj-website-video}[Here's a video where I'm presenting a version of this website^] __(uncollapse to details)__ ...
 [%collapsible]
 ====
 It is a *straightforward website*, almost entirely text-based and
@@ -48,11 +48,11 @@ private or public {uri-cloud-platforms}[cloud platforms^] or data
 centers.
 
 *[blue]#I am {uri-open-to-job}[open to job opportunities^] as a
-<<web3,Web3>> or JavaScript/ TypeScript developer#*, or in the DevOps
-area, working full-time or part-time.
-*You can read about my past works in [red]#my résumé (in
-{uri-pj-resume}[English^] or {uri-pj-resume-pt-br}[Brazilian
-Portuguese^])#*.
+{uri-pj-resume-web3}[Full Stack Developer, Web3^], or
+{uri-pj-resume-devops}[DevOps Engineer^]#*.
+__Please, click on the links to see my details about each each
+position!__
+I can work full or part-time.
 ****
 
 .As an Entrepreneur, I founded the project *Finisher.Tech* ...
