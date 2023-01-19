@@ -34,37 +34,41 @@ Note that in the icons above you can see links to all my blog posts (
 {SitemapIcon1x} ), that I've written.
 ====
 
-.I'm an Entrepreneur and a *Software Architect/ Developer*
+.I am a *{SoftwareDeveloper}/ {TechnicalLeader}*
 ****
-I have {uri-pj-sitemap}/#tags[knowledge of many technologies^] and more
-than two decades of experience in software architecture and development.
-I have been a programmer {uri-pj-cv-1993}[since 1993^].
-My bachelor's degree in Computer Science was in 1994, and in 2002 I
-concluded a {uri-pj-resume-specialist}[specialization in Distributed
-Systems and Object Orientation^].
-I am always working with *{security}* in mind.
-I also work as a *{DevOps}* guy because I like automating tasks in
-private or public {uri-cloud-platforms}[cloud platforms^] or data
-centers.
+I have experience in *{uri-pj-sitemap}/#tags[many technologies^]* and
+more than two decades (since 1993) working in positions like
+*{SoftwareDeveloper}*, *{SoftwareArchitect}*, and *{TechnicalLeader}*.
 
-*[blue]#I am {uri-open-to-job}[open to job opportunities^] as a
-{FullStackDeveloperWeb3} or {DevOpsEngineer}#*.
+My bachelor's degree in *Computer Science* was in 1994, and in 2002 I
+concluded a specialization in *Distributed Systems and Object
+Orientation*.
+
+I always work with *{security}* and *{quality}* in mind.
+My software is *{TestInfected}* since I met {KentBeck} in person during
+the {uri-xpbrasil2002}[Extreme Programming Brasil event in 2002^].
+I work as a *{DevOps}* guy because I like automating tasks in private or
+public {uri-cloud-platforms}[cloud platforms^] or data centers.
+
+*I am {uri-open-to-job}[open to job opportunities^] as a
+{FullStackDeveloperWeb3} or {DevOpsEngineer}*.
 _[red]#Please, click on the links to see my customized résumés for each
 position!#_
 I can work full or part-time.
 ****
 
-.As an Entrepreneur, I founded the project *Finisher.Tech* ...
+.I founded the project *Finisher.Tech*, focusing on *Blockchain/ Web3 development* ...
 [%collapsible]
 ====
-{FinisherTech} started as {uri-finishertech-project}[a project^]
-but is now the name of my Brazilian company.
+{FinisherTech} started with my entrepreneurial spirit in the wellness
+area and was {uri-finishertech-project}[a project^], but it is now the
+name of my Brazilian company.
 
 [[web3]]
-*Also, [red]#with my current focus on {Web3} technologies#*, I'm
-inviting people (from all places of the world) to work with me in a *DAO
-(Distributed Autonomous Organization)* that I initiated with the name
-{FinishersDAO}.
+*With my current focus on {Blockchain} and {Web3} development*, I'm
+inviting people (from all places of the world) to work with me in a
+*Distributed Autonomous Organization (DAO)* that I initiated with the
+name {FinishersDAO}.
 This DAO is focused on developing Web3 software for the wellness area in
 a category called {MoveToEarn}.
 Beyond this focus, by inviting people to join me in this DAO, one of my
@@ -72,22 +76,23 @@ interests is to share knowledge while improving programming skills for
 the new Web era.
 ====
 
-.Currently, *I live in Brazil* {uri-pj-wife}[with my wife^] ...
+.Currently, *I live in Brazil* with my wife ...
 [%collapsible]
 ====
-{uri-pj-marriage-photo}[We got married in 1997^] and
+{uri-pj-wife}[We^] got married {uri-pj-marriage-photo}[in 1997^] and
 now have two adults child ({uri-pj-daughter}[a married daughter^] and
 {uri-pj-son}[a son^]).
 My home is in {Brasilia}, but I also spend many weeks of the year in
 {RioDeJaneiro} because my son lives there.
 ====
 
-.I'm an *Amateur Triathlete (3x {uri-ironman}[Ironman^])* ...
+.I'm an *Amateur Triathlete (3x Ironman)* ...
 [%collapsible]
 ====
 \... practicing sports *daily* to get more healthy and quality life. +
-You can read {uri-saudeecripto}[my history in Ironman races^] _(only in
-Brazilian Portuguese now)_. +
+You can read {uri-saudeecripto-com}[my history in Ironman races^] _(only
+in Brazilian Portuguese now)_ and {uri-saudeecripto}[other related
+links^]. +
 [[remark]] After a stop in my workouts, today, I'm a *-> {revremark} <-*
 {uri-finishersdao-desafio1}[(read more about this)^].
 ====
