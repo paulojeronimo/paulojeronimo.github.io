@@ -70,11 +70,15 @@
 :YouTubeLink: {uri-pj-youtube}[{YouTubeIcon}^]
 //
 :security: {link-to}security[security^]
+:DevOps: {link-to}devops[DevOps^]
 :Bash: {link-to}bash[Bash^]
 :JavaScript: {link-to}javascript[JavaScript^]
 :Web3: {link-to}web3[Web3^]
 :Brasilia: https://goo.gl/maps/Wdgo8se79hfP1m7PA[Brasília^]
 :RioDeJaneiro: https://goo.gl/maps/ivSEqaLmU2E4J7kRA[Rio de Janeiro^]
+//
+:FullStackDeveloperWeb3: {uri-pj-resume-web3}[Full Stack Developer (Web3)^]
+:DevOpsEngineer: {uri-pj-resume-devops}[DevOps and Site Reliability Engineer^]
 // Operational Attributes
 :og-url: https://paulojeronimo.com
 :og-image: {og-url}/images/pj-2.jpg

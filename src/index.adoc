@@ -41,17 +41,16 @@ than two decades of experience in software architecture and development.
 I have been a programmer {uri-pj-cv-1993}[since 1993^].
 My bachelor's degree in Computer Science was in 1994, and in 2002 I
 concluded a {uri-pj-resume-specialist}[specialization in Distributed
-Computing and Object Orientation^].
-I am always working with {security} in mind.
-Sometimes I work as a *DevOps* guy because I like automating tasks in
+Systems and Object Orientation^].
+I am always working with *{security}* in mind.
+I also work as a *{DevOps}* guy because I like automating tasks in
 private or public {uri-cloud-platforms}[cloud platforms^] or data
 centers.
 
 *[blue]#I am {uri-open-to-job}[open to job opportunities^] as a
-{uri-pj-resume-web3}[Full Stack Developer, Web3^], or
-{uri-pj-resume-devops}[DevOps Engineer^]#*.
-__Please, click on the links to see my details about each each
-position!__
+{FullStackDeveloperWeb3} or {DevOpsEngineer}#*.
+_[red]#Please, click on the links to see my customized résumés for each
+position!#_
 I can work full or part-time.
 ****
 
