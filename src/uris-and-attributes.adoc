@@ -15,6 +15,7 @@
 :uri-pj-github-website: https://github.com/paulojeronimo/paulojeronimo.github.io
 :uri-pj-linkedin: https://www.linkedin.com/in/paulojeronimo/
 :uri-pj-youtube: https://www.youtube.com/~paulojeronimo
+:uri-pj-instagram: https://www.instagram.com/paulojeronimo.dao/
 :uri-pj-whatsapp: https://wa.me/5561998073864
 :uri-pj-telegram: https://t.me/paulojeronimo_com
 :uri-pj-sitemap: {uri-pj}/sitemap
@@ -60,6 +61,8 @@
 :GitHubLink: {uri-pj-github}[{GitHubIcon}^]
 :YouTubeIcon: icon:youtube[2x]
 :YouTubeLink: {uri-pj-youtube}[{YouTubeIcon}^]
+:InstagramIcon: icon:instagram[2x]
+:InstagramLink: {uri-pj-instagram}[{InstagramIcon}^]
 :HomeLink: link:/[{HomeIcon}]
 :SitemapIcon1x: icon:sitemap[]
 :SitemapIcon: icon:sitemap[2x]
@@ -68,8 +71,6 @@
 :WhatsAppLink: {uri-pj-whatsapp}[{WhatsAppIcon}^]
 :LinkedInIcon: icon:linkedin[2x]
 :LinkedInLink: {uri-pj-linkedin}[{LinkedInIcon}^]
-:YouTubeIcon: icon:youtube[2x]
-:YouTubeLink: {uri-pj-youtube}[{YouTubeIcon}^]
 :Ironman: {uri-ironman}[Ironman^]
 //
 :security: {link-to}security[security^]

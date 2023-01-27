@@ -8,5 +8,6 @@ icon:i-cursor[2x]
 {LinkedInLink}
 {GitHubLink}
 {YouTubeLink}
+{InstagramLink}
 
 '''
