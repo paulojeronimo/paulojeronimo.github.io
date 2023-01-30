@@ -89,7 +89,7 @@
 :SoftwareArchitect: pass:q[<u>Software Architect</u>]
 :TechnicalLeader: pass:q[<u>Technical Leader</u>]
 :DevOpsEngineer: pass:q[<u>DevOps Engineer</u>]
-:FullStackDeveloperWeb3: {uri-pj-resume-web3}[Full Stack Developer (Web3)^]
+:FullStackDeveloper: {uri-pj-resume-web3}[Full Stack Developer^]
 :DevOpsAndSRE: {uri-pj-resume-devops}[DevOps and Site Reliability Engineer^]
 // Operational Attributes
 :og-url: https://paulojeronimo.com

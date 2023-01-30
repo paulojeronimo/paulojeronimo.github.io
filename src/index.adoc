@@ -53,7 +53,7 @@ My software is *{TestInfected}* since I met {KentBeck} in person during
 the {uri-xpbrasil2002}[Extreme Programming Brasil event in 2002^].
 
 *I am {uri-open-to-job}[open to job opportunities^] as a
-{FullStackDeveloperWeb3} or {DevOpsAndSRE}*.
+{FullStackDeveloper} or {DevOpsAndSRE}*.
 _[red]#Please, click on the links to see my customized résumés for each
 position!#_
 I can work full or part-time.

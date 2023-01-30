@@ -2,7 +2,7 @@
 {HomeLink}
 {BlogPostsLink}
 {SitemapLink}
-icon:i-cursor[2x]
+//icon:i-cursor[2x]
 {WhatsAppLink}
 {TelegramLink}
 {LinkedInLink}
