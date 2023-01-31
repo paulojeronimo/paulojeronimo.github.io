@@ -5,8 +5,8 @@
 //icon:i-cursor[2x]
 {WhatsAppLink}
 {TelegramLink}
-{LinkedInLink}
 {GitHubLink}
+{LinkedInLink}
 {YouTubeLink}
 {InstagramLink}
 

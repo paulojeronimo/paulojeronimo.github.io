@@ -18,7 +18,7 @@ image::{og-image}[width=40%]
 
 Hi! *[red]#My name is {author}#*.
 
-.{uri-pj-website-video}[Here's a video where I'm presenting a version of this website^] __(uncollapse to details)__ ...
+.*About this website* _(click to details)_...
 [%collapsible]
 ====
 It is a *straightforward website*, almost entirely text-based and
@@ -32,6 +32,11 @@ are interested in it#.
 Note that in the icons above you can see links to all my blog posts (
 {BlogPostsIcon1x} ), code ( {GitHubIcon1x} ), articles, and tutorials (
 {SitemapIcon1x} ), that I've written.
+
+{uri-pj-website-video}[I have a video where I'm presenting a version of
+this website^].
+You can also see me link:english-videos.html[speaking in English in some
+other videos].
 ====
 
 .I am a *{SoftwareDeveloper}/ {TechnicalLeader}*

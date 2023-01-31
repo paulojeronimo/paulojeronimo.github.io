@@ -12,6 +12,7 @@ src_dir=src; source $src_dir/common.sh
 
 _build() {
   echo-and-do "docker-asciidoctor -a baseuri=${baseuri} -D $html_dir $doc"
+  echo-and-do "asciidoctor -a baseuri=${baseuri} -D $html_dir src/english-videos.adoc"
   echo-and-do "asciidoctor -a baseuri=${baseuri} -D $html_dir/posts src/posts/index.adoc"
 }
 

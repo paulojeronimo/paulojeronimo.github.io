@@ -1,0 +1,24 @@
+= *paulojeronimo.com/english-videos*
+:source-highlighter: coderay
+:stylesdir: css
+:linkcss:
+:icons: font
+:imagesdir: images
+:nofooter:
+:docinfo2:
+include::uris-and-attributes.adoc[]
+:og-description: English Videos
+
+include::icons.adoc[]
+
+== Some of my English videos on social networks
+
+LinkedIn::
+. https://www.linkedin.com/feed/update/urn:li:activity:7024389064439050240/
+
+Instagram::
+. https://www.instagram.com/stories/highlights/17942969726399181/
+. https://www.instagram.com/stories/highlights/18062780005362670/
+
+YouTube::
+. https://www.youtube.com/watch?v=LUp70yv3tsQ
