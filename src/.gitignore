@@ -1,3 +1,4 @@
 *.log
 *.pid
+*.html
 /posts/**/asciidoctor.css

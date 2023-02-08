@@ -14,11 +14,22 @@ include::icons.adoc[]
 == Some of my English videos on social networks
 
 LinkedIn::
-. https://www.linkedin.com/feed/update/urn:li:activity:7024389064439050240/
+* *2023, Feb 7*:
+  https://www.linkedin.com/feed/update/urn:li:activity:7028892384579006464/[Improve
+your #programming skills by coding a #Fibonacci app]
+* *2023, Jan 26*:
+  https://www.linkedin.com/feed/update/urn:li:activity:7024389064439050240/[I
+am using Artificial Intelligence to improve my English]
 
 Instagram::
-. https://www.instagram.com/stories/highlights/17942969726399181/
-. https://www.instagram.com/stories/highlights/18062780005362670/
+* *https://instagram.com/paulojeronimo.dao[@paulojeronimo.dao]* <- all
+  my content in this account is in English (no Portuguese inside here).
+* *https://instagram.com/paulojeronimo74[@paulojeronimo74]* <- See my
+  https://www.instagram.com/stories/highlights/18062780005362670/[Daily
+English] stories.
 
 YouTube::
-. https://www.youtube.com/watch?v=LUp70yv3tsQ
+* *2023, Feb 7*: https://www.youtube.com/watch?v=hL3hFxp-aSc[Improve your
+  programming skills by coding a Fibonacci app]
+* [[yt-20221222]]*2022, Dec 22*:
+  https://www.youtube.com/watch?v=LUp70yv3tsQ[About me and my website]
