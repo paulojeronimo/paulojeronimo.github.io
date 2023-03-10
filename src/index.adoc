@@ -3,7 +3,9 @@ Paulo Jerônimo
 v1.0.0, {localdatetime}: 15 km running challenger
 :source-highlighter: coderay
 :stylesdir: css
+:stylesheet: my-styles.css
 :linkcss:
+:!copycss:
 :icons: font
 :imagesdir: images
 :nofooter:
@@ -39,28 +41,41 @@ a version of this website] on YouTube (2022, Dec 22).
 
 .I am a *{SoftwareDeveloper}/ {TechnicalLeader}*
 ****
-I have experience in *{uri-pj-sitemap}/#tags[several technologies^]* and
-more than two decades (since 1993) working in positions like
-*{SoftwareDeveloper}*, *{SoftwareArchitect}*, and *{TechnicalLeader}*.
-I can also work as a *{DevOpsEngineer}* guy because I have
-{uri-pj-resume-devops}[many years of giving practical solutions in this
-area], automating tasks in private or public {uri-cloud-platforms}[cloud
-platforms^] or data centers.
+I have *over three decades (since 1993) of working experience in
+{uri-pj-sitemap}#tags[several technologies^]* in the corporate market, from
+startups to big companies.
+My [.underline]#Git repositories, Slides, Blog Posts, Articles, Tutorials,
+Wikis, Videos and Running Applications# are centralized in one single page (
+{SitemapLink} ):
 
-My bachelor's degree in *Computer Science* was in 1994, and in 2002 I
-concluded a specialization in *Distributed Systems and Object
-Orientation*.
-
-I always work with *{security}* and *{quality}* in mind.
-My software is *{TestInfected}* since I met {KentBeck} in person during
-the {uri-xpbrasil2002}[Extreme Programming Brasil event in 2002^].
-
-*I am {uri-open-to-job}[open to job opportunities^] as a
-{FullStackDeveloper} or {DevOpsAndSRE}*.
-_[red]#Please, click on the links to see my customized résumés for each
-position!#_
-I can work full or part-time.
+[.h2-size.text-center]
+*{uri-pj-sitemap}*
 ****
+
+.[red]#Do you need *my help with your projects*#?
+[%collapsible%open]
+====
+Right now, *I am {uri-open-to-job}[open to job opportunities^]*.
+*My résumés (CVs):* +
+
+. *{FullStackDeveloper}*.
+. *{DevOpsAndSRE}*.
+
+*I can work full or part-time*.
+====
+
+.[red]#Do you *want buy my ebooks*#?
+[%collapsible]
+====
+These are the [.underline]#*ebooks* that I am currently developing# (_the real
+names of them aren't already defined_):
+
+. *{uri-tpttpa-ebook}[The Phi Treadmill Training Plan App (TPTTPA)]*. +
+A full-stack wellness project to show you the integrated used of some modern technologies. +
+_Main techs: Python, TypeScript, AWS_.
+. *{uri-bash-tips-ebook}[Bash Tips]*.
+. *{uri-fibonacci-ebook}[Programming The Fibonacci Sequence]*.
+====
 
 .I founded the project *Finisher.Tech*, focusing on *Blockchain/ Web3 development* ...
 [%collapsible]

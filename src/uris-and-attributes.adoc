@@ -28,6 +28,9 @@
 :uri-pj-daughter: https://www.instagram.com/p/Cf-EsN_MskF/
 :uri-pj-son: https://www.instagram.com/p/Ch2l6EgrCmD/
 :uri-open-to-job: https://www.linkedin.com/feed/update/urn:li:activity:7013247326311870464/
+:uri-tpttpa-ebook: https://paulojeronimo.com/tpttpa/tpttpa.pdf
+:uri-bash-tips-ebook: https://www.instagram.com/stories/highlights/17977053359081712/
+:uri-fibonacci-ebook: https://www.instagram.com/stories/highlights/18234447091090732/
 //
 :link-to: {uri-pj-sitemap}/#
 :uri-web3: {link-to}web3
