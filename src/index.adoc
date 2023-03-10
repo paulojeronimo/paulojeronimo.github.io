@@ -44,12 +44,13 @@ a version of this website] on YouTube (2022, Dec 22).
 I have *over three decades (since 1993) of working experience in
 {uri-pj-sitemap}#tags[several technologies^]* in the corporate market, from
 startups to big companies.
-My [.underline]#Git repositories, Slides, Blog Posts, Articles, Tutorials,
-Wikis, Videos and Running Applications# are centralized in one single page (
-{SitemapLink} ):
 
-[.h2-size.text-center]
-*{uri-pj-sitemap}*
+My *[.underline]#Git repositories, Slides, Blog Posts, Articles, Tutorials,
+Wikis, Videos, and Running Applications#* are centralized on one single page.
+Open it through this button:
+
+[.text-center]
+{uri-pj-sitemap}[icon:sitemap[3x]]
 ****
 
 .[red]#Do you need *my help with your projects*#?
