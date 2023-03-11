@@ -15,7 +15,7 @@
 :uri-pj-github-website: https://github.com/paulojeronimo/paulojeronimo.github.io
 :uri-pj-linkedin: https://www.linkedin.com/in/paulojeronimo/
 :uri-pj-youtube: https://www.youtube.com/~paulojeronimo
-:uri-pj-instagram: https://www.instagram.com/paulojeronimo.dao/
+:uri-pj-instagram: https://www.instagram.com/paulojeronimo_com/
 :uri-pj-whatsapp: https://wa.me/5561998073864
 :uri-pj-telegram: https://t.me/paulojeronimo_com
 :uri-pj-sitemap: {uri-pj}/sitemap
