@@ -1,0 +1,10 @@
+:toc: left
+:toc-title: {doctitle}
+ifdef::backend-pdf[]
+:toc-title!:
+endif::[]
+:figure-caption!:
+:numbered:
+:idprefix:
+:idseparator: -
+:sectanchors:

@@ -1,0 +1,16 @@
+:uri-paulojeronimo: https://paulojeronimo.com
+:uri-termux: https://github.com/termux/termux-app
+:uri-ft2324-pdf: https://paulojeronimo.com/tmp/f2324.pdf
+:uri-ft2324-v1-mp4-gpg: https://paulojeronimo.com/tmp/f2324/v1.mp4.gpg
+// External Attributes
+:Termux: {uri-termux}[Termux^]
+:GPG: https://gnupg.org/[GPG^]
+:Metamask: https://metamask.io/[Metamask^]
+:Polygon: https://polygon.technology/[Polygon^]
+:Ethereum: https://ethereum.org/[Ethereum^]
+// Internal Attributes
+//
+// Operational Attributes
+:PostDate: 18 de Abril de 2023
+:PostTitle: Uma maneira singular, segura via Smart Contract, de publicar um vídeo
+// vim: tw=0

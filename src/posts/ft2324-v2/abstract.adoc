@@ -1,0 +1,17 @@
+1) Você precisa gravar e publicar um vídeo, provando a todos que fez isso até um
+determinado dia e hora.
+2) Você precisa que o conteúdo desse vídeo esteja indisponível até um horário
+específico. Porém, precisa que todos saibam que esse vídeo existe.
+3) Você precisa garantir que as pessoas que se interessaram pelo seu vídeo
+possam acessá-lo a partir do momento em que ele estiver público, ou seja,
+quando seu conteúdo estiver visível.
+4) Você não se importa se as pessoas registradas para verem o conteúdo do seu
+vídeo repassarem ele para outras pessoas, desde que a partir do horário
+configurado. Ao contrário, você quer incentivar, e bonificar, as primeiras
+pessoas registradas a repassarem o seu vídeo a partir da data configurada.
+5) Você não quer depender de pessoas, e precisa de um sistema imparável e
+altamente redundante, para que o conteúdo de seu vídeo esteja público, quando
+chegar a hora, independente de você ainda estar nesse mundo ou não.
+
+[.text-center]
+*Como resolver esse problema?*
