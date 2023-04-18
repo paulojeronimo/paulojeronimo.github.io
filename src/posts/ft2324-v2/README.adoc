@@ -52,14 +52,13 @@ criptografado], e o {uri-ft2324-v1-mp4-gpg}.sha256[seu `hash`], pois daí você
 poderá checar, a qualquer momento, seu eu realmente não alterei o seu conteúdo
 até a data em que eu publicarei a senha dele.
 
-Para salvar, ou verificar o arquivo, você também pode usar linhas de comando no
+Para salvar e verificar os arquivos, você também pode usar linhas de comando no
 Linux ou no Termux.
 
 [subs=attributes+]
 ....
 $ # Salvar os arquivos:
-$ curl {uri-ft2324-v1-mp4-gpg}
-$ curl {uri-ft2324-v1-mp4-gpg}.sha256
+$ f=v1.mp4.gpg; for x in $f{,.sha256}; do curl {uri-ft2324}/$x -o $x; done
 
 $ # Hash de v1.mp4.gpg HOJE ({localdate}) e sempre (não será alterado):
 $ cat v1.mp4.gpg.sha256

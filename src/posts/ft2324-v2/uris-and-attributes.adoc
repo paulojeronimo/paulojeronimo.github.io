@@ -1,7 +1,8 @@
 :uri-paulojeronimo: https://paulojeronimo.com
 :uri-termux: https://github.com/termux/termux-app
-:uri-ft2324-pdf: https://paulojeronimo.com/tmp/f2324.pdf
-:uri-ft2324-v1-mp4-gpg: https://paulojeronimo.com/tmp/f2324/v1.mp4.gpg
+:uri-ft2324: https://paulojeronimo.com/tmp/ft2324
+:uri-ft2324-pdf: {uri-ft2324}.pdf
+:uri-ft2324-v1-mp4-gpg: {uri-ft2324}/v1.mp4.gpg
 // External Attributes
 :Termux: {uri-termux}[Termux^]
 :GPG: https://gnupg.org/[GPG^]
