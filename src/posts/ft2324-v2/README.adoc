@@ -58,7 +58,7 @@ Linux ou no Termux.
 [subs=attributes+]
 ....
 $ # Salvar os arquivos:
-$ f=v1.mp4.gpg; for x in $f{,.sha256}; do curl {uri-ft2324}/$x -o $x; done
+$ for f in v1.mp4.gpg{,.sha256}; do curl {uri-ft2324}/$f -o $f; done
 
 $ # Hash de v1.mp4.gpg HOJE ({localdate}) e sempre (não será alterado):
 $ cat v1.mp4.gpg.sha256
