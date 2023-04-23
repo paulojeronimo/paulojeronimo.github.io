@@ -6,8 +6,12 @@ pull it later because that won't work.
 The files generated in this repository are accessible through the URL
 https://paulojeronimo.com/tmp/.
 
-The SHA256 of the temporary files stored here keeps alive (and constantly
-updated) in https://paulojeronimo.com/tmp-history/files.txt.
+*The SHA256 of the temporary files* stored here keeps alive (and constantly
+updated) in https://github.com/paulojeronimo/paulojeronimo.github.io/blob/master/tmp-history/files.txt.
+So, you can audit if there was any change in the files pointed out by it.
+
+All the files that are not temporary in this repository are also available in
+the directory `tmp-history` pointed by the repo above.
 
 The link:publish-to-gh-pages.sh[] script is responsible for recreating this
 repository every time it is called.
