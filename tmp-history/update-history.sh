@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -o pipefail
 
+[ "$1" ] || { echo A date is required!; exit 1; }
+
 history_dir=${history_repo:-../paulojeronimo.github.io/tmp-history}
 cd "$(dirname "$0")"
 
@@ -18,3 +20,7 @@ filter() {
 
 for f in ${!history_files[@]}; do cp "$f" "$history_dir"/; done
 find . -type f ! -path */.git/* | filter | sort | xargs sha256sum > "$history_dir"/files.txt
+
+cd "$history_dir"
+git add .
+git commit -m "Updated tmp-history at $1"
