@@ -7,7 +7,7 @@ The files generated in this repository are accessible through the URL
 https://paulojeronimo.com/tmp/.
 
 *The SHA256 of the temporary files* stored here keeps alive (and constantly
-updated) in https://github.com/paulojeronimo/paulojeronimo.github.io/blob/master/tmp-history/files.txt.
+updated) in https://github.com/paulojeronimo/paulojeronimo.github.io/blob/master/tmp-history/changes.txt.
 So, you can audit if there was any change in the files pointed out by it.
 
 All the files that are not temporary in this repository are also available in
